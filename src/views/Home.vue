@@ -5,6 +5,7 @@
         <OurPartners
             v-bind:items="items"
         />
+        <Convenient />
             <router-link to="/pozhalujsta">Page 1</router-link>
 
     </main>
@@ -16,6 +17,7 @@
 
 import UnifiedPlatform from '@/components/UnifiedPlatform.vue'
 import OurPartners from '@/components/OurPartners.vue'
+import Convenient from '@/components/Convenient.vue'
 
 export default {
   name: 'App',
@@ -30,7 +32,8 @@ export default {
   },
   components: {
     UnifiedPlatform,
-    OurPartners
+    OurPartners,
+    Convenient
   }
 }
 </script>
