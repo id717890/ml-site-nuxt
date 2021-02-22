@@ -601,3 +601,41 @@ body {
 .section_2 .content_box:nth-child(7) {
     min-width: 37%;
 }
+
+.pop-templates {
+    padding: 90px 0;
+}
+
+.pop-templates .content-box {
+    width: 71%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.pop-templates .pop_title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1A1A1A;
+    padding: 9px 0;
+    line-height: 1.6;
+    position: relative;
+}
+
+.pop-templates .pop_title::after {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    position: absolute;
+    right: 4px;
+    top: 33%;
+    transform: rotate(45deg) translate(0, -50%);
+}
+
+.pop-templates .pop_desc {
+    font-weight: 300;
+    padding: 11px 7%;
+    display: none;
+}
