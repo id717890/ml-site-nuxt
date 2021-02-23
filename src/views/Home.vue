@@ -7,6 +7,8 @@
         />
         <Convenient />
         <PopularTemplates />
+        <Algorithms/>
+        <ForYou />
             <router-link to="/pozhalujsta">Page 1</router-link>
 
     </main>
@@ -20,6 +22,8 @@ import UnifiedPlatform from '@/components/UnifiedPlatform.vue'
 import OurPartners from '@/components/OurPartners.vue'
 import Convenient from '@/components/Convenient.vue'
 import PopularTemplates from '@/components/PopularTemplates.vue'
+import Algorithms from '@/components/Algorithms.vue'
+import ForYou from '@/components/ForYou.vue'
 
 export default {
   name: 'App',
@@ -36,7 +40,9 @@ export default {
     UnifiedPlatform,
     OurPartners,
     Convenient,
-    PopularTemplates
+    PopularTemplates,
+    Algorithms,
+    ForYou
   }
 }
 </script>

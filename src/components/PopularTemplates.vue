@@ -5,7 +5,8 @@
         Популярные шаблоны<br />
         акций и рассылок
       </div>
-      <div class="content-box">
+      <div class="content-box" id="vue_acc">
+
         <div class="item">
           <div class="pop_title">
             Постоянный процент поощрения от суммы покупки
@@ -49,7 +50,7 @@
             </p>
           </div>
         </div>
-        <div class="item">
+        <div class="item" >
           <div class="pop_title">
             Плавающий процент поощрения от суммы покупки
           </div>
@@ -818,7 +819,10 @@
             </div>
           </div>
         </div>
-      </vsa-list>
+      </div>
+      <div class="img">
+        <img src="../assets/img/lap_persp.jpg" alt="Популярные шаблоны sакций и рассылок">
+      </div>
     </div>
 
     
@@ -829,7 +833,15 @@
 
 </template>
 
+
+
+
+
+
+
+
 <script>
+
 
 </script>
 

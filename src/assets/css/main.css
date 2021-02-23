@@ -603,7 +603,7 @@ body {
 }
 
 .pop-templates {
-    padding: 90px 0;
+    padding: 90px 0 42px;
 }
 
 .pop-templates .content-box {
@@ -638,4 +638,227 @@ body {
     font-weight: 300;
     padding: 11px 7%;
     display: none;
+}
+
+.pop-templates .img{
+    margin-top: 41px;
+}
+
+.algorithms {
+    background-color: #F0F2F2;
+    padding: 80px 0;
+}
+
+.algorithms .content_box {
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: flex-start
+}
+
+.algorithms .item {
+    position: relative;
+    max-width: 50%;
+    border: 1px solid #CCCCCC;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 40px 0 0px;
+    background-color: #F0F2F2;
+    z-index: 1;
+}
+
+.algorithms .num {
+    line-height: 1;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 17px rgb(0 0 0 / 5%);
+    background-color: #1A1A1A;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+}
+
+.algorithms .item_1 {
+    margin-left: 12px;
+    max-width: 39%;
+    text-align: center;
+    order: -1;
+}
+
+.algorithms .item_2 {
+    max-width: 39%;
+    text-align: center;
+    order: 1;
+    margin-top: -97px;
+    padding: 0;
+    border: none;
+    margin-left: 139px;
+}
+
+.algorithms .item_2 .num {
+    bottom: auto;
+    top: 50%;
+    left: auto;
+    right: 97%;
+    transform: translate(-50%, -50%);
+}
+
+.algorithms .item_2::after {
+    content: '';
+    display: block;
+    width: calc(100% + 0px);
+    height: calc(100% + 191px);
+    position: absolute;
+    bottom: -143px;
+    left: -35px;
+    border-radius: 0px 50px 0px 50px;
+    border-left: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #CCCCCC;
+    z-index: 0;
+}
+
+.algorithms .item_3 {
+    max-width: 39%;
+    text-align: center;
+    order: 0;
+    margin-left: auto;
+    margin-right: 37px;
+    margin-top: 8%;
+    padding: 28px 9px;
+    max-height: 422px;
+}
+
+.algorithms .item_3 .img {
+    max-height: 324px;
+    overflow: hidden;
+}
+
+.algorithms .item_4 {
+    max-width: 39%;
+    order: 2;
+    margin-left: auto;
+    padding: 39px 33px;
+    margin-right: 18%;
+    text-align: right;
+    border: none;
+    z-index: 0;
+}
+
+.algorithms .item_4 .num {
+    left: 100%;
+    top: 41%;
+    transform: translate(-50%, -50%);
+}
+
+.algorithms .item_4::after {
+    content: '';
+    display: block;
+    width: calc(100% + 106px);
+    height: calc(100% + 255px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+    border: 1px dotted #CCCCCC;
+    z-index: 0;
+}
+
+.algorithms .item_5 {
+    max-width: 39%;
+    text-align: center;
+    order: 3;
+    margin-top: -130px;
+    padding: 42px 29px;
+    margin-left: 18.5%;
+}
+
+.algorithms .item_5 .num {
+    background-color: #F0F2F2;
+}
+
+.algorithms .item_6 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62%;
+    text-align: center;
+    order: 4;
+    padding: 35px 18px 12px;
+    margin-top: 121px;
+}
+
+.algorithms .item_6::before,
+.algorithms .item_6::after {
+    content: '';
+    display: block;
+}
+
+.algorithms .item_6::after {
+    width: 60px;
+    height: 42px;
+    position: absolute;
+    top: -63px;
+    left: 209px;
+    border-radius: 0px 50px 0px 50px;
+    border-right: 1px dotted #CCCCCC;
+    border-top: 1px dotted #CCCCCC;
+    z-index: 0;
+}
+
+.algorithms .item_6::before {
+    width: 138px;
+    height: 60px;
+    position: absolute;
+    top: -123px;
+    left: 79px;
+    border-radius: 0px 50px 0px 50px;
+    border-left: 1px dotted #CCCCCC;
+    border-bottom: 1px dotted #CCCCCC;
+    z-index: 0;
+}
+
+.foryou .span {
+    display: block;
+    font-size: 31px;
+}
+
+.foryou .span_1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 58px;
+}
+
+.foryou .span_2 {
+    font-size: 41px;
+    text-transform: uppercase;
+    letter-spacing: 9px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+.foryou .span_3 {
+    font-size: 37px;
+    letter-spacing: 7px;
+    line-height: 59px;
+}
+
+.foryou .span_4 {
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    font-weight: 500;
+    line-height: 86px;
+}
+
+.foryou .span_5 {
+    font-size: 31px;
+    line-height: 50px;
 }
