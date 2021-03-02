@@ -9,7 +9,7 @@
             </div>
             <div class="btn_block flex">
                 <button type="button" class="btn bg_tr btn-order">Заказать КП</button>
-                <button type="button" class="btn btn-demo">Демо</button>
+                <!-- <button type="button" class="btn btn-demo">Демо</button> -->
             </div>
         </div>
     </header>

@@ -2,14 +2,17 @@
     <main>
         <UnifiedPlatform />
         
-        <OurPartners
+        <!-- <OurPartners
             v-bind:items="items"
-        />
+        /> -->
         <Convenient />
         <PopularTemplates />
         <Algorithms/>
         <ForYou />
-            <router-link to="/pozhalujsta">Page 1</router-link>
+        <Connections />
+        <TechnologyFriends />
+        
+            <!-- <router-link to="/pozhalujsta">Page 1</router-link> -->
 
     </main>
 </template>
@@ -24,6 +27,9 @@ import Convenient from '@/components/Convenient.vue'
 import PopularTemplates from '@/components/PopularTemplates.vue'
 import Algorithms from '@/components/Algorithms.vue'
 import ForYou from '@/components/ForYou.vue'
+import Connections from '@/components/Connections.vue'
+import TechnologyFriends from '@/components/TechnologyFriends.vue'
+
 
 export default {
   name: 'App',
@@ -42,7 +48,10 @@ export default {
     Convenient,
     PopularTemplates,
     Algorithms,
-    ForYou
+    ForYou,
+    Connections,
+    TechnologyFriends
+
   }
 }
 </script>

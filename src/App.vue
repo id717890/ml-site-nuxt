@@ -3,7 +3,8 @@
     <Header/>
     
     <router-view />  <!-- параметр для передачи страниц в эту область -->
-    
+
+    <Footer />
   </div>
 </template>
 
@@ -22,11 +23,13 @@
 import '@/assets/css/main.css'
  
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Footer
   }
 }
 </script>
