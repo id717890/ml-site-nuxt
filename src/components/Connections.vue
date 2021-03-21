@@ -144,7 +144,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <button type="button" class="btn btn-order">Узнать сроки и стоимость</button> -->
+            <button type="button" class="btn btn-order">Узнать сроки и стоимость</button>
         </div>
     </section>
 </template>

@@ -2,14 +2,15 @@
     <main>
         <UnifiedPlatform />
         
-        <!-- <OurPartners
+        <OurPartners
             v-bind:items="items"
-        /> -->
+        />
         <Convenient />
         <PopularTemplates />
         <Algorithms/>
         <ForYou />
         <Connections />
+        <Pricing />
         <TechnologyFriends />
         
             <!-- <router-link to="/pozhalujsta">Page 1</router-link> -->
@@ -29,6 +30,7 @@ import Algorithms from '@/components/Algorithms.vue'
 import ForYou from '@/components/ForYou.vue'
 import Connections from '@/components/Connections.vue'
 import TechnologyFriends from '@/components/TechnologyFriends.vue'
+import Pricing from '@/components/Pricing.vue'
 
 
 export default {
@@ -50,7 +52,8 @@ export default {
     Algorithms,
     ForYou,
     Connections,
-    TechnologyFriends
+    TechnologyFriends,
+    Pricing
 
   }
 }

@@ -38,5 +38,12 @@ npm run serve
 npm run build
 ```
 
+create web.config file https://dnilvincent.com/blog/posts/host-vuejs-app-on-iis
+
+instal URL Rewrite https://www.iis.net/downloads/microsoft/url-rewrite
+
+create site on iis
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
