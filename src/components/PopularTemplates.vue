@@ -12,42 +12,44 @@
             Постоянный процент поощрения от суммы покупки
           </div>
           <div class="pop_desc">
-            <p>Пример механики:</p>
-            <p>- всем клиентам;</p>
-            <p>- в любое время;</p>
-            <p>- за любой товар;</p>
-            <p>- за любую сумму покупки;</p>
-            <br>
-            <p>
-              Начисляется 5% от суммы покупки в виде бонусов на личный счет!
-            </p>
-            <p>1 бонус= 1 рубль скидки!</p>
-            <br>
-            <p>Например,</p>
-            <br>
-            <p>- покупка = 100 р.</p>
-            <p>
-              - поощрение клиента = 100 р. * 5%= 5 бонусов на счет (1 бонус=1
-              рубль)
-            </p>
-            <p>
-              - результат = бизнес дал обещание предоставить скидку в 5р. только
-              при следующей покупке, но при этом клиент в кассу заплатил 100%
-              стоимости покупки! Т.е. 5 бонусов, обещанные за первую покупку,
-              можно реализовать только при следующей покупке, т.е. одно обещание
-              обеспечивает 2 покупки, как минимум!
-            </p>
-            <br>
-            <p>
-              Данная механика, в качестве основной механики Программы,
-              применяется для мотивации клиентов совершать привычные, частые
-              покупки в одном магазине, т.е. в Вашем!
-            </p>
-            <br>
-            <p>
-              Данная механика отражается в Правилах Программы на сайте
-              Программы.
-            </p>
+            <div>
+              <p>Пример механики:</p>
+              <p>- всем клиентам;</p>
+              <p>- в любое время;</p>
+              <p>- за любой товар;</p>
+              <p>- за любую сумму покупки;</p>
+              <br>
+              <p>
+                Начисляется 5% от суммы покупки в виде бонусов на личный счет!
+              </p>
+              <p>1 бонус= 1 рубль скидки!</p>
+              <br>
+              <p>Например,</p>
+              <br>
+              <p>- покупка = 100 р.</p>
+              <p>
+                - поощрение клиента = 100 р. * 5%= 5 бонусов на счет (1 бонус=1
+                рубль)
+              </p>
+              <p>
+                - результат = бизнес дал обещание предоставить скидку в 5р. только
+                при следующей покупке, но при этом клиент в кассу заплатил 100%
+                стоимости покупки! Т.е. 5 бонусов, обещанные за первую покупку,
+                можно реализовать только при следующей покупке, т.е. одно обещание
+                обеспечивает 2 покупки, как минимум!
+              </p>
+              <br>
+              <p>
+                Данная механика, в качестве основной механики Программы,
+                применяется для мотивации клиентов совершать привычные, частые
+                покупки в одном магазине, т.е. в Вашем!
+              </p>
+              <br>
+              <p>
+                Данная механика отражается в Правилах Программы на сайте
+                Программы.
+              </p>
+            </div>
           </div>
         </div>
         <div class="item" >
@@ -55,12 +57,7 @@
             Плавающий процент поощрения от суммы покупки
           </div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1128-35"
-              data-muse-uid="U1128"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>Пример механики:</p>
               <p>- всем клиентам;</p>
@@ -115,12 +112,7 @@
         <div class="item">
           <div class="pop_title">Разный процент поощрения на разный товар</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1131-48"
-              data-muse-uid="U1131"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>Пример механики:</p>
               <p>- всем клиентам;</p>
@@ -188,12 +180,7 @@
         <div class="item">
           <div class="pop_title">Поощрение за время и сумму покупки!</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1244-28"
-              data-muse-uid="U1244"
-              data-muse-type="txt_frame"
-            >
+            <div >
               <!-- content -->
               <p>Пример механики:</p>
               <p>Всем клиентам начисляется 2% бонусами от суммы покупки,</p>
@@ -248,12 +235,7 @@
             Фиксированное количество бонусов за количество покупок!
           </div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1247-40"
-              data-muse-uid="U1247"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>Пример механики:</p>
               <p>Всем клиентам начисляется 2% бонусами от суммы покупки,</p>
@@ -312,12 +294,7 @@
         <div class="item">
           <div class="pop_title">Уровни клиентов</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1250-53"
-              data-muse-uid="U1250"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>Пример механики:</p>
               <p>- всем клиентам;</p>
@@ -394,12 +371,7 @@
         <div class="item">
           <div class="pop_title">Списание бонусов</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1253-27"
-              data-muse-uid="U1253"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Самые типовые и уже всем понятные правила использования бонусов
@@ -463,12 +435,7 @@
         <div class="item">
           <div class="pop_title">Велком бонус</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1256-9"
-              data-muse-uid="U1256"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Самая популярная акция на старте Программы! Используется для
@@ -494,12 +461,7 @@
         <div class="item">
           <div class="pop_title">Приведи Друга</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1259-45"
-              data-muse-uid="U1259"
-              data-muse-type="txt_frame"
-            >
+            <div >
               <!-- content -->
               <p>
                 Механика используется для привлечения новых участников из числа
@@ -572,12 +534,7 @@
         <div class="item">
           <div class="pop_title">День Рождения</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1262-22"
-              data-muse-uid="U1262"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Механика используется для формирования положительного образа
@@ -621,12 +578,7 @@
         <div class="item">
           <div class="pop_title">Сгораемые бонусы по разовым Акциям</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1265-20"
-              data-muse-uid="U1265"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Механика используется для поддержания интереса участников к
@@ -661,12 +613,7 @@
         <div class="item">
           <div class="pop_title">Счастливые моменты</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1268-22"
-              data-muse-uid="U1268"
-              data-muse-type="txt_frame"
-            >
+            <div >
               <!-- content -->
               <p>
                 Механика используется для поддержания/усиления продаж в
@@ -712,12 +659,7 @@
         <div class="item">
           <div class="pop_title">Промокоды / купоны</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1271-38"
-              data-muse-uid="U1271"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Данные опции используются для достижения конкретных целей бренда
@@ -757,12 +699,7 @@
         <div class="item">
           <div class="pop_title">Списание бонусов, начисленных по акции</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1274-15"
-              data-muse-uid="U1274"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Для большей капитализации любой акции с начислением повышенных
@@ -792,12 +729,7 @@
         <div class="item">
           <div class="pop_title">Ручное начисление и списание бонусов</div>
           <div class="pop_desc">
-            <div
-              class="clearfix grpelem"
-              id="u1277-10"
-              data-muse-uid="U1277"
-              data-muse-type="txt_frame"
-            >
+            <div>
               <!-- content -->
               <p>
                 Для решения штатных или внештатных ситуаций с участниками и
@@ -835,16 +767,26 @@
 
 
 
-
-
-
-
-
 <script>
 
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var acc = document.getElementsByClassName("pop_title");
+  console.log(typeof acc);
+  console.log(acc.length);
+  console.log(acc);
+  var i;
 
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+});
+ 
 </script>
-
-<style scoped>
-
-</style>

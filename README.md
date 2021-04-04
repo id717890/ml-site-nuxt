@@ -47,3 +47,9 @@ create site on iis
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+
+<!-- 
+git add *
+git commit -m "Commit message"
+git push origin master 
+-->

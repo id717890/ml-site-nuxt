@@ -46,7 +46,7 @@ body {
     color: #7F7F7F;
     font-size: 16px;
     font-family: 'AF', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     min-width: 1020px;
     padding-top: 81px;
 }
@@ -340,7 +340,7 @@ body {
     color: #000;
 }
 
-.advantages {
+.advantages.flex {
     justify-content: space-around;
     align-items: flex-end;
     margin-bottom: 52px;
@@ -370,10 +370,10 @@ body {
     margin-bottom: 3px;
 }
 
-.platform .btn-order {
+.platform .btn.btn-order {
     margin: 0 auto;
     display: block;
-    padding: 12px 30px;
+    padding: 11px 27px;
 }
 
 
@@ -438,6 +438,10 @@ body {
     color: #383838;
     text-transform: uppercase;
     margin-bottom: 7px;
+}
+
+.result .item .name a {
+    font-weight: normal;
 }
 
 .result .item .item_title:hover{
@@ -635,12 +639,28 @@ body {
     right: 4px;
     top: 33%;
     transform: rotate(45deg) translate(0, -50%);
+    transition:.4s;
+}
+
+/* .pop-templates .pop_title:hover::after, */
+.pop-templates .pop_title.active::after {
+    transform: rotate(-135deg) translate(0, -50%);
+    right: -5px;
 }
 
 .pop-templates .pop_desc {
     font-weight: 300;
-    padding: 11px 7%;
-    display: none;
+    /* padding: 11px 7%; */
+    /* display: none; */
+    padding: 0px 7%;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+.pop-templates .pop_desc > div {
+    padding: 11px 0;
 }
 
 .pop-templates .img{
