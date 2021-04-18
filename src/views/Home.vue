@@ -13,7 +13,7 @@
         <Pricing />
         <TechnologyFriends />
         
-            <!-- <router-link to="/pozhalujsta">Page 1</router-link> -->
+            <!-- <router-link to="/pozhalujsta/">Page 1</router-link> -->
 
     </main>
 </template>
@@ -38,9 +38,9 @@ export default {
   data() {
     return {
       items: [
-        {id: 1, titile: 'Пожалуйста', description: 'Коалиционная программа', link: '#1', image: '#'},
-        {id: 2, titile: 'M5 BONUS', description: 'Торговый центр', link: '#2', image: '#'},
-        {id: 3, titile: 'Сладкоежкам везет', description: 'Розничная сеть', link: '#3', image: '#'}
+        {id: 1, titile: 'Пожалуйста', description: 'Коалиционная программа', link: '/pozhalujsta/', image: 'please.png'},
+        {id: 2, titile: 'M5 BONUS', description: 'Торговый центр', link: '/m5_bonus/', image: 'm5.png'},
+        {id: 3, titile: 'Сладкоежкам везет', description: 'Розничная сеть', link: '/sladkoezhkam_vezet/', image: 'medoboryi.png'}
       ]
     }
   },

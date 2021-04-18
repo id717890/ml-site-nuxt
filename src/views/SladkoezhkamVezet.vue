@@ -3,8 +3,8 @@
         <section class="page_2 container">
             <br>
             <br>
-            <h2 class="title_1">{{item.titile}}</h2>
-            <!-- <p>{{item.description}}</p> -->
+            <h2 class="title_1">Сладкоежкам везет</h2>
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem sapiente, repellendus corrupti expedita sit mollitia vel, rem magni minus dolorem facilis? Corrupti obcaecati et asperiores maxime enim ab, hic quod?</p>
                 <br>
                 <br>
@@ -20,12 +20,3 @@
 
 
 
-<script>
-import OurPartnersItem from '@/components/OurPartnersItem'
-export default {
-    props: ['items'],
-    components: {
-        OurPartnersItem
-    }
-}
-</script>

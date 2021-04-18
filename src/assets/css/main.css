@@ -51,11 +51,11 @@ body {
     padding-top: 81px;
 }
 
-/* #app {
-    min-height: 100vh;
+#app {
+    min-height: calc(100vh - 81px);
     display: flex;
     flex-direction: column;
-} */
+}
 
 .container {
     display: block;
@@ -411,6 +411,7 @@ body {
 
 .result .item .image {
     width: 100%;
+    max-width: 174px;
     padding-top: 100%;
     position: relative;
     margin-bottom: 11px;
@@ -1309,6 +1310,7 @@ body {
     background-color: #1A1A1A;
     color: #fff;
     padding: 28px 0 29px;
+    margin-top: auto;
 }
 
 .flex {
