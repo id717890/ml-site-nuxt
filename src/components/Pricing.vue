@@ -112,7 +112,7 @@
                             </div>
                         </div>
 
-                        <button type="button" class="btn bg_tr btn-consultation">Консультация</button>
+                        <button type="button" class="btn bg_tr btn-consultation" data-open_call>Консультация</button>
                      </div>
                  </div>
              </div>

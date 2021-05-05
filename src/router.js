@@ -4,6 +4,7 @@ import Home from '@/views/Home'
 import Pozhalujsta from '@/views/Pozhalujsta'
 import M5Bonus from '@/views/M5Bonus'
 import SladkoezhkamVezet from '@/views/SladkoezhkamVezet.vue'
+import Approval from '@/views/Approval.vue'
 
 Vue.use(Router) //регистрируем роутер как плагин
 
@@ -24,6 +25,10 @@ export default new Router({ // экспортируем по дефолту но
         {
             path: '/sladkoezhkam_vezet',
             component: () => import('./views/SladkoezhkamVezet.vue')
+        },
+        {
+            path: '/approval',
+            component: () => import('./views/Approval.vue')
         },
     ]
 })

@@ -771,9 +771,7 @@
 
 document.addEventListener("DOMContentLoaded", function(event) { 
   var acc = document.getElementsByClassName("pop_title");
-  console.log(typeof acc);
-  console.log(acc.length);
-  console.log(acc);
+
   var i;
 
   for (i = 0; i < acc.length; i++) {
