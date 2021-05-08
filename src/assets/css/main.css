@@ -133,7 +133,9 @@ body {
 }
 
 .title_1,
-.title_2 {
+.title_2,
+.title_4,
+.title_5  {
     line-height: 53px;
     font-size: 46px;
     letter-spacing: 3px;
@@ -155,6 +157,18 @@ body {
     text-align: center;
     font-weight: 500;
     color: #000;
+}
+
+.title_4 {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.title_5 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 22px;
 }
 
 .description {
@@ -1594,7 +1608,7 @@ body {
 }
 
 .page_2 {
-    padding: 30px 0 100px;
+    padding: 30px 0 110px;
 }
 
 .approval_cont > div {
@@ -1743,4 +1757,102 @@ body {
 
 .form__form-select.form-block a:hover {
     border-bottom: 1px solid transparent;
+}
+
+.table-block {
+    font-size: 18px;
+    padding-top: 33px;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.table-block .left-coll{
+    color: #383838;
+    text-transform: uppercase;
+    width: 37%;
+}
+
+.table-block .right-coll{
+    color: #999999;
+}
+
+.table-block > .flex {
+    padding: 13px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.container_2 .pop-templates {
+    padding: 0px;
+}
+
+.function_box {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 40px;
+    margin-bottom: 59px;
+}
+
+.function-title {
+    justify-content: flex-start;
+    font-size: 24px;
+    margin-left: -48px;
+}
+
+.function-title span {
+    display: flex;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A1A;
+    border-radius: 50%;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.container_2 .pop-templates .content-box {
+    width: 100%;
+}
+
+.desc_2 {
+    text-align: center;
+    line-height: 28px;
+    color: #7F7F7F;
+    font-size: 20px;
+    margin-top: -13px;
+}
+
+.big_img  >img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -18px;
+}
+
+.midle_btn{
+    text-align: center;
+}
+
+.download {
+    margin-top: 117px;
+    text-align: center;
+}
+
+.link_line {
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    line-height: 1;
+}
+
+.link_line:hover {
+    border-bottom: 1px solid transparent;
+}
+
+.tel_img {
+    z-index: -1;
+    margin-top: -30px;
+}
+
+.back_link {
+    margin-top: 30px;
 }

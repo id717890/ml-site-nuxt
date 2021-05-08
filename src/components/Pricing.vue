@@ -145,22 +145,24 @@ window.addEventListener('DOMContentLoaded', function() {
         tabs[i].classList.add('active');
     }
     
-    hideTabContent();
-    showTabContent();
+    if (tabsContent.length > 0) {
+        hideTabContent();
+        showTabContent();
+    }
 
-    tabsParent.addEventListener('click', function(event) {
-
-
-        const target = event.target;
-        if(target && target.classList.contains('nav')) {
-            tabs.forEach((item, i) => {
-                if (target == item) {
-                    hideTabContent();
-                    showTabContent(i);
-                }
-            });
-        }
-    });
+    if(tabsParent !== null) {
+        tabsParent.addEventListener('click', function(event) {
+            const target = event.target;
+            if(target && target.classList.contains('nav')) {
+                tabs.forEach((item, i) => {
+                    if (target == item) {
+                        hideTabContent();
+                        showTabContent(i);
+                    }
+                });
+            }
+        });
+     }
  });
 
   
