@@ -34,21 +34,46 @@ export default {
 
  document.addEventListener("DOMContentLoaded", function(event) { 
 
-  var acc = document.getElementsByClassName("pop_title");
+  // var acc = document.getElementsByClassName("pop_title");
+  // var i;
 
-  var i;
+  // for (i = 0; i < acc.length; i++) {
+  //   acc[i].addEventListener("click", function() {
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
+  //     this.classList.toggle("active");
+
+  //     var panel = this.nextElementSibling;
+
+  //     if (panel.style.maxHeight) {
+  //       panel.style.maxHeight = null;
+  //     } else {
+  //       panel.style.maxHeight = panel.scrollHeight + "px";
+  //     }
+
+  //   });
+  // }
+
+  let  accordionParent = document.querySelector('#app');
+
+	accordionParent.addEventListener('click', function(event) {
+    
+		const target = event.target;
+console.log(target);
+		if(target && target.classList.contains('pop_title')) {
+
+
+      target.classList.toggle("active");
+
+      let panel = target.nextElementSibling;
+
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-      } 
-    });
-  }
+      }
+		}
+	});
+
 });
 
 </script>
