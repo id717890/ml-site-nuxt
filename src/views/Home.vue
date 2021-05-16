@@ -13,7 +13,7 @@
         <Pricing />
         <TechnologyFriends />
 
-        <ModalForm />
+        
         
             <!-- <router-link to="/pozhalujsta/">Page 1</router-link> -->
 
@@ -33,7 +33,7 @@ import ForYou from '@/components/ForYou.vue'
 import Connections from '@/components/Connections.vue'
 import TechnologyFriends from '@/components/TechnologyFriends.vue'
 import Pricing from '@/components/Pricing.vue'
-import ModalForm from '@/components/ModalForm.vue'
+
 
 
 export default {
@@ -56,8 +56,7 @@ export default {
     ForYou,
     Connections,
     TechnologyFriends,
-    Pricing,
-    ModalForm
+    Pricing
 
   }
 }

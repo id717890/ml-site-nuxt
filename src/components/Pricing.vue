@@ -8,7 +8,7 @@
                      <div class="nav nav_2">Дополнительные услуги</div>
                  </div>
                  <div class="content_tabs">
-                     <div class="tab tab_1">
+                     <div class="tab tab_1 show fade">
 
                         <p class="title_table">Запуск Программы</p>
 
@@ -119,51 +119,3 @@
         </div>
     </section>
 </template>
-
-<script>
-window.addEventListener('DOMContentLoaded', function() {
-    let tabs = document.querySelectorAll('.nav'),
-        tabsContent = document.querySelectorAll('.tab'),
-        tabsParent = document.querySelector('.nav_tabs');
-
-        
-    function hideTabContent() {
-        
-        tabsContent.forEach(item => {
-            item.classList.add('hide');
-            item.classList.remove('show', 'fade');
-        });
-
-        tabs.forEach(item => {
-            item.classList.remove('active');
-        });
-    }
-
-    function showTabContent(i = 0) {
-        tabsContent[i].classList.add('show', 'fade');
-        tabsContent[i].classList.remove('hide');
-        tabs[i].classList.add('active');
-    }
-    
-    if (tabsContent.length > 0) {
-        hideTabContent();
-        showTabContent();
-    }
-
-    if(tabsParent !== null) {
-        tabsParent.addEventListener('click', function(event) {
-            const target = event.target;
-            if(target && target.classList.contains('nav')) {
-                tabs.forEach((item, i) => {
-                    if (target == item) {
-                        hideTabContent();
-                        showTabContent(i);
-                    }
-                });
-            }
-        });
-     }
- });
-
-  
-</script>
