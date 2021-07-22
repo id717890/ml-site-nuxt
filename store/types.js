@@ -1,0 +1,8 @@
+export default {
+  nuxtServerInit: 'nuxtServerInit',
+  // ACTION
+  GET_APP_CONFIG: 'GET_APP_CONFIG',
+  // MUTATION
+  SET_APP_CONFIG: 'SET_APP_CONFIG',
+  SET_APP_CONFIG_LOADING: 'SET_APP_CONFIG_LOADING',
+}
