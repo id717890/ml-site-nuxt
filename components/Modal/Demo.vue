@@ -63,9 +63,9 @@
         <p>
           Нажимая кнопку, вы даете согласие <br />
           на
-          <router-link to="/approval/" title="Подробнее" class="pers">
-            обработка персональных данных</router-link
-          >
+          <a href="#" title="Подробнее" class="pers" @click.prevent="openLink">
+            обработка персональных данных
+          </a>
         </p>
       </div>
     </form>
@@ -81,13 +81,20 @@ export default {
   name: 'ModalDemo',
   directives: { mask },
   data: () => ({
-    name: 'Zamir',
-    phone: '+79527247500',
-    email: 'zam@gmail.com',
+    name: null,
+    phone: null,
+    email: null,
+    // name: 'Zamir',
+    // phone: '+79527247500',
+    // email: 'zam@gmail.com',
     loading: false,
   }),
   methods: {
     ...mapActions('lead', [types.CREATE_REQUEST]),
+    openLink() {
+      this.$emit('close')
+      this.$router.push({ name: 'rules' })
+    },
     async sendRequest() {
       this.loading = true
       const result = await this[types.CREATE_REQUEST]({

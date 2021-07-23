@@ -70,8 +70,10 @@ export default {
   name: 'ModalCallMe',
   directives: { mask },
   data: () => ({
-    name: 'Zamir',
-    phone: '+79527247500',
+    name: null,
+    phone: null,
+    // name: 'Zamir',
+    // phone: '+79527247500',
     loading: false,
   }),
   methods: {
