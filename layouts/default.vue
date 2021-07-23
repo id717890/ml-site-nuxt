@@ -46,7 +46,7 @@ export default {
     MlHeader,
     MlFooter,
   },
-  middleware: ['cfg', 'client/redirect'],
+  middleware: ['cfg', 'jwt', 'client/redirect'],
   data: () => ({
     showScrollTop: false,
   }),
@@ -69,14 +69,25 @@ export default {
     this.debouncedScroll = debounce(this.handleScroll, 200)
   },
   mounted() {
-    const el = document.querySelector('#app')
-    el.addEventListener('wheel', this.debouncedScroll, true)
+    this.setInitialize()
   },
   destroyed() {
     const el = document.querySelector('#app')
     el?.removeEventListener('wheel', this.debouncedScroll)
   },
   methods: {
+    setInitialize() {
+      const el = document.querySelector('#app')
+      el.addEventListener('wheel', this.debouncedScroll, true)
+      this.marquizScript(window, document, 'script', {
+        host: '//quiz.marquiz.ru',
+        id: '5aa97f14ee90d20018523ad6',
+        autoOpen: false,
+        autoOpenFreq: 'once',
+        openOnExit: false,
+        disableOnMobile: false,
+      })
+    },
     scrollTop() {
       window.scrollTo({ top: 100, left: 100, behavior: 'smooth' })
       this.showScrollTop = false
@@ -88,6 +99,28 @@ export default {
       } else {
         this.showScrollTop = false
       }
+    },
+    marquizScript(w, d, s, o) {
+      if (!window.__marquiz) window.__marquiz = []
+      window.marquiz = function () {
+        window.Marquiz
+          ? // eslint-disable-next-line no-undef
+            Marquiz.add(arguments)
+          : window.__marquiz.push(arguments)
+      }
+      const j = d.createElement(s)
+      j.async = true
+      j.src = '//script.marquiz.ru/v2.js'
+      j.onload = function () {
+        // eslint-disable-next-line no-undef
+        if (document.readyState !== 'loading') Marquiz.init(o)
+        else
+          document.addEventListener('DOMContentLoaded', function () {
+            // eslint-disable-next-line no-undef
+            Marquiz.init(o)
+          })
+      }
+      d.head.insertBefore(j, d.head.firstElementChild)
     },
   },
 }

@@ -85,7 +85,7 @@
           </div>
         </div>
 
-        <h2 class="title_5">Результат:</h2>
+        <h2 v-if="details.results" class="title_5">Результат:</h2>
 
         <div class="desc_2">
           <!-- eslint-disable-next-line -->

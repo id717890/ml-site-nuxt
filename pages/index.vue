@@ -34,6 +34,7 @@ import { mapState } from 'vuex'
 import { cloneDeep } from 'lodash'
 import MainDefault from '~/components/IndexBlock/Main/Default'
 import PartnersDefault from '~/components/IndexBlock/Partner/Default'
+import PartnersTabAndTag from '~/components/IndexBlock/Partner/TabAndTag'
 import SliderAnd4ImageDefault from '~/components/IndexBlock/SliderAnd4Image/Default'
 import ConvenientDefault from '~/components/IndexBlock/Convenient/Default'
 import TemplateDefault from '~/components/IndexBlock/Template/Default'
@@ -47,6 +48,7 @@ export default {
   components: {
     MainDefault,
     PartnersDefault,
+    PartnersTabAndTag,
     SliderAnd4ImageDefault,
     ConvenientDefault,
     TemplateDefault,

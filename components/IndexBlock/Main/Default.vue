@@ -138,9 +138,9 @@
           </p>
         </div>
       </div>
-      <button v-if="orderBtn.show" type="button" class="btn btn-order">
+      <!-- <button v-if="orderBtn.show" type="button" class="btn btn-order">
         {{ orderBtn.text }}
-      </button>
+      </button> -->
     </div>
   </section>
 </template>
@@ -161,9 +161,9 @@ export default {
     title2() {
       return this.settings?.title2
     },
-    orderBtn() {
-      return this.settings?.orderBtn
-    },
+    // orderBtn() {
+    //   return this.settings?.orderBtn
+    // },
   },
 }
 </script>

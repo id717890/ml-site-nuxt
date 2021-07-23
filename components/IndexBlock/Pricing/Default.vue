@@ -1,14 +1,29 @@
 <template>
-  <section class="pricing">
+  <section v-if="settings" class="pricing">
     <div class="container">
       <div class="title_1">Ценообразование</div>
       <div class="tabs">
-        <div class="nav_tabs flex">
-          <div class="nav nav_1" :class="{active: currentTab === 0}" @click="currentTab = 0">Облачное решение</div>
-          <div class="nav nav_2" :class="{active: currentTab === 1}" @click="currentTab = 1">Дополнительные услуги</div>
+        <div v-if="!settings.withoutAdditional" class="nav_tabs flex">
+          <div
+            class="nav nav_1"
+            :class="{ active: currentTab === 0 }"
+            @click="currentTab = 0"
+          >
+            Облачное решение
+          </div>
+          <div
+            class="nav nav_2"
+            :class="{ active: currentTab === 1 }"
+            @click="currentTab = 1"
+          >
+            Дополнительные услуги
+          </div>
         </div>
         <div class="content_tabs">
-          <div class="tab tab_1 fade" :class="currentTab === 0 ? 'fade show' : 'hide'">
+          <div
+            class="tab tab_1 fade"
+            :class="currentTab === 0 ? 'fade show' : 'hide'"
+          >
             <p class="title_table">Запуск Программы</p>
 
             <div class="table_block">
@@ -91,12 +106,15 @@
               </div>
             </div>
 
-            <button type="button" class="btn bg_tr btn-connect">
+            <!-- <button type="button" class="btn bg_tr btn-connect">
               Подключиться
-            </button>
+            </button> -->
           </div>
 
-          <div class="tab tab_2" :class="currentTab === 1 ? 'fade show' : 'hide'">
+          <div
+            class="tab tab_2"
+            :class="currentTab === 1 ? 'fade show' : 'hide'"
+          >
             <p class="title_table">Дополнительные услуги</p>
 
             <div class="table_block">
@@ -150,13 +168,19 @@
 </template>
 
 <script>
-import CallModal from "~/components/Modal/Call";
+import CallModal from '~/components/Modal/Call'
 export default {
   name: 'PricingBlockDefault',
+  props: {
+    settings: {
+      type: Object,
+      required: true,
+    },
+  },
   data: () => ({
     currentTab: 0,
   }),
-  methods:{
+  methods: {
     openCallModal() {
       this.$modal.show(
         CallModal,
@@ -166,7 +190,7 @@ export default {
           width: 312,
         }
       )
-    }
-  }
+    },
+  },
 }
 </script>

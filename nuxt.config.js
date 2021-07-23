@@ -62,6 +62,7 @@ export default {
       short_name: 'MLoyalty',
       description: 'Больше чем система лояльности',
       lang: 'en',
+      icons: null,
     },
     // workbox: {
     //   importScripts: ['/js/sw.js'],

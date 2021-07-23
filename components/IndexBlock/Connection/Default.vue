@@ -194,8 +194,8 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-order">
-        Узнать сроки и стоимость
+      <button type="button" class="btn btn-order" @click="openQuiz">
+        Заказать КП
       </button>
     </div>
   </section>
@@ -204,5 +204,12 @@
 <script>
 export default {
   name: 'ConnectionBlockDefault',
+  methods: {
+    openQuiz() {
+      // TODO перенести в конфиг ID quiz
+      // eslint-disable-next-line no-undef
+      Marquiz.showModal('5fda3289c9b57700443842f2')
+    },
+  },
 }
 </script>

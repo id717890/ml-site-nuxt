@@ -3,6 +3,24 @@
     <div class="container ml-container">
       <div class="title_1">Нам доверяют и получают результат</div>
 
+      <div
+        v-if="tags"
+        class="partner-filter-tag container ml-container v-application"
+      >
+        <v-btn
+          v-for="tag in tags"
+          :key="tag.id"
+          :outlined="!tag.selected"
+          :depressed="!tag.selected"
+          class="mr-2"
+          :color="!tag.selected ? '' : 'primary'"
+          @click="selectTag(tag)"
+        >
+          <Fa icon="tag" class="mr-1" />
+          {{ tag.name }}
+        </v-btn>
+      </div>
+
       <div class="block_partners flex">
         <div
           v-for="partner in showedPartners"
@@ -53,7 +71,7 @@
 
 <script>
 export default {
-  name: 'PartnerBlockDefault',
+  name: 'PartnerBlockTabAndTag',
   props: {
     settings: {
       type: Object,
@@ -62,16 +80,30 @@ export default {
   },
   data: () => ({
     showItems: 3,
+    tags: [],
   }),
   computed: {
     partners() {
       return this.settings?.partners
     },
+    selectedTags() {
+      return this.tags
+        ?.filter((tag) => tag.selected)
+        ?.map((tag) => tag?.name?.toLowerCase())
+    },
+    partnersByTags() {
+      if (!this.selectedTags?.length) return this.partners
+      return this.partners?.filter((partner) =>
+        partner?.tags?.some((x) =>
+          this.selectedTags?.includes(x?.toLowerCase())
+        )
+      )
+    },
     showedPartners() {
-      if (this.partners?.length <= this.showItems) {
-        return this.partners
+      if (this.partnersByTags?.length <= this.showItems) {
+        return this.partnersByTags
       }
-      return this.partners?.slice(0, this.showItems)
+      return this.partnersByTags?.slice(0, this.showItems)
     },
     defaults() {
       return this.settings?.defaults
@@ -85,6 +117,19 @@ export default {
     this.setInitialize()
   },
   methods: {
+    selectTag(tag) {
+      const find = this.tags?.find((x) => x?.id === tag?.id)
+      if (find) {
+        const indexOf = this.tags.indexOf(find)
+        if (indexOf >= 0) {
+          this.tags?.splice(indexOf, 1, {
+            id: tag?.id,
+            name: tag?.name,
+            selected: !tag?.selected,
+          })
+        }
+      }
+    },
     showMorePartners() {
       this.showItems += this.showItems
     },
@@ -93,6 +138,16 @@ export default {
       if (showItems) {
         this.showItems = showItems
       }
+      this.initTags()
+    },
+    initTags() {
+      const tags = this.settings?.defaults?.tags
+      if (!tags || !tags.length) return
+      this.tags = tags.map((tag, index) => ({
+        name: tag,
+        id: index,
+        selected: false,
+      }))
     },
   },
 }

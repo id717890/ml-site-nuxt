@@ -21,7 +21,11 @@
             >
               Заказать звонок
             </button>
-            <button type="button" class="btn btn-order">
+            <button
+              type="button"
+              class="btn btn-order"
+              @click.prevent="openQuiz"
+            >
               Узнать стоимость
             </button>
           </div>
@@ -57,6 +61,11 @@ export default {
           width: 312,
         }
       )
+    },
+    openQuiz() {
+      // TODO перенести в конфиг ID quiz
+      // eslint-disable-next-line no-undef
+      Marquiz.showModal('5fda3289c9b57700443842f2')
     },
   },
 }
