@@ -25,7 +25,7 @@ export default {
     { src: '@/plugins/vue-js-modal', mode: 'client' },
     { src: '@/plugins/constants', mode: 'client' },
     { src: '@/plugins/font-awesome', mode: 'client' },
-    { src: '@/plugins/sw.client', mode: 'client' },
+    // { src: '@/plugins/sw.client', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
