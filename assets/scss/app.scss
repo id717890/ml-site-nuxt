@@ -199,3 +199,27 @@
     opacity: 1;
   }
 }
+
+.ml-partner-modal-info {
+  line-height: normal;
+  background: #fff;
+  padding: 28px;
+  border-radius: 20px;
+
+  h2 {
+    font-size: 18px;
+    color: #fe634e;
+    font-weight: 600;
+    // font-family: 'OpinionPro',Arial,sans-serif;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.55;
+    // font-family: 'OpinionPro',Arial,sans-serif;
+    font-weight: 300;
+  }
+}

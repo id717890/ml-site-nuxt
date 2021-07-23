@@ -2,7 +2,6 @@
   <section class="result">
     <div class="container ml-container">
       <div class="title_1">Нам доверяют и получают результат</div>
-
       <div
         v-if="tags"
         class="partner-filter-tag container ml-container v-application"
@@ -21,7 +20,7 @@
         </v-btn>
       </div>
 
-      <div class="block_partners flex">
+      <div class="block_partners flex mt-5">
         <div
           v-for="partner in showedPartners"
           :key="partner.id"
@@ -29,28 +28,38 @@
           class="item flex"
         >
           <div class="image">
-            <nuxt-link
-              :to="'/partner/' + partner.id"
+            <a
+              href="#"
               class="img_link"
               title="Подробнее"
               rel="nofollow"
+              @click.prevent="openInfo(partner)"
             >
               <img :src="partner.image" :alt="partner.title" class="img" />
-            </nuxt-link>
+            </a>
           </div>
           <div class="name">
-            <nuxt-link
-              :to="'/partner/' + partner.id"
+            <a
+              href="#"
               class="item_title"
               title="Подробнее"
+              @click.prevent="openInfo(partner)"
             >
               {{ partner.title }}
-            </nuxt-link>
+            </a>
             <!-- <router-link :to="item.link" class="item_title" title="Подробнее">{{item.titile}}</router-link> -->
           </div>
           <div class="desc">
             {{ partner.description }}
           </div>
+          <a
+            href="#"
+            class="link btn bg_tr"
+            title="Подробнее"
+            rel="nofollow"
+            @click.prevent="openInfo(partner)"
+            >Подробнее</a
+          >
           <!-- <router-link :to="item.link" class="link btn bg_tr" title="Подробнее" rel="nofollow">Подробнее</router-link> -->
         </div>
         <!-- <OurPartnersItem v-for="item of items" :item="item" /> -->
@@ -70,6 +79,8 @@
 </template>
 
 <script>
+import PartnerInfoModal from './components/ModalInfo.vue'
+
 export default {
   name: 'PartnerBlockTabAndTag',
   props: {
@@ -117,6 +128,21 @@ export default {
     this.setInitialize()
   },
   methods: {
+    openInfo(partner) {
+      console.log(partner)
+      this.$modal.show(
+        PartnerInfoModal,
+        {
+          content: partner?.content,
+        },
+        {
+          ...this.$const.MODAL_SETTINGS,
+          maxWidth: 760,
+          width: 760,
+          clickToClose: false,
+        }
+      )
+    },
     selectTag(tag) {
       const find = this.tags?.find((x) => x?.id === tag?.id)
       if (find) {
