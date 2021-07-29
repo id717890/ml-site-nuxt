@@ -208,7 +208,7 @@ export default {
     openQuiz() {
       // TODO перенести в конфиг ID quiz
       // eslint-disable-next-line no-undef
-      Marquiz.showModal('5fda3289c9b57700443842f2')
+      Marquiz.showModal('5aa97f14ee90d20018523ad6')
     },
   },
 }
