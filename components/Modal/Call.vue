@@ -13,6 +13,7 @@
           id="FORM1_field1"
           v-model="name"
           class="form-block__obligatory-field"
+          :class="{ 'not-valid': !validateName }"
           name="ФИО"
           type="text"
           placeholder="Введите имя*"
@@ -29,6 +30,7 @@
             form-block__number-field
             form-block__obligatory-field
           "
+          :class="{ 'not-valid': !validatePhone }"
           name="Телефон"
           type="text"
           placeholder="Введите номер телефона*"
@@ -66,6 +68,8 @@
 import { mapActions } from 'vuex'
 import { mask } from 'vue-the-mask'
 import types from '~/store/types'
+import ModalMessage from '~/components/Modal/Message.vue'
+
 export default {
   name: 'ModalCallMe',
   directives: { mask },
@@ -75,11 +79,30 @@ export default {
     // name: 'Zamir',
     // phone: '+79527247500',
     loading: false,
+    submit: false,
   }),
+  computed: {
+    validateForm() {
+      return this.validateName && this.validatePhone
+    },
+    validateName() {
+      if (!this.submit) return true
+      return this.name?.length > 0
+    },
+    validatePhone() {
+      if (!this.submit) return true
+      return this.phone?.length === 18
+    },
+  },
   methods: {
     ...mapActions('lead', [types.CREATE_REQUEST]),
     async sendRequest() {
       this.loading = true
+      this.submit = true
+      if (!this.validateForm) {
+        this.loading = false
+        return
+      }
       const result = await this[types.CREATE_REQUEST]({
         leadname: this.name,
         phone: this.phone,
@@ -92,6 +115,7 @@ export default {
       this.loading = false
       if (result) {
         this.$emit('close')
+        this.$modal.show(ModalMessage, {}, this.$const.MODAL_SETTINGS)
       }
     },
   },

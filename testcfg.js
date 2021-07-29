@@ -1489,7 +1489,7 @@ export default {
     },
     {
       id: 11,
-      order: 0,
+      order: 11,
       name: 'Partners',
       style: 'TabAndTag',
       defaults: {
@@ -1678,6 +1678,21 @@ export default {
           content: 'Здесь будет описание',
           tags: ['Конфигурация 1С', '1С Битрикс'],
         },
+      ],
+    },
+    {
+      id: 12,
+      order: 0,
+      name: 'Tech',
+      style: 'Default',
+      bgColor: 'silver',
+      items: [
+        { img: '/img/tech/vue.png', title: 'Vue.js' },
+        { img: '/img/tech/nodejs.png', title: 'Node.js' },
+        { img: '/img/tech/sqlserver.png', title: 'SQL Server Database' },
+        { img: '/img/tech/aspnetmvc.png', title: '.Net MVC' },
+        { img: '/img/tech/bitrix24.jpg', title: 'Bitrix 24' },
+        { img: '/img/tech/nuxt.png', title: 'Nuxt.js' },
       ],
     },
   ],
