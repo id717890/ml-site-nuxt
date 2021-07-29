@@ -3,7 +3,7 @@
     <div class="container">
       <div class="title_2">{{ settings.title1 }}</div>
       <div class="description">{{ settings.title2 }}</div>
-      <div class="flex technology_flex">
+      <div class="flex technology_flex px-0">
         <div
           v-for="(friend, index) in settings.items"
           :key="index"

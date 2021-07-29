@@ -535,41 +535,41 @@ export default {
     //     },
     //   ],
     // },
-    {
-      id: 3,
-      order: 2,
-      name: 'SliderAnd4Image',
-      style: 'Default',
-      image1: {
-        url: '/img/example/s1.jpg',
-        href: 'https://google.com',
-        title: 'Хоккейный шлем — прочность, надежность и безопасность',
-        subtitle: 'Экипировки',
-      },
-      image2: {
-        url: '/img/example/s2.jpg',
-        href: '/partner/1',
-        title: 'Легкое пуховое одеяло для тепла зимой и комфорта летом',
-        subtitle: 'Текстиль',
-      },
-      image3: {
-        url: '/img/example/s3.jpg',
-        href: '/partner/2',
-        title: 'Трехколесный транспорт для начинающих гонщиков',
-        subtitle: 'Велосипеды',
-      },
-      image4: {
-        url: '/img/example/s4.jpg',
-        href: '/partner/3',
-        title: 'Деталь стильного образа для мужчин и женщин',
-        subtitle: 'Часы',
-      },
-      slides: [
-        { image: '/img/example/s5.jpg' },
-        { image: '/img/example/s6.jpg' },
-        { image: '/img/example/s7.jpg' },
-      ],
-    },
+    // {
+    //   id: 3,
+    //   order: 2,
+    //   name: 'SliderAnd4Image',
+    //   style: 'Default',
+    //   image1: {
+    //     url: '/img/example/s1.jpg',
+    //     href: 'https://google.com',
+    //     title: 'Хоккейный шлем — прочность, надежность и безопасность',
+    //     subtitle: 'Экипировки',
+    //   },
+    //   image2: {
+    //     url: '/img/example/s2.jpg',
+    //     href: '/partner/1',
+    //     title: 'Легкое пуховое одеяло для тепла зимой и комфорта летом',
+    //     subtitle: 'Текстиль',
+    //   },
+    //   image3: {
+    //     url: '/img/example/s3.jpg',
+    //     href: '/partner/2',
+    //     title: 'Трехколесный транспорт для начинающих гонщиков',
+    //     subtitle: 'Велосипеды',
+    //   },
+    //   image4: {
+    //     url: '/img/example/s4.jpg',
+    //     href: '/partner/3',
+    //     title: 'Деталь стильного образа для мужчин и женщин',
+    //     subtitle: 'Часы',
+    //   },
+    //   slides: [
+    //     { image: '/img/example/s5.jpg' },
+    //     { image: '/img/example/s6.jpg' },
+    //     { image: '/img/example/s7.jpg' },
+    //   ],
+    // },
     {
       id: 4,
       order: 4,
@@ -1463,7 +1463,7 @@ export default {
     },
     {
       id: 10,
-      order: 10,
+      order: 0,
       name: 'Friend',
       style: 'Default',
       title1: 'Наши технологические друзья',
@@ -1489,7 +1489,7 @@ export default {
     },
     {
       id: 11,
-      order: 1,
+      order: 11,
       name: 'Partners',
       style: 'TabAndTag',
       defaults: {
