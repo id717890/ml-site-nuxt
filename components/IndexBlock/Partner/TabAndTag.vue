@@ -6,7 +6,22 @@
         v-if="tags"
         class="partner-filter-tag container ml-container v-application"
       >
-        <v-btn
+        <a
+          v-for="tag in tags"
+          :key="tag.id"
+          href="#"
+          class="btn-tag mr-4"
+          :title="tag.name"
+          :class="{ active: tag.selected }"
+          @click.prevent="selectTag(tag)"
+        >
+          <!-- <Fa v-if="tag.selected" icon="tag" class="mr-1" /> -->
+          {{ tag.name }}
+        </a>
+        <v-btn title="Сбросить фильтры" icon @click="clearFilter">
+          <Fa icon="redo" />
+        </v-btn>
+        <!-- <v-btn
           v-for="tag in tags"
           :key="tag.id"
           :outlined="!tag.selected"
@@ -17,7 +32,7 @@
         >
           <Fa icon="tag" class="mr-1" />
           {{ tag.name }}
-        </v-btn>
+        </v-btn> -->
       </div>
 
       <div class="block_partners flex mt-5">
@@ -28,6 +43,17 @@
           class="item flex"
         >
           <div class="image">
+            <div v-if="partner.special" class="special-tags v-application">
+              <v-btn
+                v-for="tag in partner.special"
+                :key="tag.color"
+                class="mr-1 white--text"
+                elevation="0"
+                :color="tag.color"
+                small
+                >{{ tag.text }}</v-btn
+              >
+            </div>
             <a
               href="#"
               class="img_link"
@@ -128,6 +154,14 @@ export default {
     this.setInitialize()
   },
   methods: {
+    clearFilter() {
+      const result = []
+      this.tags.forEach((tag) => {
+        tag.selected = false
+        result.push(tag)
+      })
+      this.$set(this, 'tags', result)
+    },
     openInfo(partner) {
       console.log(partner)
       this.$modal.show(
@@ -178,3 +212,30 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.special-tags {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.btn-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+  color: #7f7f7f;
+  line-height: 1;
+  font-family: 'AF', sans-serif;
+}
+
+.btn-tag.active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.btn-tag:hover {
+  // border-bottom: 1px solid transparent;
+}
+</style>

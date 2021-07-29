@@ -7,6 +7,7 @@ import {
   faChevronLeft,
   faChevronRight,
   faTag,
+  faRedo,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -17,6 +18,7 @@ library.add([
   faChevronLeft,
   faChevronRight,
   faTag,
+  faRedo,
 ])
 
 Vue.component('Fa', FontAwesomeIcon)

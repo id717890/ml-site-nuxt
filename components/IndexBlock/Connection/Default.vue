@@ -1,7 +1,7 @@
 <template>
   <section class="connections">
     <div class="container">
-      <div class="title_2">Порядок подключения к M.Loyalty</div>
+      <div class="title_2">Порядок подключения</div>
       <div class="flex connections_box">
         <div class="item">
           <div class="num">1</div>

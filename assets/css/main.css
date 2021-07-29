@@ -1039,6 +1039,7 @@ body {
     font-size: 16px;
     text-align: center;
     font-weight: 600;
+    font-family: '__a_FuturicaMedium_5';
 }
 
 .connections .question_box {
@@ -1049,8 +1050,8 @@ body {
 
 .connections .text_block {
     position: absolute;
-    top: 100%;
-    left: -45px;
+    top: -150px;
+    left: 30px;
     pointer-events: none;
     opacity: 0;
     padding-top: 15px;
@@ -1059,18 +1060,20 @@ body {
     min-width: 450px;
 }
 
+
 .connections .item:nth-child(2) .text_block {
     min-width: 35vw;
 }
 
-.connections .question_box:hover .text_block {
+.connections .question_box:hover .text_block,
+.connections .question_box:hover .text_block_last {
     opacity: 1;
     pointer-events: all;
 }
 
 .connections .item:nth-child(4) .text_block {
-    left: auto;
-    right: -45px;
+    /* left: auto; */
+    /* right: -45px; */
 }
 
 .connections .text_block > div {
@@ -1092,14 +1095,14 @@ body {
     border-right: 10px solid #fff;
     border-top: 10px solid #fff;
     position: absolute;
-    left: 44px;
-    transform: rotate(-45deg);
-    top: 8px;
+    left: -5px;
+    transform: rotate(-135deg);
+    top: 150px;
 }
 
 .connections .item:nth-child(4) .text_block::after {
-    left: auto;
-    right: 44px;
+    /* left: auto; */
+    /* right: 44px; */
 }
 
 .connections_box.flex {
