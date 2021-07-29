@@ -9,11 +9,11 @@
               alt="Больше чем система лояльности!"
           /></router-link>
           <div class="copi">
-            © 2010-{{ new Date().getFullYear() }} Все права защищены
+            © {{ new Date().getFullYear() }} Все права защищены
           </div>
         </div>
         <div class="box box_2">
-          <div class="btn_block flex">
+          <div class="btn_block flex d-flex justify-content-center">
             <button
               type="button"
               class="btn bg_tr btn-consultation"
@@ -21,13 +21,13 @@
             >
               Заказать звонок
             </button>
-            <button
+            <!-- <button
               type="button"
               class="btn btn-order"
               @click.prevent="openQuiz"
             >
               Узнать стоимость
-            </button>
+            </button> -->
           </div>
           <nuxt-link to="/rules" title="Подробнее" class="pers">
             Обработка персональных данных
