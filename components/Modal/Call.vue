@@ -75,7 +75,7 @@ export default {
   directives: { mask },
   data: () => ({
     name: null,
-    phone: null,
+    phone: '+7',
     // name: 'Zamir',
     // phone: '+79527247500',
     loading: false,

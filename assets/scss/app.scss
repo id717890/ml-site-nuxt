@@ -228,3 +228,41 @@
 .not-valid {
   border: 1px solid red !important;
 }
+
+.tech-block {
+  cursor: pointer;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0 0 20px rgb(0 0 0 / 3%);
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 26px;
+  margin: 0 15px 15px 0;
+  transition: .4s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  .img {
+    height: 80px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #383838;
+  }
+}
+
+.tech-block:hover {
+  box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+  background-color: #FFF;
+}
+
+.tech-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
