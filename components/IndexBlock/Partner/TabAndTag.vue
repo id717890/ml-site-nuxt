@@ -212,30 +212,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-.special-tags {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-}
-
-.btn-tag {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: none;
-  color: #7f7f7f;
-  line-height: 1;
-  font-family: 'AF', sans-serif;
-}
-
-.btn-tag.active {
-  color: #000;
-  border-bottom: 1px solid #000;
-}
-
-.btn-tag:hover {
-  // border-bottom: 1px solid transparent;
-}
-</style>
