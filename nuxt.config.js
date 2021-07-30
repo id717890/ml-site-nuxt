@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import appconfig from './appconfig'
 
 export default {
   // ssr: false,
@@ -25,6 +26,7 @@ export default {
     { src: '@/plugins/vue-js-modal', mode: 'client' },
     { src: '@/plugins/constants', mode: 'client' },
     { src: '@/plugins/font-awesome', mode: 'client' },
+    { src: '@/plugins/axios' },
     // { src: '@/plugins/sw.client', mode: 'client' },
   ],
 
@@ -53,7 +55,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: appconfig.apiUrl,
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {

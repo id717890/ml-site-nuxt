@@ -1,7 +1,6 @@
 import jwtDecode from 'jwt-decode'
 import appconfig from '@/appconfig.json'
 import types from './types'
-import AuthService from '~/api/AuthService'
 
 export const state = () => ({
   accessToken: null,
@@ -10,7 +9,7 @@ export const state = () => ({
 })
 
 export const actions = {
-  [types.AUTH_JWT_ACTION]: async ({ commit }) => {
+  async [types.AUTH_JWT_ACTION]({ commit }) {
     if (!appconfig) throw new Error('AppConfig.json IS NOT defined')
     const { jwtu, jwtp } = appconfig
     if (!jwtu || !jwtp) throw new Error('JWT user or password IS NOT defined')
@@ -18,7 +17,7 @@ export const actions = {
     request.append('username', jwtu)
     request.append('password', jwtp)
     request.append('grant_type', 'password')
-    const { status, data } = await AuthService.getJwt(request)
+    const { status, data } = await this.$axios.post('managerLogin', request)
     if (status === 200 && data?.access_token && data?.refresh_token) {
       commit(types.SET_ACCESS_TOKEN, data?.access_token)
       commit(types.SET_REFRESH_TOKEN, data?.refresh_token)

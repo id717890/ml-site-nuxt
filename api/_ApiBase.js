@@ -1,6 +1,7 @@
 // import Vue from 'vue'
 import axios from 'axios'
 import appconfig from '~/appconfig'
+// import store from '~/store/index'
 
 const Axios = axios.create({
   baseURL: appconfig.apiUrl,
@@ -9,6 +10,7 @@ const Axios = axios.create({
 
 Axios.interceptors.request.use(
   (config) => {
+    // console.log('axios', store, this)
     // eslint-disable-next-line no-undef
     const { accessToken } = $nuxt?.$store?.state?.auth
     if (accessToken) {

@@ -1,6 +1,6 @@
 import types from '~/store/types'
 
-export default async ({ store, redirect }) => {
+export default async ({ store }) => {
   const { config } = store?.state?.app
   if (!config) {
     await store?.dispatch(`app/${types.GET_APP_CONFIG}`, {}, { root: true })

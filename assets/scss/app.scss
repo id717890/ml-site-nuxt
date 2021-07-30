@@ -272,13 +272,16 @@
 }
 
 .special-tags {
-  position: absolute;
-  top: 0;
+  position: absolute !important;
+  top: 0 !important;
   z-index: 10;
 }
 
 .btn-tag,
-.btn-tag:visited {
+.btn-tag:visited,
+a.btn-tag,
+a.btn-tag:visited,
+a.btn-tag:link {
   display: flex;
   justify-content: center;
   align-items: center;

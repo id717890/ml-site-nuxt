@@ -1,6 +1,7 @@
 import types from '~/store/types'
 
 export default async ({ store }) => {
+  // if (!process.server) {
   const { accessToken } = store?.state?.auth
   if (!accessToken) {
     try {
@@ -9,4 +10,5 @@ export default async ({ store }) => {
       console.error('jwt middleware', e)
     }
   }
+  // }
 }
