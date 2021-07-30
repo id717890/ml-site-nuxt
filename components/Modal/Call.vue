@@ -106,11 +106,8 @@ export default {
       const result = await this[types.CREATE_REQUEST]({
         leadname: this.name,
         phone: this.phone,
-        formname: 'MLoyalty - ЗВОНОК', // наименование формы
-        leadmessage: {
-          subject: this.name,
-          leadtext: 'Запрос ЗВОНКА',
-        },
+        formname: 'Mloyalty_CALL',
+        type: 1, // тип лида; "Заказать звонок" это 1 тип, "Демо" - это 5 тип
       })
       this.loading = false
       if (result) {

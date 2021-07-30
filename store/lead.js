@@ -6,15 +6,12 @@ export const actions = {
   async [types.CREATE_REQUEST]({ rootState }, payload) {
     const operator = rootState?.auth?.decodeJwt?.oper
     const partner = rootState?.auth?.decodeJwt?.partner
-    console.log(operator, partner, rootState?.auth?.decodeJwt)
-    const direction = 2 // тип продукта (направление), по которому идёт запрос; 1 - значит лояльность
-    const type = 4 // 4 - это значит обращение в поддержку
+    const poscode = rootState?.auth?.decodeJwt?.poscode
     const request = {
       ...payload,
       operator,
       partner,
-      direction,
-      type,
+      poscode,
     }
     const { status, data } = await this.$axios.post(
       'api/lead/LeadCreate',

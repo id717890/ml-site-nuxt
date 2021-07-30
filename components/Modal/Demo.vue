@@ -133,11 +133,8 @@ export default {
         leadname: this.name,
         phone: this.phone,
         email: this.email,
-        formname: 'MLoyalty - DEMO', // наименование формы
-        leadmessage: {
-          subject: this.name,
-          leadtext: 'Запрос ДЕМО',
-        },
+        formname: 'Mloyalty_DEMO',
+        type: 5, // тип лида; "Заказать звонок" это 1 тип, "Демо" - это 5 тип
       })
       this.loading = false
       if (result) {
