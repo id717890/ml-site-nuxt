@@ -84,6 +84,7 @@ import { mapActions } from 'vuex'
 import { mask } from 'vue-the-mask'
 import types from '~/store/types'
 import ModalMessage from '~/components/Modal/Message.vue'
+import ModalRules from '~/components/Modal/Rules'
 
 export default {
   name: 'ModalDemo',
@@ -118,8 +119,18 @@ export default {
   methods: {
     ...mapActions('lead', [types.CREATE_REQUEST]),
     openLink() {
-      this.$emit('close')
-      this.$router.push({ name: 'rules' })
+      // this.$emit('close')
+      // this.$router.push({ name: 'rules' })
+      this.$modal.show(
+        ModalRules,
+        {},
+        {
+          ...this.$const.MODAL_SETTINGS,
+          width: 700,
+          maxWidth: 700,
+          scrollable: true,
+        }
+      )
     },
 
     async sendRequest() {
