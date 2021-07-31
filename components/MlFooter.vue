@@ -27,9 +27,9 @@
               Узнать стоимость
             </button> -->
           </div>
-          <nuxt-link to="/rules" title="Подробнее" class="pers">
+          <a href="#" title="Подробнее" class="pers" @click.prevent="openLink">
             Обработка персональных данных
-          </nuxt-link>
+          </a>
         </div>
         <div class="box box_3">
           <div class="title_footer">Контактная информация:</div>
@@ -47,9 +47,25 @@
 
 <script>
 import CallModal from '~/components/Modal/Call'
+import ModalRules from '~/components/Modal/Rules'
+
 export default {
   name: 'MlFooter',
   methods: {
+    openLink() {
+      // this.$emit('close')
+      // this.$router.push({ name: 'rules' })
+      this.$modal.show(
+        ModalRules,
+        {},
+        {
+          ...this.$const.MODAL_SETTINGS,
+          width: 700,
+          maxWidth: 700,
+          scrollable: true,
+        }
+      )
+    },
     openCallModal() {
       this.$modal.show(
         CallModal,
