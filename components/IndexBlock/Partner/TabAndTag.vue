@@ -19,7 +19,7 @@
           {{ tag.name }}
         </a>
         <v-btn title="Сбросить фильтры" icon @click="clearFilter">
-          <Fa icon="redo" />
+          <fa icon="redo" />
         </v-btn>
         <!-- <v-btn
           v-for="tag in tags"

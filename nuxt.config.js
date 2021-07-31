@@ -42,6 +42,14 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     '@nuxtjs/dotenv',
+    [
+      '@nuxtjs/fontawesome',
+      {
+        // useLayers: false,
+        component: 'fa',
+        suffix: false,
+      },
+    ],
   ],
 
   serverMiddleware: ['~/middleware/server/redirect.js'],
@@ -52,11 +60,26 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'nuxt-purgecss',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: appconfig.apiUrl,
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faHome', 'faChevronUp', 'faRedo'],
+      regular: [],
+      light: [],
+      duotone: [],
+      brands: [],
+    },
+  },
+
+  purgeCSS: {
+    whitelistPatterns: [/svg.*/, /fa.*/, /v-btn.*/, /v-size.*/, /item.*/],
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

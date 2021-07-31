@@ -3,11 +3,9 @@
     <div class="container ml-container">
       <div class="flex">
         <div class="box box_1">
-          <router-link to="/"
-            ><img
-              src="/img/logo_white.png"
-              alt="Больше чем система лояльности!"
-          /></router-link>
+          <router-link to="/">
+            <img src="/img/logo.png" alt="Больше чем система лояльности!" />
+          </router-link>
           <div class="copi">
             © {{ new Date().getFullYear() }} Все права защищены
           </div>
@@ -16,7 +14,7 @@
           <div class="btn_block flex d-flex justify-content-center">
             <button
               type="button"
-              class="btn bg_tr btn-consultation"
+              class="btn bg_tr btn-order"
               @click="openCallModal"
             >
               Заказать звонок

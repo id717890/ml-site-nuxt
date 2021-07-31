@@ -13,7 +13,9 @@
       class="ml-scroll-top btn bg_tr btn-order"
       @click.prevent="scrollTop"
     >
-      <Fa icon="chevron-up" />
+      <!-- <i class="fa chevron-up"></i> -->
+      <!-- <v-icon>mdi-home</v-icon> -->
+      <fa icon="chevron-up" />
     </a>
   </div>
   <!-- <div class="container b1">

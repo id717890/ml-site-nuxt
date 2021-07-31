@@ -104,6 +104,11 @@
   position: fixed;
   right: 75px;
   bottom: 70px;
+  background-color: white !important;
+}
+
+.ml-scroll-top:hover {
+  background-color: black !important;
 }
 
 .slider4img {
@@ -225,7 +230,10 @@
 }
 
 .partner-filter-tag {
+  padding: 0 60px !important;
   display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 
@@ -287,11 +295,10 @@ a.btn-tag:link {
   align-items: center;
   border-bottom: none;
   color: #7f7f7f;
-  line-height: 1;
   font-family: 'AF', sans-serif;
 }
 
 .btn-tag.active {
-  color: #000;
-  border-bottom: 1px solid #000;
+  color: #000 !important;
+  border-bottom: 1px solid #000 !important;
 }
