@@ -79,7 +79,15 @@ export default {
   },
 
   purgeCSS: {
-    whitelistPatterns: [/svg.*/, /fa.*/, /v-btn.*/, /v-size.*/, /item.*/],
+    whitelistPatterns: [
+      /svg.*/,
+      /fa.*/,
+      /v-btn.*/,
+      /v-size.*/,
+      /item.*/,
+      /v-modal.*/,
+      /v--modal.*/,
+    ],
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
