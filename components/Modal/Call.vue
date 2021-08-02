@@ -120,7 +120,7 @@ export default {
       }
       const result = await this[types.CREATE_REQUEST]({
         leadname: this.name,
-        phone: this.phone,
+        phone: parseInt(this.$helper.getClearPhone(this.phone, true)),
         formname: 'Mloyalty_CALL',
         type: 1, // тип лида; "Заказать звонок" это 1 тип, "Демо" - это 5 тип
       })
