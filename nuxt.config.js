@@ -87,6 +87,7 @@ export default {
       /item.*/,
       /v-modal.*/,
       /v--modal.*/,
+      /theme--light.*/,
     ],
   },
 
