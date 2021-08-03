@@ -47,7 +47,8 @@
               <v-btn
                 v-for="tag in partner.special"
                 :key="tag.color"
-                class="mr-1 white--text"
+                height="22"
+                class="mr-1 white--text text-lowercase py-0"
                 elevation="0"
                 :color="tag.color"
                 small

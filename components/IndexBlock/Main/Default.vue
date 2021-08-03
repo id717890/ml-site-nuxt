@@ -69,39 +69,41 @@
           <img
             class="mokap_img"
             src="/img/img_6.png"
-            alt="Полноценная CRM-система"
+            alt="Бизнес-процессы, чат боты, опросы"
           />
           <p class="text">
-            Полноценная<br />
-            CRM-система
+            Бизнес-процессы,<br />
+            чат боты, опросы
           </p>
         </div>
         <div class="info_blok info_blok_7">
           <img
             class="mokap_img"
             src="/img/img_7.png"
-            alt="Сайты, лэндинги и личные кабинеты"
+            alt="Виджеты ЛК, Продажи и учёта эл. сертификатов"
           />
           <p class="text">
-            Сайты, лэндинги и<br />
-            личные кабинеты
+            Виджеты ЛК, <br />
+            Продажи и учёта <br />
+            эл. сертификатов
           </p>
         </div>
       </div>
 
       <p class="plus">+</p>
 
-      <div class="title_3">Легко заказывайте нужные опции</div>
+      <div class="title_3">Легко подключайте нужные опции</div>
       <div class="advantages flex">
         <div class="advantages_box advantages_box_1">
           <img
             class="img"
-            src="/img/box_img_1.png"
-            alt="Привлечение клиентов в Интернете"
+            src="/img/img_7.png"
+            alt="Виджет продажи электронных сертификатов"
           />
+          <!-- <fa icon="chevron-right" /> -->
           <p class="text">
-            Привлечение клиентов<br />
-            в Интернете
+            Виджет продажи<br />
+            электронных сертификатов
           </p>
         </div>
         <div class="advantages_box advantages_box_2">
@@ -129,12 +131,12 @@
         <div class="advantages_box advantages_box_4">
           <img
             class="img"
-            src="/img/box_img_4.png"
-            alt="Дизайн, сувениры, фирменный стиль"
+            src="/img/img_3.png"
+            alt="Виджет личного кабинет клиента на свой сайт"
           />
           <p class="text">
-            Дизайн, сувениры, <br />
-            фирменный стиль
+            Виджет личного кабинет<br />
+            клиента на свой сайт
           </p>
         </div>
       </div>

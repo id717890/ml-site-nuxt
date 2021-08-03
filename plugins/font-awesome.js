@@ -8,6 +8,7 @@
 //   faChevronRight,
 //   faTag,
 //   faRedo,
+//   faQuestion,
 // } from '@fortawesome/free-solid-svg-icons'
 // import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
@@ -19,6 +20,7 @@
 //   faChevronRight,
 //   faTag,
 //   faRedo,
+//   faQuestion
 // ])
 
 // Vue.component('Fa', FontAwesomeIcon)

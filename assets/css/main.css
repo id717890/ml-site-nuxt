@@ -460,8 +460,8 @@ body {
 }
 
 .result .item .img {
-    width: 74%;
-    height: 74%;
+    width: 65%;
+    height: 65%;
     object-fit: contain;
     transition: .4s;
 }

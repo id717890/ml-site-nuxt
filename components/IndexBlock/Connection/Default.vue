@@ -8,7 +8,9 @@
           <div class="name_block">
             <div class="top_block flex">
               <div class="question_box">
-                <span class="qu">?</span>
+                <span class="qu">
+                  <fa icon="question" class="ml-question" />
+                </span>
                 <div class="text_block">
                   <div>
                     <p>
@@ -55,7 +57,9 @@
           <div class="name_block">
             <div class="top_block flex">
               <div class="question_box">
-                <span class="qu">?</span>
+                <span class="qu">
+                  <fa icon="question" class="ml-question" />
+                </span>
                 <div class="text_block">
                   <div>
                     <p>
@@ -118,7 +122,9 @@
           <div class="name_block">
             <div class="top_block flex">
               <div class="question_box">
-                <span class="qu">?</span>
+                <span class="qu">
+                  <fa icon="question" class="ml-question" />
+                </span>
                 <div class="text_block">
                   <div>
                     <p>На данном этапе мы «собираем» воедино:</p>
@@ -158,7 +164,9 @@
           <div class="name_block">
             <div class="top_block flex">
               <div class="question_box">
-                <span class="qu">?</span>
+                <span class="qu">
+                  <fa icon="question" class="ml-question" />
+                </span>
                 <div class="text_block">
                   <div>
                     <p>
