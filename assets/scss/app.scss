@@ -307,3 +307,26 @@ a.btn-tag:link {
   color: #000 !important;
   border-bottom: 1px solid #000 !important;
 }
+
+.ml-phone-input {
+  position: relative;
+  padding-left: 48px !important;
+}
+
+.ml-phone-input + label {
+  position: relative;
+}
+
+.ml-phone-input + label::before {
+  content: '+7 |';
+  position: absolute;
+  top: -31px;
+  left: 17px;
+  width: 45px;
+  color: 1px solid rgba(85, 85, 85, 0.5);
+}
+
+.ml-phone-input.filled + label::before,
+.ml-phone-input:focus + label::before {
+  color: black;
+}

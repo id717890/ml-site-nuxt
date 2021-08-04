@@ -24,17 +24,19 @@
         <input
           id="FORM1_field2"
           v-model="phone"
-          v-mask="'+7 (###) ###-##-##'"
+          v-mask="'(###) ###-##-##'"
           class="
             form-block__phone-field-11
             form-block__number-field
             form-block__obligatory-field
+            ml-phone-input
           "
-          :class="{ 'not-valid': !validatePhone }"
+          :class="{ 'not-valid': !validatePhone, filled: phone }"
           name="Телефон"
           type="text"
           placeholder="Введите номер телефона*"
         />
+        <label for="FORM2_field2"></label>
       </div>
 
       <div class="form__form-block form-block form-block-submit">
@@ -76,7 +78,7 @@ export default {
   directives: { mask },
   data: () => ({
     name: null,
-    phone: '+7',
+    phone: '',
     // name: 'Zamir',
     // phone: '+79527247500',
     loading: false,
@@ -92,7 +94,7 @@ export default {
     },
     validatePhone() {
       if (!this.submit) return true
-      return this.phone?.length === 18
+      return this.phone?.length === 15
     },
   },
   methods: {
