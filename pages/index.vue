@@ -42,6 +42,7 @@ import AlgorithmDefault from '~/components/IndexBlock/Algorithm/Default'
 import AdvertisingDefault from '~/components/IndexBlock/Advertising/Default'
 import ConnectionDefault from '~/components/IndexBlock/Connection/Default'
 import PricingDefault from '~/components/IndexBlock/Pricing/Default'
+import PricingSecond from '~/components/IndexBlock/Pricing/Second'
 import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
 export default {
@@ -57,6 +58,7 @@ export default {
     AdvertisingDefault,
     ConnectionDefault,
     PricingDefault,
+    PricingSecond,
     FriendDefault,
     TechDefault,
   },

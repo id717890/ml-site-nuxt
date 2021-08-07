@@ -1445,7 +1445,7 @@ export default {
     },
     {
       id: 7,
-      order: 7,
+      order: 1,
       name: 'Advertising',
       style: 'Default',
     },
@@ -1457,9 +1457,9 @@ export default {
     },
     {
       id: 9,
-      order: 9,
+      order: 7,
       name: 'Pricing',
-      style: 'Default',
+      style: 'Second',
       withoutAdditional: true,
     },
     {
@@ -1765,7 +1765,7 @@ export default {
     },
     {
       id: 12,
-      order: 9,
+      order: 12,
       title: 'Наш стэк технологий',
       name: 'Tech',
       style: 'Default',
@@ -1778,7 +1778,7 @@ export default {
         { img: '/img/tech/sqlserver.png', title: 'SQL Server DB' },
         { img: '/img/tech/aspnetmvc.png', title: '.Net MVC' },
         { img: '/img/tech/kotlin.png', title: 'Kotlin' },
-        { img: '/img/tech/bitrix24.jpg', title: 'Bitrix 24' },
+        // { img: '/img/tech/bitrix24.jpg', title: 'Bitrix 24' },
         { img: '/img/tech/swift.svg', title: 'Swift' },
         { img: '/img/tech/csharp.png', title: 'C#' },
         { img: '/img/tech/figma.png', title: 'Figma' },
