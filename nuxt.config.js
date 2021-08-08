@@ -95,6 +95,9 @@ export default {
       /v-modal.*/,
       /v--modal.*/,
       /theme--light.*/,
+      /v-tab.*/,
+      /v-item.*/,
+      /v-slide.*/,
     ],
   },
 

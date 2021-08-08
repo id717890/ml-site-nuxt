@@ -10,7 +10,7 @@
             :show-arrows="true"
             next-icon="mdi-arrow-right-bold-box-outline"
           >
-            <v-tab v-for="tab in tabs" :key="tab.name" @click="clickTab(tab)">
+            <v-tab v-for="tab in tabs" :key="tab.name">
               {{ tab.name }}
             </v-tab>
           </v-tabs>
@@ -112,9 +112,6 @@ export default {
     this.setInitialize()
   },
   methods: {
-    clickTab(tab) {
-      console.log(tab)
-    },
     setArrowsForTabs() {
       const elPrev = document.querySelector('.v-slide-group__prev')
       const elNext = document.querySelector('.v-slide-group__next')
