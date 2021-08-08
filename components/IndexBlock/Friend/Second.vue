@@ -123,7 +123,9 @@ export default {
       }
     },
     setInitialize() {
-      this.setArrowsForTabs()
+      setTimeout(() => {
+        this.setArrowsForTabs()
+      }, 500)
     },
   },
 }
