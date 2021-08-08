@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="container ml-container">
+    <div class="container ml-container pb-4">
       <div class="flex">
         <div class="box box_1">
           <router-link to="/">
@@ -39,6 +39,39 @@
           <a href="mailto:info@mloyalty.ru" class="mail" title="Написать письмо"
             >info@mloyalty.ru</a
           >
+        </div>
+      </div>
+    </div>
+    <div class="ml-footer-second">
+      <div class="container ml-container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="block1">
+              <span class="stat">40%</span>
+              <div class="d-flex flex-column">
+                <span>клиентов пришли</span>
+                <span>по рекомендации</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="block2">
+              <span class="stat">20</span>
+              <div class="d-flex flex-column">
+                <span>регионов</span>
+                <span>присутствия</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="block2">
+              <span class="stat">100%</span>
+              <div class="d-flex flex-column">
+                <span>собственная</span>
+                <span>разработка</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -84,3 +117,19 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.ml-footer-second {
+  background-color: black;
+  .block1,
+  .block2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    .stat {
+      font-size: 2.3rem;
+      margin-right: 10px;
+    }
+  }
+}
+</style>

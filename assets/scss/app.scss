@@ -12,6 +12,22 @@
 
 @import 'media.scss';
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  // border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  // border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #9c9c9c;
+}
+
 .b1 {
   border: 1px solid red;
 }
@@ -33,6 +49,7 @@
 
 .ml-nuxt-router-container {
   margin-top: 24px;
+  min-height: 90vh;
 }
 
 .mfp-zoom-in {
@@ -103,7 +120,7 @@
 .ml-scroll-top {
   position: fixed;
   right: 75px;
-  bottom: 70px;
+  bottom: 100px;
   background-color: white !important;
 }
 
@@ -331,3 +348,9 @@ a.btn-tag:link {
 .ml-phone-input:focus + label::before {
   color: black;
 }
+
+
+.technology_flex {
+  padding: 15px;
+}
+

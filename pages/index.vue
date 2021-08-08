@@ -44,6 +44,7 @@ import ConnectionDefault from '~/components/IndexBlock/Connection/Default'
 import PricingDefault from '~/components/IndexBlock/Pricing/Default'
 import PricingSecond from '~/components/IndexBlock/Pricing/Second'
 import FriendDefault from '~/components/IndexBlock/Friend/Default'
+import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
 export default {
   name: 'HomePage',
@@ -60,6 +61,7 @@ export default {
     PricingDefault,
     PricingSecond,
     FriendDefault,
+    FriendSecond,
     TechDefault,
   },
   head() {
@@ -90,6 +92,7 @@ export default {
         return 0
       })
       return buffer?.map((x) => {
+        // x.component = null
         x.component = `${x.name}${x.style}`
         return x
       })

@@ -70,7 +70,14 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faHome', 'faChevronUp', 'faRedo', 'faQuestion'],
+      solid: [
+        'faHome',
+        'faChevronUp',
+        'faChevronLeft',
+        'faChevronRight',
+        'faRedo',
+        'faQuestion',
+      ],
       regular: [],
       light: [],
       duotone: [],
