@@ -1,6 +1,6 @@
 <template>
   <section class="connections">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">Порядок подключения</div>
       <div class="flex connections_box">
         <div class="item">

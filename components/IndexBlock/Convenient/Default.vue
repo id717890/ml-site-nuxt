@@ -1,7 +1,7 @@
 <template>
   <section v-if="settings" class="convenient">
     <div v-if="settings.section1" class="section_1">
-      <div class="container">
+      <div class="container-old">
         <!-- eslint-disable-next-line --><!-- prettier-ignore -->
         <div v-if="settings.section1.title1" class="title_2" v-html="settings.section1.title1"></div>
         <!-- eslint-disable-next-line --><!-- prettier-ignore -->
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div v-if="settings.section2" class="section_2">
-      <div class="container">
+      <div class="container-old">
         <!-- eslint-disable-next-line --><!-- prettier-ignore -->
         <div v-if="settings.section2.title1" class="title_2" v-html="settings.section2.title1"></div>
         <!-- eslint-disable-next-line --><!-- prettier-ignore -->

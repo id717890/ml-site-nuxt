@@ -1,4 +1,4 @@
-// @import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap/scss/bootstrap.scss';
 
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
@@ -10,6 +10,7 @@
 // @import 'bootstrap/scss/_grid';
 // @import 'bootstrap/scss/helpers';
 
+@import 'ml-style.scss';
 @import 'media.scss';
 
 body::-webkit-scrollbar {
@@ -40,12 +41,12 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid yellowgreen;
 }
 
-.ml-container {
-  z-index: 1;
-  width: 980px !important;
-  display: flex;
-  justify-content: center;
-}
+// .ml-container {
+//   z-index: 1;
+//   width: 980px !important;
+//   display: flex;
+//   justify-content: center;
+// }
 
 .ml-nuxt-router-container {
   margin-top: 24px;
@@ -332,7 +333,7 @@ a.btn-tag:link {
 }
 
 .ml-phone-input + label {
-  position: relative;
+  position: absolute;
 }
 
 .ml-phone-input + label::before {
@@ -354,3 +355,77 @@ a.btn-tag:link {
   padding: 15px;
 }
 
+.btn-panel {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.btn-footer {
+  border: 1px solid #7f7f7f;
+  border-radius: 0;
+  display: block;
+  margin: 0 10px 0 0;
+  color: #7f7f7f;
+  background: transparent;
+  line-height: 22px;
+  font-size: 18px;
+  padding: 12px 18px;
+  transition: .4s;
+  font-family: 'AF', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.btn-footer:hover {
+  color: white;
+  background-color: black;
+}
+
+.ancors {
+  display: flex;
+  flex-flow: column;
+
+  a {
+    margin-bottom: 10px;
+  }
+
+  a:hover {
+    color: #616060;
+  }
+}
+
+.second-block {
+  border-right: 2px solid rgb(234, 235, 238);
+  border-left: 2px solid rgb(234, 235, 238);
+  padding-left: 30px;
+}
+
+.third-block {
+  padding: 0;
+}
+
+.ml-footer-second {
+  background-color: black;
+  .block1,
+  .block2,
+  .block3 {
+    color: white;
+    display: flex;
+    padding-left: 20px;
+    // justify-content: center;
+    .stat {
+      font-size: 2.3rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+.text1 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text14 {
+  font-size: 14px;
+}

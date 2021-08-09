@@ -1,6 +1,6 @@
 <template>
   <section class="result">
-    <div class="container ml-container">
+    <div class="container-old ml-container">
       <div class="title_1">Нам доверяют и получают результат</div>
 
       <div class="block_partners flex">

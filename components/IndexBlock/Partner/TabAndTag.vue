@@ -1,11 +1,8 @@
 <template>
   <section class="result">
-    <div class="container ml-container">
+    <div class="container-old">
       <div class="title_1">Нам доверяют и получают результат</div>
-      <div
-        v-if="tags"
-        class="partner-filter-tag container ml-container v-application"
-      >
+      <div v-if="tags" class="partner-filter-tag container-old v-application">
         <a
           v-for="tag in tags"
           :key="tag.id"

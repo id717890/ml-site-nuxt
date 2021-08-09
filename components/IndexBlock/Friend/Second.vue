@@ -1,6 +1,6 @@
 <template>
   <section v-if="settings" class="technology">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">{{ settings.title1 }}</div>
       <div class="description">{{ settings.title2 }}</div>
       <div class="v-application mt-3 mb-4">
@@ -67,6 +67,7 @@
               <img
                 :src="friend.image"
                 alt="Наши технологические друзья"
+                :style="friend.style"
                 :title="friend.name"
               />
             </div>
@@ -97,7 +98,7 @@ export default {
     },
   },
   data: () => ({
-    currentTab: null,
+    currentTab: 0,
   }),
   computed: {
     tabs() {

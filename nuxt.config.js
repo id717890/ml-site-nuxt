@@ -98,6 +98,7 @@ export default {
       /v-tab.*/,
       /v-item.*/,
       /v-slide.*/,
+      /madals-container.*/,
     ],
   },
 

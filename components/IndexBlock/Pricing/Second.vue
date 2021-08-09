@@ -1,6 +1,6 @@
 <template>
   <section class="foryou">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">Ценообразование</div>
       <div class="box-shadow pricing-second mb-5">
         <div class="p-config">

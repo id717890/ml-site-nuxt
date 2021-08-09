@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <div class="ml-container container flex header-container py-0 px-0">
+    <div class="container-old flex header-container py-0 px-0">
       <div class="logo">
         <nuxt-link to="/">
           <img

@@ -1,6 +1,6 @@
 <template>
   <section v-if="settings" class="technology">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">{{ settings.title1 }}</div>
       <div class="description">{{ settings.title2 }}</div>
       <div class="flex technology_flex px-0">

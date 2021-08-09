@@ -1,6 +1,6 @@
 <template>
   <section v-if="settings" class="pop-templates">
-    <div class="container">
+    <div class="container-old">
       <!-- eslint-disable-next-line --><!-- prettier-ignore -->
       <div class="title_2" v-html="settings.title"></div>
       <div id="vue_acc" class="content-box">

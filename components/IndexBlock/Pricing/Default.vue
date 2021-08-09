@@ -1,6 +1,6 @@
 <template>
   <section v-if="settings" class="pricing">
-    <div class="container">
+    <div class="container-old">
       <div class="title_1">Ценообразование</div>
       <div class="tabs">
         <div v-if="!settings.withoutAdditional" class="nav_tabs flex">

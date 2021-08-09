@@ -1,6 +1,6 @@
 <template>
   <section class="platform">
-    <div class="container ml-container">
+    <div class="container-old ml-container">
       <!-- eslint-disable-next-line -->
       <h1 class="title_2" v-if="title1" v-html="title1">
         <!-- Единая платформа для управления<br /> -->

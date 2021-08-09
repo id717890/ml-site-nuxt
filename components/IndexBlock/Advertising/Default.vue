@@ -1,6 +1,6 @@
 <template>
   <section class="foryou">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">
         У нас найдется всё для Ваших<br />
         программ лояльности

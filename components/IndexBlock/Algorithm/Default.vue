@@ -1,6 +1,6 @@
 <template>
   <section class="algorithms">
-    <div class="container">
+    <div class="container-old">
       <div class="title_2">
         Основной алгоритм работы <br />
         с вашей клиентской базой

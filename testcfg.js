@@ -1506,7 +1506,11 @@ export default {
             { image: '/img/friends/devinotelecom.jpg', name: 'DevinoTelecom' },
             { image: '/img/friends/smsaero.png', name: 'SmsAero' },
             { image: '/img/friends/yandex.png', name: 'Yandex' },
-            { image: '/img/technology_3.png', name: 'SendPulse' },
+            {
+              image: '/img/technology_3.png',
+              name: 'SendPulse',
+              style: 'margin: 30px 0;',
+            },
           ],
         },
         {

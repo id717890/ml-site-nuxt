@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="container ml-container pb-4">
+    <!-- <div class="container ml-container pb-4">
       <div class="flex">
         <div class="box box_1">
           <router-link to="/">
@@ -19,13 +19,6 @@
             >
               Заказать звонок
             </button>
-            <!-- <button
-              type="button"
-              class="btn btn-order"
-              @click.prevent="openQuiz"
-            >
-              Узнать стоимость
-            </button> -->
           </div>
           <a href="#" title="Подробнее" class="pers" @click.prevent="openLink">
             Обработка персональных данных
@@ -41,11 +34,83 @@
           >
         </div>
       </div>
+    </div> -->
+    <div class="ml-footer-first">
+      <div class="ml-container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-4">
+            <img src="/img/logo.png" alt="Больше чем система лояльности!" />
+            <p class="text1 mb-5 ms-4">Больше чем система лояльности</p>
+            <p class="text14 mb-2 ms-4">Обработка персональных данных</p>
+            <p class="text14 mb-2 ms-4">Безопасность и надежность</p>
+            <p class="text14 ms-4">
+              © {{ new Date().getFullYear() }}год. Все права защищены.
+            </p>
+            <p class="text14 ms-4">ООО ЭМ ЛОЯЛТИ</p>
+            <p></p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 mb-4">
+            <div class="second-block">
+              <p class="text14 mb-1">Горячая линия</p>
+              <p class="text1 mb-4">8 (499) 990-18-63</p>
+              <p class="text14 mb-1">E-mail</p>
+              <p class="text1 mb-5">info@mloyalty.ru</p>
+              <p>141503, Московская область, город</p>
+              <p>Солнечногорск, Набережная улица,</p>
+              <p>дом 11 корпус а, помещение 100 офис 2</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <div class="third-block">
+              <div class="container-fluid px-0">
+                <div class="row px-0">
+                  <div class="col-12 col-md-6 ancors">
+                    <a href="#api" title="API документация">API документация</a>
+                    <a href="#clients" title="Наши клиенты">Наши клиенты</a>
+                    <a href="#integration" title="Интеграции">Интеграции</a>
+                    <a href="#steps" title="Этапы подключения"
+                      >Этапы подключения</a
+                    >
+                    <a href="#pricing" title="Ценообразование"
+                      >Ценообразование</a
+                    >
+                  </div>
+                  <div class="col-12 col-md-6 ancors">
+                    <a href="#dop" title="Доп. услуги">Доп. услуги</a>
+                    <a href="#faq" title="FAQ">FAQ</a>
+                    <a href="#sert" title="Сертификаты">Сертификаты</a>
+                    <a href="#widget" title="Виджет-ЛК">Виджет-ЛК</a>
+                    <a href="#tech" title="Технологии">Технологии</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid ps-0 pe-0">
+              <div class="row">
+                <div class="col-12">
+                  <div class="btn-panel">
+                    <a
+                      href="#"
+                      class="btn-footer"
+                      @click.prevent="openCallModal"
+                    >
+                      Заказать звонок
+                    </a>
+                    <a href="#" class="btn-footer" @click.prevent="openQuiz">
+                      Заказать КП
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ml-footer-second">
-      <div class="container ml-container">
+      <div class="ml-container">
         <div class="row">
-          <div class="col-sm-12 col-md-4">
+          <div class="col-12 col-sm-12 col-md-4">
             <div class="block1">
               <span class="stat">40%</span>
               <div class="d-flex flex-column">
@@ -54,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4">
+          <div class="col-12 col-sm-12 col-md-4">
             <div class="block2">
               <span class="stat">20</span>
               <div class="d-flex flex-column">
@@ -63,8 +128,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="block2">
+          <div class="col-12 col-sm-12 col-md-4">
+            <div class="block3">
               <span class="stat">100%</span>
               <div class="d-flex flex-column">
                 <span>собственная</span>
@@ -112,24 +177,8 @@ export default {
     openQuiz() {
       // TODO перенести в конфиг ID quiz
       // eslint-disable-next-line no-undef
-      Marquiz.showModal('5fda3289c9b57700443842f2')
+      Marquiz.showModal('5aa97f14ee90d20018523ad6')
     },
   },
 }
 </script>
-
-<style scoped lang="scss">
-.ml-footer-second {
-  background-color: black;
-  .block1,
-  .block2 {
-    color: white;
-    display: flex;
-    justify-content: center;
-    .stat {
-      font-size: 2.3rem;
-      margin-right: 10px;
-    }
-  }
-}
-</style>
