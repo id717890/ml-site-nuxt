@@ -10,7 +10,7 @@
             class="img"
             :title="item.title"
           />
-          <div class="title">{{ item.title }}</div>
+          <!-- <div class="title">{{ item.title }}</div> -->
         </div>
       </div>
     </div>
