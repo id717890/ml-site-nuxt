@@ -703,10 +703,11 @@ export default {
     },
     {
       id: 5,
-      order: 5,
+      order: 13,
       name: 'Template',
       style: 'Default',
-      title: 'Популярные шаблоны <br /> акций и рассылок',
+      // title: 'Популярные шаблоны <br /> акций и рассылок',
+      title: 'Часто задаваемые вопросы',
       image: '/img/lap_persp.jpg',
       items: [
         {

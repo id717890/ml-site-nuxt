@@ -121,7 +121,7 @@
           </div>
           <div class="col-12 col-sm-12 col-md-4">
             <div class="block2">
-              <span class="stat">20</span>
+              <span class="stat">30</span>
               <div class="d-flex flex-column">
                 <span>регионов</span>
                 <span>присутствия</span>
