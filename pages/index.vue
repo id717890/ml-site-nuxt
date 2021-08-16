@@ -43,6 +43,7 @@ import AdvertisingDefault from '~/components/IndexBlock/Advertising/Default'
 import ConnectionDefault from '~/components/IndexBlock/Connection/Default'
 import PricingDefault from '~/components/IndexBlock/Pricing/Default'
 import PricingSecond from '~/components/IndexBlock/Pricing/Second'
+import PricingThird from '~/components/IndexBlock/Pricing/Third'
 import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
@@ -60,6 +61,7 @@ export default {
     ConnectionDefault,
     PricingDefault,
     PricingSecond,
+    PricingThird,
     FriendDefault,
     FriendSecond,
     TechDefault,

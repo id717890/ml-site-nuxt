@@ -41,8 +41,12 @@
           <div class="col-12 col-sm-12 col-md-4">
             <img src="/img/logo.png" alt="Больше чем система лояльности!" />
             <p class="text1 mb-5 ms-4">Больше чем система лояльности</p>
-            <p class="text14 mb-2 ms-4">Обработка персональных данных</p>
-            <p class="text14 mb-2 ms-4">Безопасность и надежность</p>
+            <p class="text14 mb-2 ms-4">
+              <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
+            </p>
+            <p class="text14 mb-2 ms-4">
+              <nuxt-link to="/security">Безопасность и надежность</nuxt-link>
+            </p>
             <p class="text14 ms-4">
               © {{ new Date().getFullYear() }}год. Все права защищены.
             </p>
@@ -65,22 +69,63 @@
               <div class="container-fluid px-0">
                 <div class="row px-0">
                   <div class="col-12 col-md-6 ancors">
-                    <a href="#api" title="API документация">API документация</a>
-                    <a href="#clients" title="Наши клиенты">Наши клиенты</a>
-                    <a href="#integration" title="Интеграции">Интеграции</a>
-                    <a href="#steps" title="Этапы подключения"
-                      >Этапы подключения</a
+                    <a
+                      href="https://dev.lctest.ru/Help"
+                      target="_blank"
+                      title="API документация"
                     >
-                    <a href="#pricing" title="Ценообразование"
-                      >Ценообразование</a
+                      API документация
+                    </a>
+                    <a
+                      href="#clients"
+                      title="Наши клиенты"
+                      @click.prevent="scrollTo('partners-block')"
+                      >Наши клиенты</a
                     >
+                    <a
+                      href="#integration"
+                      title="Интеграции"
+                      @click.prevent="scrollTo('technology')"
+                    >
+                      Интеграции
+                    </a>
+                    <a
+                      href="#steps"
+                      title="Этапы подключения"
+                      @click.prevent="scrollTo('connections')"
+                    >
+                      Этапы подключения
+                    </a>
+                    <a
+                      href="#pricing"
+                      title="Ценообразование"
+                      @click.prevent="scrollTo('pricing-block')"
+                    >
+                      Ценообразование
+                    </a>
                   </div>
                   <div class="col-12 col-md-6 ancors">
-                    <a href="#dop" title="Доп. услуги">Доп. услуги</a>
-                    <a href="#faq" title="FAQ">FAQ</a>
-                    <a href="#sert" title="Сертификаты">Сертификаты</a>
-                    <a href="#widget" title="Виджет-ЛК">Виджет-ЛК</a>
-                    <a href="#tech" title="Технологии">Технологии</a>
+                    <!-- <a href="#dop" title="Доп. услуги">Доп. услуги</a> -->
+                    <a
+                      href="#faq"
+                      title="FAQ"
+                      @click.prevent="scrollTo('faq-block')"
+                    >
+                      FAQ
+                    </a>
+                    <a href="#sert" title="Сертификаты">
+                      <nuxt-link to="/certificate">Сертификаты</nuxt-link>
+                    </a>
+                    <a href="#widget" title="Виджет-ЛК">
+                      <nuxt-link to="/widget">Виджет-ЛК</nuxt-link>
+                    </a>
+                    <a
+                      href="#tech"
+                      title="Технологии"
+                      @click="scrollTo('out-tech-block')"
+                    >
+                      Технологии
+                    </a>
                   </div>
                 </div>
               </div>
@@ -150,6 +195,15 @@ import ModalRules from '~/components/Modal/Rules'
 export default {
   name: 'MlFooter',
   methods: {
+    scrollTo(anchor) {
+      const scrollEl = document.querySelector(`.${anchor}`)
+      if (scrollEl && scrollEl?.offsetTop)
+        window.scrollTo({
+          top: scrollEl?.offsetTop,
+          left: 0,
+          behavior: 'smooth',
+        })
+    },
     openLink() {
       // this.$emit('close')
       // this.$router.push({ name: 'rules' })

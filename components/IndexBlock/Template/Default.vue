@@ -1,5 +1,5 @@
 <template>
-  <section v-if="settings" class="pop-templates">
+  <section v-if="settings" class="pop-templates" :class="settings.anchor">
     <div class="container-old">
       <!-- eslint-disable-next-line --><!-- prettier-ignore -->
       <div class="title_2" v-html="settings.title"></div>

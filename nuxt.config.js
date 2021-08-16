@@ -77,6 +77,8 @@ export default {
         'faChevronRight',
         'faRedo',
         'faQuestion',
+        'faExclamation',
+        'faCircle',
       ],
       regular: [],
       light: [],
