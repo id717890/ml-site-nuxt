@@ -2,52 +2,28 @@
   <section v-if="settings" class="technology">
     <div class="container-old">
       <div class="title_2">{{ settings.title1 }}</div>
-      <div class="description">{{ settings.title2 }}</div>
+      <div class="description mb-4">{{ settings.title2 }}</div>
+      <div v-if="tags" class="partner-filter-tag container-old v-application">
+        <a
+          v-for="tag in tags"
+          :key="tag.id"
+          href="#"
+          class="btn-tag mr-4"
+          :title="tag.name"
+          :class="{ active: tag.selected }"
+          @click.prevent="selectTag(tag)"
+        >
+          {{ tag.name }}
+        </a>
+        <v-btn title="Сбросить фильтры" icon @click="clearFilter(true)">
+          <fa icon="redo" />
+        </v-btn>
+      </div>
       <div class="v-application mt-3 mb-4">
         <div class="tabs-wrapper">
-          <v-tabs
-            v-model="currentTab"
-            :show-arrows="true"
-            next-icon="mdi-arrow-right-bold-box-outline"
-          >
-            <v-tab v-for="tab in tabs" :key="tab.name">
-              {{ tab.name }}
-            </v-tab>
-          </v-tabs>
-          <!-- <div v-if="currentTabItem" class="technology_flex">
+          <div class="technology_flex">
             <div
-              v-for="(friend, index) in currentTabItem.items"
-              :key="index"
-              class="item"
-            >
-              <div v-if="friend.tags" class="tags v-application">
-                <v-btn
-                  v-for="tag in friend.tags"
-                  :key="tag.color"
-                  class="tag mr-1 white--text text-lowercase py-0"
-                  height="22"
-                  elevation="0"
-                  :color="tag.color"
-                  small
-                >
-                  {{ tag.name }}
-                </v-btn>
-              </div>
-              <img
-                :src="friend.image"
-                alt="Наши технологические друзья"
-                :title="friend.name"
-              />
-            </div>
-          </div> -->
-          <!-- <v-tabs-items v-model="currentTab" light class="technology_flex">
-            <v-tab-item v-for="tab in tabs" :key="tab.name">
-              
-            </v-tab-item>
-          </v-tabs-items> -->
-          <div v-if="currentTabItem" class="technology_flex">
-            <div
-              v-for="(friend, index) in currentTabItem.items"
+              v-for="(friend, index) in friendsByTags"
               :key="index"
               class="item"
             >
@@ -74,16 +50,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="flex technology_flex px-0">
-        <div
-          v-for="(friend, index) in settings.items"
-          :key="index"
-          :class="'item item_' + friend.id"
-        >
-          <img :src="friend.image" alt="Наши технологические друзья" />
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
@@ -98,21 +64,80 @@ export default {
     },
   },
   data: () => ({
-    currentTab: 0,
+    tags: [],
   }),
   computed: {
-    tabs() {
+    friends() {
       if (!this.settings || !this.settings?.items) return []
-      return this.settings?.items.map((x) => ({ name: x.name, items: x.items }))
+      return this.settings?.items
     },
-    currentTabItem() {
-      return this.tabs?.length ? this.tabs[this.currentTab] : null
+
+    selectedTags() {
+      return this.tags
+        ?.filter((tag) => tag.selected)
+        ?.map((tag) => tag?.name?.toLowerCase())
+    },
+    friendsByTags() {
+      console.log(1)
+      if (!this.selectedTags?.length) return []
+      console.log(2)
+      let result = []
+      this.selectedTags.forEach((tag) => {
+        console.log(tag)
+        const find = this.friends.find(
+          (x) => x.name.toLowerCase() === tag.toLowerCase()
+        )
+        console.log(find)
+        if (find && find?.items?.length) {
+          result = result.concat(find.items)
+        }
+      })
+      console.log(3)
+      return result
+      // return this.friends?.filter((friend) =>
+      //   friend?.tags?.some((x) =>
+      //     this.selectedTags?.includes(x?.toLowerCase())
+      //   )
+      // )
     },
   },
   mounted() {
     this.setInitialize()
   },
   methods: {
+    selectTag(tag) {
+      this.clearFilter()
+      const find = this.tags?.find((x) => x?.id === tag?.id)
+      if (find) {
+        const indexOf = this.tags.indexOf(find)
+        if (indexOf >= 0) {
+          this.tags?.splice(indexOf, 1, {
+            id: tag?.id,
+            name: tag?.name,
+            selected: !tag?.selected,
+          })
+        }
+      }
+    },
+    clearFilter(def = false) {
+      const result = []
+      this.tags.forEach((tag, index) => {
+        tag.selected = def ? index === 0 : false
+        result.push(tag)
+      })
+      this.$set(this, 'tags', result)
+    },
+    initTags() {
+      const tags = this.settings?.items
+      if (!tags || !tags.length) return
+      this.tags = tags.map((tag, index) => {
+        return {
+          name: tag.name,
+          id: index,
+          selected: index === 0,
+        }
+      })
+    },
     setArrowsForTabs() {
       const elPrev = document.querySelector('.v-slide-group__prev')
       const elNext = document.querySelector('.v-slide-group__next')
@@ -127,17 +152,13 @@ export default {
       setTimeout(() => {
         this.setArrowsForTabs()
       }, 500)
+      this.initTags()
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-.tabs-wrapper {
-  display: flex;
-  flex-flow: column;
-}
-
 // .technology_flex {
 // padding: 15px;
 // }

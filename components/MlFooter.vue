@@ -114,7 +114,7 @@
             <div class="block1">
               <span class="stat">40%</span>
               <div class="d-flex flex-column">
-                <span>клиентов пришли</span>
+                <span style="margin-top: 2px">клиентов пришли</span>
                 <span>по рекомендации</span>
               </div>
             </div>
@@ -123,7 +123,7 @@
             <div class="block2">
               <span class="stat">30</span>
               <div class="d-flex flex-column">
-                <span>регионов</span>
+                <span style="margin-top: 2px">регионов</span>
                 <span>присутствия</span>
               </div>
             </div>
@@ -132,7 +132,7 @@
             <div class="block3">
               <span class="stat">100%</span>
               <div class="d-flex flex-column">
-                <span>собственная</span>
+                <span style="margin-top: 2px">собственная</span>
                 <span>разработка</span>
               </div>
             </div>

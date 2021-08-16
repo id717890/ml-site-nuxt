@@ -377,11 +377,14 @@ a.btn-tag:link {
 }
 
 .btn-footer {
-  border: 1px solid #7f7f7f;
-  border-radius: 0;
+  border: 2px solid #000;
+  // border: 1px solid #7f7f7f;
+  // border-radius: 0;
+  border-radius: 6px;
   display: block;
   margin: 0 10px 0 0;
-  color: #7f7f7f;
+  // color: #7f7f7f;
+  color: #000;
   background: transparent;
   line-height: 22px;
   font-size: 18px;
@@ -439,7 +442,7 @@ a.btn-tag:link {
     // padding-left: 20px;
     // justify-content: center;
     .stat {
-      font-size: 2.3rem;
+      font-size: 2.4rem;
       margin-right: 10px;
     }
   }
@@ -452,4 +455,10 @@ a.btn-tag:link {
 
 .text14 {
   font-size: 14px;
+}
+
+.tabs-wrapper {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
 }

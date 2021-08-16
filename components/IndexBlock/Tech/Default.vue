@@ -1,7 +1,8 @@
 <template>
   <div v-if="settings" :style="{ backgroundColor: settings.bgColor }">
     <div class="container-old">
-      <div class="title_2 my-5" v-text="settings.title"></div>
+      <div class="title_2 mt-5 mb-4" v-text="settings.title"></div>
+      <div class="description mb-5" v-text="settings.title2"></div>
       <div class="tech-wrapper">
         <div v-for="item in settings.items" :key="item.img" class="tech-block">
           <img

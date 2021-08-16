@@ -16,7 +16,7 @@
           <div class="pop_desc" v-html="template.text"></div>
         </div>
       </div>
-      <div class="img">
+      <div v-if="settings.image" class="img">
         <img :src="settings.image" alt="Популярные шаблоны sакций и рассылок" />
       </div>
     </div>
