@@ -7,8 +7,8 @@
       </div>
       <div class="box-shadow flex">
         <div class="left_block">
-          <div class="flex">
-            <span class="span span_1">Набор&nbsp;</span>
+          <div class="d-flex align-items-center">
+            <span class="span span_1 me-2">Набор&nbsp;</span>
             <span class="span span_2"> готовых</span>
           </div>
           <span class="span span_3">функциональных</span>
@@ -64,7 +64,8 @@
         </div>
       </div>
       <div class="title_3">
-        Необходимые уникальный функционал для каждого клиента
+        Настраиваемый персональный функционал
+        <!-- Необходимые уникальный функционал для каждого клиента -->
         <!-- Необходимые правила, положения, процессы программы -->
       </div>
       <div class="flex flex_rules">

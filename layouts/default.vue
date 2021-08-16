@@ -10,7 +10,7 @@
     <a
       v-show="showScrollTop"
       href="#"
-      class="ml-scroll-top btn bg_tr btn-order"
+      class="ml-scroll-top"
       @click.prevent="scrollTop"
     >
       <!-- <i class="fa chevron-up"></i> -->

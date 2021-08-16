@@ -18,6 +18,36 @@
 }
 
 // Medium devices (tablets, 768px and up)
+@media (min-width: 0) and (max-width: 767.98px) {
+  body {
+    padding-top: 0 !important;
+  }
+
+  .header {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .btn-order, .btn-demo {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .v--modal-box {
+    margin: 0 auto;
+    left: 0 !important;
+  }
+
+  .v--modal-overlay {
+    height: 100% !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
   .btn-footer {
     flex-basis: 45% !important;
