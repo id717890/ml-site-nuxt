@@ -101,6 +101,8 @@ export default {
       /v-item.*/,
       /v-slide.*/,
       /madals-container.*/,
+      /v-application.*/,
+      /partner-filter-tag.*/,
     ],
   },
 

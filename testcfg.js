@@ -2209,14 +2209,14 @@ export default {
       name: 'Friend',
       style: 'Second',
       title1: 'Наши технологические друзья',
-      title2: 'надежно | безопасно | проверено',
+      title2: 'надежно | безопасно | официально',
       items: [
         {
           name: 'Кассы и Cms',
           items: [
             { image: '/img/friends/1C.png', name: '1С (все конфигурации)' },
             { image: '/img/technology_2.jpg', name: 'Штрих-М Кассир 5' },
-            { image: null, name: 'Рестарт' },
+            { image: '/img/friends/restart.png', name: 'Рестарт' },
             { image: '/img/friends/1sbitrix.png', name: '1С Битрикс' },
             {
               image: '/img/friends/wordpress.png',
@@ -2482,7 +2482,7 @@ export default {
     // // },
     {
       id: 11,
-      order: 1,
+      order: 3,
       name: 'Partners',
       style: 'TabAndTag',
       defaults: {
