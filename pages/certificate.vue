@@ -38,6 +38,7 @@
 <script>
 export default {
   name: 'CertificatePage',
+  scrollToTop: true,
   head() {
     return {
       title:

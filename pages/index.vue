@@ -22,8 +22,8 @@
     </nuxt-link>
     <component
       :is="block.component"
-      v-for="(block, index) in blocks"
-      :key="index"
+      v-for="block in blocks"
+      :key="block.id"
       :settings="block"
     ></component>
   </div>
@@ -66,6 +66,7 @@ export default {
     FriendSecond,
     TechDefault,
   },
+  scrollToTop: true,
   head() {
     return {
       title: 'Больше чем система лояльности!',

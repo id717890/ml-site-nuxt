@@ -1440,7 +1440,7 @@ export default {
       ],
     },
     {
-      id: 5,
+      id: 16,
       order: 16,
       name: 'Template',
       style: 'Default',

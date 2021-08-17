@@ -114,8 +114,14 @@ export default {
     },
   },
   data: () => ({
-    showItems: 3,
-    tags: [],
+    showItems: 6,
+    tags: [
+      { name: 'Конфигурация 1С', id: 1, selected: false },
+      { name: 'Штрих М Кассир 5', id: 2, selected: false },
+      { name: '1С Битрикс', id: 3, selected: false },
+      { name: 'Моб. приложения', id: 4, selected: false },
+      { name: 'Сертификаты', id: 5, selected: false },
+    ],
   }),
   computed: {
     partners() {
@@ -196,16 +202,30 @@ export default {
       if (showItems) {
         this.showItems = showItems
       }
-      this.initTags()
+      // this.initTags()
     },
     initTags() {
       const tags = this.settings?.defaults?.tags
-      if (!tags || !tags.length) return
-      this.tags = tags.map((tag, index) => ({
-        name: tag,
-        id: index,
-        selected: false,
-      }))
+
+      if (!tags) {
+        this.$set(this, 'tags', [
+          'Конфигурация 1С',
+          'Штрих М Кассир 5',
+          '1С Битрикс',
+          'Моб. приложения',
+          'Сертификаты',
+        ])
+      } else {
+        this.$set(
+          this,
+          'tags',
+          tags.map((tag, index) => ({
+            name: tag,
+            id: index,
+            selected: false,
+          }))
+        )
+      }
     },
   },
 }
