@@ -708,6 +708,11 @@ body {
 .algorithms {
     background-color: #F0F2F2;
     padding: 80px 0 58px;
+    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF),color-stop(30%, #F0F2F2));
+    background: -webkit-linear-gradient(top,#FFFFFF ,#F0F2F2 30%);
+    background: linear-gradient(to bottom,#FFFFFF ,#F0F2F2 30%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF0F2F2, GradientType=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF0F2F2', GradientType=0)";
 }
 
 .algorithms .content_box {

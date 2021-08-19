@@ -13,9 +13,9 @@
           </div>
           <span class="span span_3">функциональных</span>
           <span class="span span_4">модулей</span>
-          <div class="flex">
-            <span class="span span_5">подключаемых </span>
-            <span class="span span_5"> по желанию</span>
+          <div class="d-flex align-items-center">
+            <span class="span span_5 me-2">подключаемых </span>
+            <span class="span span_5"> по заявке</span>
           </div>
         </div>
         <div class="right_block">

@@ -2232,11 +2232,11 @@ export default {
               name: 'ServioPump',
               tags: [{ color: 'red', name: 'Скоро' }],
             },
-            {
-              image: '/img/friends/mystock.png',
-              name: 'Мой склад',
-              tags: [{ color: 'red', name: 'Скоро' }],
-            },
+            // {
+            //   image: '/img/friends/mystock.png',
+            //   name: 'Мой склад',
+            //   tags: [{ color: 'red', name: 'Скоро' }],
+            // },
           ],
         },
         {

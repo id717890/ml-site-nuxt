@@ -13,10 +13,10 @@
             <tr>
               <th></th>
               <th class="p-config">
-                <div class="title text-center">Настройка/внедрение</div>
+                <div class="title text-start">Настройка/внедрение</div>
               </th>
               <th class="p-month">
-                <div class="title text-center">Абонентская плата</div>
+                <div class="title text-start">Абонентская плата</div>
               </th>
             </tr>
           </thead>
@@ -26,21 +26,21 @@
                 <div class="">
                   <img
                     class=""
-                    src="/img/icon_2.png"
+                    src="/img/img_6.png"
                     alt="Аналитические модули, cценарии увеличения продаж, импорт данных из других систем."
                   />
                   Система
                 </div>
               </td>
               <td>
-                <div class="text-center">
-                  Настройка сервиса по ТЗ от 20000 рублей.
+                <div class="text-start">
+                  Настройка сервиса по ТЗ от 20000 рублей
                   <br />
                   Зависит от требований
                 </div>
               </td>
               <td>
-                <div class="text-center">
+                <div class="text-start">
                   Подписка на сервис от 1,5 т.р. <br />за каждую точку продаж
                 </div>
               </td>
@@ -56,7 +56,7 @@
                 </div>
               </td>
               <td>
-                <div class="text-center">
+                <div class="text-start">
                   Провайдеры рассылок
                   <br />
                   Наши провайдеры - 0 руб.
@@ -65,7 +65,7 @@
                 </div>
               </td>
               <td>
-                <div class="text-center">
+                <div class="text-start">
                   Sms - 2,90 руб.
                   <br />
                   В МТС - 2000 руб. <br />
@@ -77,7 +77,7 @@
               <td class="p-icons">
                 <div class="">
                   <img
-                    src="/img/icon_3.png"
+                    src="/img/img_5.png"
                     alt="Аналитические модули, cценарии увеличения продаж, импорт данных из других систем."
                   />
                   <p>
@@ -87,10 +87,10 @@
                 </div>
               </td>
               <td>
-                <div class="text-center">Настройка и запуск от 30000 руб.</div>
+                <div class="text-start">Настройка и запуск от 30000 руб.</div>
               </td>
               <td>
-                <div class="text-center">От 2500 руб. за каждое приложение</div>
+                <div class="text-start">От 2500 руб. за каждое приложение</div>
               </td>
             </tr>
             <tr>
@@ -107,12 +107,12 @@
                 </div>
               </td>
               <td>
-                <div class="text-center">
-                  От 10 000 рублей. Зависит от требований
+                <div class="text-start">
+                  От 10 000 рублей <br />Зависит от требований
                 </div>
               </td>
               <td>
-                <div class="text-center">От 3000 рублей за каждый виджет</div>
+                <div class="text-start">От 3000 рублей за каждый виджет</div>
               </td>
             </tr>
             <tr>
@@ -129,26 +129,26 @@
                 </div>
               </td>
               <td>
-                <div class="text-center">
-                  От 20 000 рублей. Зависит от требований
+                <div class="text-start">
+                  От 20 000 рублей <br />Зависит от требований
                 </div>
               </td>
               <td>
-                <div class="text-center">Отсутствует</div>
+                <div class="text-start">Отсутствует</div>
               </td>
             </tr>
             <tr>
               <td colspan="3">
                 <div class="noty">
-                  <fa
+                  <!-- <fa
                     style="font-size: 20px; color: green"
                     class="me-3"
                     icon="circle"
-                  />
+                  /> -->
                   <!-- <span style="font-size: 100px">.</span> -->
                   <div>
                     В ежемесячную стоимость включена тех.поддержка 09:00 - 20:00
-                    <br />
+                    <!-- <br /> -->
                     и уполномоченый менеджер с руками и мозгами
                   </div>
                 </div>
@@ -157,9 +157,9 @@
           </tbody>
         </table>
       </div>
-      <button type="button" class="btn btn-order mb-4" @click="openQuiz">
+      <!-- <button type="button" class="btn btn-order mb-4" @click="openQuiz">
         Заказать КП
-      </button>
+      </button> -->
     </div>
   </section>
 </template>
@@ -236,7 +236,7 @@ export default {
     }
 
     img {
-      width: 77px;
+      width: 53px;
       height: auto;
     }
   }
@@ -249,7 +249,7 @@ export default {
 
   .p-config .title,
   .p-month .title {
-    font-size: 28px;
+    font-size: 22px;
     letter-spacing: 4px;
     line-height: 59px;
     color: #7f7f7f;
