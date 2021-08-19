@@ -13,7 +13,7 @@
             <tr>
               <th></th>
               <th class="p-config">
-                <div class="title text-start">Настройка/внедрение</div>
+                <div class="title text-start ps-4">Настройка/внедрение</div>
               </th>
               <th class="p-month">
                 <div class="title text-start">Абонентская плата</div>
@@ -87,10 +87,17 @@
                 </div>
               </td>
               <td>
-                <div class="text-start">Настройка и запуск от 30000 руб.</div>
+                <div class="text-start">
+                  От 30000 рублей <br />
+                  За каждое приложение
+                </div>
               </td>
               <td>
-                <div class="text-start">От 2500 руб. за каждое приложение</div>
+                <div class="text-start">
+                  От 2500 рублей
+                  <br />
+                  За каждое приложение
+                </div>
               </td>
             </tr>
             <tr>
@@ -112,7 +119,10 @@
                 </div>
               </td>
               <td>
-                <div class="text-start">От 3000 рублей за каждый виджет</div>
+                <div class="text-start">
+                  От 3000 рублей <br />
+                  За каждый виджет
+                </div>
               </td>
             </tr>
             <tr>
@@ -189,6 +199,10 @@ export default {
     padding: 10px;
   }
 
+  tr td:nth-child(even) {
+    padding-left: 2.3rem !important;
+  }
+
   .noty {
     display: flex;
     flex-flow: row nowrap;
@@ -205,7 +219,7 @@ export default {
   flex-flow: row nowrap;
   margin-left: 0;
   margin-right: 0;
-  padding: 30px 60px;
+  padding: 30px 60px 30px 45px;
   margin-bottom: 30px;
 
   .p-config {
