@@ -2,7 +2,7 @@
   <section class="foryou pricing-block">
     <div class="container-old">
       <div class="title_2">Ценообразование</div>
-      <div class="box-shadow pricing-second mb-4">
+      <div class="box-shadow pricing-second">
         <table class="pricing-table">
           <colgroup>
             <col style="width: 100px" />
@@ -220,7 +220,7 @@ export default {
   margin-left: 0;
   margin-right: 0;
   padding: 30px 60px 30px 45px;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 
   .p-config {
     position: relative;

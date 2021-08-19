@@ -66,6 +66,7 @@ export default {
     FriendSecond,
     TechDefault,
   },
+  scrollToTop: false,
   head() {
     return {
       title: 'Больше чем система лояльности!',

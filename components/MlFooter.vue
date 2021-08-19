@@ -122,7 +122,7 @@
                     <a
                       href="#tech"
                       title="Технологии"
-                      @click="scrollTo('out-tech-block')"
+                      @click="scrollTo('out-tech-block', -50)"
                     >
                       Технологии
                     </a>
@@ -195,15 +195,25 @@ import ModalRules from '~/components/Modal/Rules'
 export default {
   name: 'MlFooter',
   methods: {
-    scrollTo(anchor) {
-      const scrollEl = document.querySelector(`.${anchor}`)
-      console.log(scrollEl, scrollEl?.offsetTop)
-      if (scrollEl && scrollEl?.offsetTop)
-        window.scrollTo({
-          top: scrollEl?.offsetTop,
-          left: 0,
-          behavior: 'smooth',
-        })
+    scrollTo(anchor, offset = null) {
+      function scrolling() {
+        const scrollEl = document.querySelector(`.${anchor}`)
+        if (scrollEl && scrollEl?.offsetTop)
+          window.scrollTo({
+            top: offset ? scrollEl?.offsetTop + offset : scrollEl?.offsetTop,
+            left: 0,
+            behavior: 'smooth',
+          })
+      }
+      const { path } = this.$route
+      if (path !== '/') {
+        this.$router.push({ name: 'index' })
+        setTimeout(() => {
+          scrolling()
+        }, 500)
+      } else {
+        scrolling()
+      }
     },
     openLink() {
       // this.$emit('close')
