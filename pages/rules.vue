@@ -64,7 +64,6 @@
 <script>
 export default {
   name: 'RulesPage',
-  scrollToTop: true,
   head() {
     return {
       title:

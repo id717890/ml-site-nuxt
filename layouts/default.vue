@@ -1,23 +1,25 @@
 <template>
-  <div id="app">
-    <MlHeader />
-    <modals-container />
-    <section class="ml-nuxt-router-container">
-      <nuxt v-if="!loading" />
-      <h1 v-else>Loading...</h1>
-    </section>
-    <MlFooter />
-    <a
-      v-show="showScrollTop"
-      href="#"
-      class="ml-scroll-top"
-      @click.prevent="scrollTop"
-    >
-      <!-- <i class="fa chevron-up"></i> -->
-      <!-- <v-icon>mdi-home</v-icon> -->
-      <fa icon="chevron-up" />
-    </a>
-  </div>
+  <client-only>
+    <div id="app">
+      <MlHeader />
+      <modals-container />
+      <section class="ml-nuxt-router-container">
+        <nuxt v-if="!loading" />
+        <h1 v-else>Loading...</h1>
+      </section>
+      <MlFooter />
+      <a
+        v-show="showScrollTop"
+        href="#"
+        class="ml-scroll-top"
+        @click.prevent="scrollTop"
+      >
+        <!-- <i class="fa chevron-up"></i> -->
+        <!-- <v-icon>mdi-home</v-icon> -->
+        <fa icon="chevron-up" />
+      </a>
+    </div>
+  </client-only>
   <!-- <div class="container b1">
     <div class="row b2">
       <div class="col-4 b3">4</div>
@@ -71,7 +73,9 @@ export default {
     this.debouncedScroll = debounce(this.handleScroll, 200)
   },
   mounted() {
-    this.setInitialize()
+    setTimeout(() => {
+      this.setInitialize()
+    }, 250)
   },
   destroyed() {
     const el = document.querySelector('#app')
@@ -80,7 +84,7 @@ export default {
   methods: {
     setInitialize() {
       const el = document.querySelector('#app')
-      el.addEventListener('wheel', this.debouncedScroll, true)
+      el?.addEventListener('wheel', this.debouncedScroll, true)
       this.marquizScript(window, document, 'script', {
         host: '//quiz.marquiz.ru',
         id: '5aa97f14ee90d20018523ad6',

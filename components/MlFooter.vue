@@ -40,7 +40,7 @@
         <div class="row">
           <div class="col-12 col-sm-12 col-md-4">
             <img src="/img/logo.png" alt="Больше чем система лояльности!" />
-            <p class="text1 mb-5 ms-4">Больше чем система лояльности</p>
+            <p class="text1 mb-2 ms-4">Больше чем система лояльности</p>
             <p class="text14 mb-2 ms-4">
               <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
             </p>
@@ -58,7 +58,7 @@
               <p class="text14 mb-1">Горячая линия</p>
               <p class="text1 mb-4">8 (499) 990-18-63</p>
               <p class="text14 mb-1">E-mail</p>
-              <p class="text1 mb-5">info@mloyalty.ru</p>
+              <p class="text1 mb-4">info@mloyalty.ru</p>
               <p>141503, Московская область, город</p>
               <p>Солнечногорск, Набережная улица,</p>
               <p>дом 11 корпус а, помещение 100 офис 2</p>
@@ -197,6 +197,7 @@ export default {
   methods: {
     scrollTo(anchor) {
       const scrollEl = document.querySelector(`.${anchor}`)
+      console.log(scrollEl, scrollEl?.offsetTop)
       if (scrollEl && scrollEl?.offsetTop)
         window.scrollTo({
           top: scrollEl?.offsetTop,
