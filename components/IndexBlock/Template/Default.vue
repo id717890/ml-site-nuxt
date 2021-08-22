@@ -17,7 +17,11 @@
         </div>
       </div>
       <div v-if="settings.image" class="img">
-        <img :src="settings.image" alt="Популярные шаблоны sакций и рассылок" />
+        <img
+          :src="settings.image"
+          class="w100"
+          alt="Популярные шаблоны sакций и рассылок"
+        />
       </div>
     </div>
   </section>

@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    <section class="d-block d-sm-block d-md-none w100">
+    <!-- <section class="d-block d-sm-block d-md-none w100">
       <div class="header-mobile">
         <nuxt-link to="/">
           <img
@@ -28,8 +28,8 @@
           Демо
         </button>
       </div>
-    </section>
-    <section class="d-none d-md-block w100">
+    </section> -->
+    <section class="d-block w100">
       <div class="container-old flex header-container py-0 px-0">
         <div class="logo">
           <nuxt-link to="/">

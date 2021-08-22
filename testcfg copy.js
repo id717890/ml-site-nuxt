@@ -2189,12 +2189,13 @@ export default {
       name: 'Advertising',
       style: 'Default',
     },
-    {
-      id: 8,
-      order: 8,
-      name: 'Connection',
-      style: 'Default',
-    },
+    // {
+    //   id: 8,
+    //   // order: 8,
+    //   order: 0,
+    //   name: 'Connection',
+    //   style: 'Default',
+    // },
     {
       id: 9,
       order: 7,
@@ -2232,11 +2233,11 @@ export default {
               name: 'ServioPump',
               tags: [{ color: 'red', name: 'Скоро' }],
             },
-            {
-              image: '/img/friends/mystock.png',
-              name: 'Мой склад',
-              tags: [{ color: 'red', name: 'Скоро' }],
-            },
+            // {
+            //   image: '/img/friends/mystock.png',
+            //   name: 'Мой склад',
+            //   tags: [{ color: 'red', name: 'Скоро' }],
+            // },
           ],
         },
         {

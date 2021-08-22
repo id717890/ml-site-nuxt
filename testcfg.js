@@ -2191,7 +2191,8 @@ export default {
     },
     {
       id: 8,
-      order: 8,
+      // order: 8,
+      order: 0,
       name: 'Connection',
       style: 'Default',
     },
