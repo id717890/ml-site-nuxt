@@ -4,7 +4,7 @@
       <div class="header-mobile">
         <nuxt-link to="/">
           <img
-            src="/img/logo.png"
+            src="/img/logo2.png"
             alt="Больше чем система лояльности!"
             class="img-logo"
           />
@@ -34,7 +34,7 @@
         <div class="logo">
           <nuxt-link to="/">
             <img
-              src="/img/logo.png"
+              src="/img/logo2.png"
               alt="Больше чем система лояльности!"
               class="img-logo"
             />
@@ -49,7 +49,7 @@
           </button>
           <button
             type="button"
-            class="btn btn-demo"
+            class="btn btn-demo me-0"
             data-open_demo
             @click="open"
           >

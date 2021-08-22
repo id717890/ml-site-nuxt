@@ -410,7 +410,7 @@ body {
 
 
 .result {
-    background: #F0F2F2;
+    /* background: #F0F2F2; */
     padding: 89px 0 72px;
 }
 
@@ -502,11 +502,11 @@ body {
 .convenient {
     padding: 88px 0 115px;
     overflow: hidden;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF),color-stop(100%, #F0F2F2));
-    background: -webkit-linear-gradient(top,#FFFFFF ,#F0F2F2 100%);
-    background: linear-gradient(to bottom,#FFFFFF ,#F0F2F2 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF0F2F2, GradientType=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF0F2F2', GradientType=0)";
+    /* background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF),color-stop(100%, #F0F2F2)); */
+    /* background: -webkit-linear-gradient(top,#FFFFFF ,#F0F2F2 100%); */
+    /* background: linear-gradient(to bottom,#FFFFFF ,#F0F2F2 100%); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF0F2F2, GradientType=0); */
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF0F2F2', GradientType=0)"; */
 }
 
 .convenient .container {
@@ -706,13 +706,13 @@ body {
 }
 
 .algorithms {
-    background-color: #F0F2F2;
+    /* background-color: #F0F2F2; */
     padding: 80px 0 58px;
-    background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF),color-stop(30%, #F0F2F2));
-    background: -webkit-linear-gradient(top,#FFFFFF ,#F0F2F2 30%);
-    background: linear-gradient(to bottom,#FFFFFF ,#F0F2F2 30%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF0F2F2, GradientType=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF0F2F2', GradientType=0)";
+    /* background: -webkit-gradient(linear, center top, center bottom, from(#FFFFFF),color-stop(30%, #F0F2F2)); */
+    /* background: -webkit-linear-gradient(top,#FFFFFF ,#F0F2F2 30%); */
+    /* background: linear-gradient(to bottom,#FFFFFF ,#F0F2F2 30%); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF0F2F2, GradientType=0); */
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF0F2F2', GradientType=0)"; */
 }
 
 .algorithms .content_box {
@@ -773,6 +773,7 @@ body {
     padding: 0;
     border: none;
     margin-left: 139px;
+    background-color: transparent;
 }
 
 .algorithms .item_2 .num {
@@ -802,7 +803,7 @@ body {
     text-align: center;
     order: 0;
     margin-left: auto;
-    margin-right: 37px;
+    margin-right: 15px;
     margin-top: 8%;
     padding: 28px 9px;
     max-height: 422px;
@@ -822,6 +823,7 @@ body {
     text-align: right;
     border: none;
     z-index: 0;
+    background-color: transparent;
 }
 
 .algorithms .item_4 .num {
@@ -938,11 +940,11 @@ body {
 
 .foryou {
     padding: 0 0 7px;
-    background: -webkit-gradient(linear, center top, center bottom, color-stop(40%, #FFFFFF),to(#F7F9F9));
-    background: -webkit-linear-gradient(top,#FFFFFF 40%,#F7F9F9 );
-    background: linear-gradient(to bottom,#FFFFFF 40%,#F7F9F9 );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF7F9F9, GradientType=0);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF7F9F9', GradientType=0)";
+    /* background: -webkit-gradient(linear, center top, center bottom, color-stop(40%, #FFFFFF),to(#F7F9F9)); */
+    /* background: -webkit-linear-gradient(top,#FFFFFF 40%,#F7F9F9 ); */
+    /* background: linear-gradient(to bottom,#FFFFFF 40%,#F7F9F9 ); */
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF, endColorstr=#FFF7F9F9, GradientType=0); */
+    /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF7F9F9', GradientType=0)"; */
 }
 
 .foryou .title_2{
