@@ -38,7 +38,7 @@
     <div class="ml-footer-first">
       <div class="ml-container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-4">
+          <div class="col-4">
             <img src="/img/logo.png" alt="Больше чем система лояльности!" />
             <p class="text1 mb-2 ms-4">Больше чем система лояльности</p>
             <p class="text14 mb-2 ms-4">
@@ -53,7 +53,7 @@
             <p class="text14 ms-4">ООО ЭМ ЛОЯЛТИ</p>
             <p></p>
           </div>
-          <div class="col-12 col-sm-12 col-md-4 mb-4">
+          <div class="col-4 mb-4">
             <div class="second-block">
               <p class="text14 mb-1">Горячая линия</p>
               <p class="text1 mb-4">8 (499) 990-18-63</p>
@@ -64,7 +64,7 @@
               <p>дом 11 корпус а, помещение 100 офис 2</p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4">
+          <div class="col-4">
             <div class="third-block">
               <div class="container-fluid px-0">
                 <div class="row px-0">
@@ -155,7 +155,7 @@
     <div class="ml-footer-second">
       <div class="ml-container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-4">
+          <div class="col-4">
             <div class="block1">
               <span class="stat">40%</span>
               <div class="d-flex flex-column">
@@ -164,7 +164,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-4">
+          <div class="col-4">
             <div class="block2">
               <span class="stat">30</span>
               <div class="d-flex flex-column">
@@ -173,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-4">
+          <div class="col-4">
             <div class="block3">
               <span class="stat">100%</span>
               <div class="d-flex flex-column">

@@ -1084,6 +1084,12 @@ body {
     min-width: 450px;
 }
 
+.connections .item:nth-child(3) .text_block {
+    max-width: 370px !important;
+    min-width: 0;
+    width: 370px;
+}
+
 .connections .item:last-child .text_block {
     max-width: 335px !important;
     min-width: 0;
@@ -1101,9 +1107,23 @@ body {
     pointer-events: all;
 }
 
-.connections .item:nth-child(4) .text_block {
+.connections .item:last-of-type .text_block {
     /* left: auto; */
-    /* right: -45px; */
+    left: auto;
+    right: 35px;
+    /* z-index: 999; */
+}
+
+.connections .item:last-of-type .text_block::after {
+    right: -5px;
+    left: auto;
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+.connections .text_block:nth-child(4) {
+    right: 40px !important;
 }
 
 .connections .text_block > div {
