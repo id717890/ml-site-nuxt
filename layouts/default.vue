@@ -82,6 +82,31 @@ export default {
     el?.removeEventListener('wheel', this.debouncedScroll)
   },
   methods: {
+    initPanel() {
+      ;(function (w, i, d, g, e, t) {
+        t = i.createElement(d)
+        t.async = 1
+        t.src = g
+        t.onload = function () {
+          if (document.readyState !== 'loading') {
+            // eslint-disable-next-line no-undef
+            MloyaltyWidget.init(e)
+          } else {
+            document.addEventListener('DOMContentLoaded', function () {
+              // eslint-disable-next-line no-undef
+              MloyaltyWidget.init(e)
+            })
+          }
+        }
+        i.head.insertBefore(t, i.head.firstElementChild)
+      })(
+        window,
+        document,
+        'script',
+        'https://mloyalty-widget.s3-eu-west-1.amazonaws.com/0.6.0/mloyalty-widget.bundle.min.js',
+        { code: '*', debug: true, metadata: { id: 1, name: 'SiteWidget' } }
+      )
+    },
     setInitialize() {
       const el = document.querySelector('#app')
       el?.addEventListener('wheel', this.debouncedScroll, true)
@@ -93,6 +118,7 @@ export default {
         openOnExit: false,
         disableOnMobile: false,
       })
+      this.initPanel()
     },
     scrollTop() {
       window.scrollTo({ top: 100, left: 100, behavior: 'smooth' })
