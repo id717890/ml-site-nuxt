@@ -52,11 +52,11 @@ export default {
   methods: {
     openBuy() {
       // eslint-disable-next-line no-undef
-      MloyaltyWidget.open('Купить')
+      MloyaltyCertWidget.open('Купить')
     },
     opendBalance() {
       // eslint-disable-next-line no-undef
-      MloyaltyWidget.open('Баланс')
+      MloyaltyCertWidget.open('Баланс')
     },
     openQuiz() {
       // TODO перенести в конфиг ID quiz
@@ -65,11 +65,11 @@ export default {
     },
     openBasket() {
       // eslint-disable-next-line no-undef
-      MloyaltyWidget.open('Готовая корзина')
+      MloyaltyCertWidget.open('Готовая корзина')
     },
     openSubscription() {
       // eslint-disable-next-line no-undef
-      MloyaltyWidget.open('Подписка')
+      MloyaltyCertWidget.open('Подписка')
     },
     openCertificateOwnere() {
       const url = process.env.VUE_APP_WIDGET_URL

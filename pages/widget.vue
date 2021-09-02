@@ -8,7 +8,7 @@
         href="#"
         class="btn-footer mb-3"
         style="width: 200px"
-        @click.prevent=""
+        @click.prevent="openWidgetLk"
       >
         Виджет ЛК
       </a>
@@ -31,6 +31,12 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    openWidgetLk() {
+      // eslint-disable-next-line no-undef
+      MloyaltyWidget.open('Личный кабинет')
+    },
   },
 }
 </script>

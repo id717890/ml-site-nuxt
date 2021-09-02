@@ -44,6 +44,14 @@ import { mapState } from 'vuex'
 import { debounce } from 'lodash'
 import MlHeader from '~/components/MlHeader'
 import MlFooter from '~/components/MlFooter'
+
+const panelCfg = {
+  code: '*',
+  url: 'https://lkvidget.lctest.ru/',
+  debug: false,
+  metadata: { client_mloyalty: 2, client_ishop: 1234 },
+  // sourceurl: 'http://lk.lctest.ru/'
+}
 export default {
   name: 'LayoutDefault',
   components: {
@@ -82,7 +90,7 @@ export default {
     el?.removeEventListener('wheel', this.debouncedScroll)
   },
   methods: {
-    initPanel() {
+    initPanelLk() {
       ;(function (w, i, d, g, e, t) {
         t = i.createElement(d)
         t.async = 1
@@ -104,7 +112,55 @@ export default {
         document,
         'script',
         'https://mloyalty-widget.s3-eu-west-1.amazonaws.com/0.6.0/mloyalty-widget.bundle.min.js',
-        { code: '*', debug: true, metadata: { id: 1, name: 'SiteWidget' } }
+        panelCfg
+      )
+    },
+    initPanel() {
+      // ;(function (w, i, d, g, e, t) {
+      //   t = i.createElement(d)
+      //   t.async = 1
+      //   t.src = g
+      //   t.onload = function () {
+      //     if (document.readyState !== 'loading') {
+      //       // eslint-disable-next-line no-undef
+      //       MloyaltyWidget.init(e)
+      //     } else {
+      //       document.addEventListener('DOMContentLoaded', function () {
+      //         // eslint-disable-next-line no-undef
+      //         MloyaltyWidget.init(e)
+      //       })
+      //     }
+      //   }
+      //   i.head.insertBefore(t, i.head.firstElementChild)
+      // })(
+      //   window,
+      //   document,
+      //   'script',
+      //   'https://mloyalty-widget.s3-eu-west-1.amazonaws.com/0.6.0/mloyalty-widget.bundle.min.js',
+      //   { code: '*', debug: true, metadata: { id: 1, name: 'SiteWidget' } }
+      // )
+      ;(function (w, i, d, g, e, t) {
+        t = i.createElement(d)
+        t.async = 1
+        t.src = g
+        t.onload = function () {
+          if (document.readyState !== 'loading') {
+            // eslint-disable-next-line no-undef
+            MloyaltyCertWidget.init(e)
+          } else {
+            document.addEventListener('DOMContentLoaded', function () {
+              // eslint-disable-next-line no-undef
+              MloyaltyCertWidget.init(e)
+            })
+          }
+        }
+        i.head.insertBefore(t, i.head.firstElementChild)
+      })(
+        window,
+        document,
+        'script',
+        'https://mloyalty-widget.s3-eu-west-1.amazonaws.com/0.6.0/mloyalty-cert-widget.bundle.min.js',
+        { code: '*', debug: false, metadata: { id: 1, name: 'SiteWidget' } }
       )
     },
     setInitialize() {
@@ -118,6 +174,7 @@ export default {
         openOnExit: false,
         disableOnMobile: false,
       })
+      this.initPanelLk()
       this.initPanel()
     },
     scrollTop() {
