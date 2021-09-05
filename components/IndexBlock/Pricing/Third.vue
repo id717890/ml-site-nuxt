@@ -219,7 +219,7 @@ export default {
   flex-flow: row nowrap;
   margin-left: 0;
   margin-right: 0;
-  padding: 30px 60px 30px 45px;
+  padding: 30px 0 30px 115px;
   margin-bottom: 70px;
 
   .p-config {

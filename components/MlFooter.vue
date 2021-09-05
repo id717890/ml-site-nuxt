@@ -36,21 +36,25 @@
       </div>
     </div> -->
     <div class="ml-footer-first">
-      <div class="ml-container">
+      <div class="container-old">
         <div class="row">
           <div class="col-4">
-            <img src="/img/logo.png" alt="Больше чем система лояльности!" />
-            <p class="text1 mb-2 ms-4">Больше чем система лояльности</p>
-            <p class="text14 mb-2 ms-4">
+            <img
+              style="margin-left: -25px"
+              src="/img/logo.png"
+              alt="Больше чем система лояльности!"
+            />
+            <p class="text1 mb-2">Больше чем система лояльности</p>
+            <p class="text14 mb-2">
               <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
             </p>
-            <p class="text14 mb-2 ms-4">
+            <p class="text14 mb-2">
               <nuxt-link to="/security">Безопасность и надежность</nuxt-link>
             </p>
-            <p class="text14 ms-4">
+            <p class="text14">
               © {{ new Date().getFullYear() }}год. Все права защищены.
             </p>
-            <p class="text14 ms-4">ООО ЭМ ЛОЯЛТИ</p>
+            <p class="text14">ООО ЭМ ЛОЯЛТИ</p>
             <p></p>
           </div>
           <div class="col-4 mb-4">
@@ -142,9 +146,9 @@
                     >
                       Заказать звонок
                     </a>
-                    <a href="#" class="btn-footer" @click.prevent="openQuiz">
+                    <!-- <a href="#" class="btn-footer" @click.prevent="openQuiz">
                       Заказать КП
-                    </a>
+                    </a> -->
                   </div>
                 </div>
               </div>
@@ -154,7 +158,7 @@
       </div>
     </div>
     <div class="ml-footer-second">
-      <div class="ml-container">
+      <div class="container-old">
         <div class="row">
           <div class="col-4">
             <div class="block1">

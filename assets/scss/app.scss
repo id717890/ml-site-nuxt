@@ -49,8 +49,11 @@ body::-webkit-scrollbar-thumb {
 // }
 
 .ml-nuxt-router-container {
+  display: flex;
   margin: 24px 0;
-  min-height: 90vh;
+  // min-height: 90vh;
+  flex-grow: 1;
+  flex-flow: column;
 }
 
 .mfp-zoom-in {

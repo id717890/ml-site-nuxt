@@ -1,36 +1,46 @@
 <template>
-  <main>
-    <section
-      class="d-flex justify-content-center align-items-center flex-column"
-      style="min-height: 800px"
+  <div
+    class="
+      d-flex
+      flex-grow-1
+      justify-content-center
+      align-items-center
+      flex-column
+    "
+  >
+    <a
+      href="#"
+      class="btn-footer mb-3"
+      style="width: 200px"
+      @click.prevent="openBuy"
     >
-      <a class="btn-footer mb-3" style="width: 200px" @click.prevent="openBuy">
-        Купить
-      </a>
-      <a
+      Купить
+    </a>
+    <a
+      class="btn-footer mb-3"
+      href="#"
+      style="width: 200px"
+      @click.prevent="openCertificateOwnere"
+    >
+      Получить
+    </a>
+    <!-- <a
         class="btn-footer mb-3"
-        style="width: 200px"
-        @click.prevent="openCertificateOwnere"
-      >
-        Получить
-      </a>
-      <a
-        class="btn-footer mb-3"
+        href="#"
         style="width: 200px"
         @click.prevent="opendBalance"
       >
         Проверить баланс
-      </a>
-      <a
-        href="#"
-        class="btn-footer"
-        style="width: 200px"
-        @click.prevent="openQuiz"
-      >
-        Заказать КП
-      </a>
-    </section>
-  </main>
+      </a> -->
+    <a
+      href="#"
+      class="btn-footer"
+      style="width: 200px"
+      @click.prevent="openQuiz"
+    >
+      Заказать КП
+    </a>
+  </div>
 </template>
 
 <script>

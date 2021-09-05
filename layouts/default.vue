@@ -69,6 +69,9 @@ export default {
   }),
   head() {
     return {
+      htmlAttrs: {
+        translate: 'no',
+      },
       link: [
         {
           rel: 'canonical',

@@ -38,6 +38,10 @@ button {transition:.4s;cursor:pointer;-webkit-appearance:none;outline:none;}a,a:
 
 * {box-sizing: border-box;}
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #fff;
     line-height: 1.4;
