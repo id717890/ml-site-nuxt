@@ -217,7 +217,9 @@ export default {
       const { path } = this.$route
       if (path !== '/') {
         this.$router.push({ name: 'index' })
-        scrolling()
+        setTimeout(() => {
+          scrolling()
+        })
       } else {
         scrolling()
       }
