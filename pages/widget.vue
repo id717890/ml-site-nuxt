@@ -6,6 +6,7 @@
       justify-content-center
       align-items-center
       flex-column
+      ml-page-widget
     "
   >
     <a

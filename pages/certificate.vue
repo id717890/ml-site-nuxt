@@ -1,6 +1,7 @@
 <template>
   <div
     class="
+      ml-page-cert
       d-flex
       flex-grow-1
       justify-content-center
