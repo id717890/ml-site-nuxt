@@ -48,6 +48,7 @@ body {
     font-family: 'AF', sans-serif;
     font-weight: 300;
     /* min-width: 1020px; */
+    width: 100%;
     padding-top: 81px;
 }
 
