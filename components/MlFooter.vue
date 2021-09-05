@@ -190,12 +190,15 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import CallModal from '~/components/Modal/Call'
 import ModalRules from '~/components/Modal/Rules'
+import types from '~/store/types'
 
 export default {
   name: 'MlFooter',
   methods: {
+    ...mapMutations('app', [types.SET_APP_GLOBAL_LOADING]),
     scrollTo(anchor, offset = null) {
       const isMobile = this.$helper.isMobile()
       function scrolling() {
@@ -216,10 +219,12 @@ export default {
       }
       const { path } = this.$route
       if (path !== '/') {
+        this[types.SET_APP_GLOBAL_LOADING](true)
         this.$router.push({ name: 'index' })
         setTimeout(() => {
           scrolling()
-        })
+          this[types.SET_APP_GLOBAL_LOADING](false)
+        }, 500)
       } else {
         scrolling()
       }

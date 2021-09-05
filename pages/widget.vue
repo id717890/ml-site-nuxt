@@ -2,7 +2,7 @@
   <main>
     <section
       class="d-flex justify-content-center align-items-center flex-column"
-      style="min-height: 400px"
+      style="min-height: 800px"
     >
       <a
         href="#"
@@ -21,8 +21,7 @@ export default {
   name: 'WidgetPage',
   head() {
     return {
-      title:
-        'Согласие на обработку персональных данных - Система лояльноси MLoyalty',
+      title: 'Виджет ЛК',
       meta: [
         {
           hid: 'description',

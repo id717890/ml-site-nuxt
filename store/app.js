@@ -5,6 +5,7 @@ import mockConfig from '~/testcfg'
 export const state = () => ({
   config: null,
   configLoading: false,
+  globalLoading: false,
 })
 
 export const actions = {
@@ -27,6 +28,9 @@ export const mutations = {
   },
   [types.SET_APP_CONFIG_LOADING]: (state, payload) => {
     state.configLoading = payload
+  },
+  [types.SET_APP_GLOBAL_LOADING]: (state, payload) => {
+    state.globalLoading = payload
   },
 }
 

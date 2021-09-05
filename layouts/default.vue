@@ -1,6 +1,11 @@
 <template>
   <client-only>
-    <div id="app">
+    <div id="app" class="app-wrapper">
+      <div v-if="globalLoading" class="ml-global-loader">
+        <div class="spinner-border text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
       <MlHeader />
       <modals-container />
       <section class="ml-nuxt-router-container">
@@ -75,6 +80,7 @@ export default {
   computed: {
     ...mapState({
       loading: (state) => state?.app?.configLoading,
+      globalLoading: (state) => state?.app?.globalLoading,
     }),
   },
   created() {

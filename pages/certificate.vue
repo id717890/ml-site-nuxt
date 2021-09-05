@@ -2,7 +2,7 @@
   <main>
     <section
       class="d-flex justify-content-center align-items-center flex-column"
-      style="min-height: 400px"
+      style="min-height: 800px"
     >
       <a class="btn-footer mb-3" style="width: 200px" @click.prevent="openBuy">
         Купить
@@ -38,8 +38,7 @@ export default {
   name: 'CertificatePage',
   head() {
     return {
-      title:
-        'Согласие на обработку персональных данных - Система лояльноси MLoyalty',
+      title: 'Виджет сертификатов лояльности',
       meta: [
         {
           hid: 'description',
