@@ -79,27 +79,28 @@
                     <a
                       href="#clients"
                       title="Наши клиенты"
-                      @click.prevent="scrollTo('partners-block')"
-                      >Наши клиенты</a
+                      @click.prevent="scrollTo('partners-block', 50)"
                     >
+                      Наши клиенты
+                    </a>
                     <a
                       href="#integration"
                       title="Интеграции"
-                      @click.prevent="scrollTo('technology')"
+                      @click.prevent="scrollTo('technology', 50)"
                     >
                       Интеграции
                     </a>
                     <a
                       href="#steps"
                       title="Этапы подключения"
-                      @click.prevent="scrollTo('connections')"
+                      @click.prevent="scrollTo('connections', 50)"
                     >
                       Этапы подключения
                     </a>
                     <a
                       href="#pricing"
                       title="Ценообразование"
-                      @click.prevent="scrollTo('pricing-block')"
+                      @click.prevent="scrollTo('pricing-block', -40)"
                     >
                       Ценообразование
                     </a>
@@ -109,7 +110,7 @@
                     <a
                       href="#faq"
                       title="FAQ"
-                      @click.prevent="scrollTo('faq-block')"
+                      @click.prevent="scrollTo('faq-block', 50)"
                     >
                       FAQ
                     </a>
@@ -196,21 +197,27 @@ export default {
   name: 'MlFooter',
   methods: {
     scrollTo(anchor, offset = null) {
+      const isMobile = this.$helper.isMobile()
       function scrolling() {
         const scrollEl = document.querySelector(`.${anchor}`)
-        if (scrollEl && scrollEl?.offsetTop)
+        if (scrollEl && scrollEl?.offsetTop) {
+          let top
+          if (isMobile) {
+            top = scrollEl?.offsetTop - 50
+          } else {
+            top = offset ? scrollEl?.offsetTop + offset : scrollEl?.offsetTop
+          }
           window.scrollTo({
-            top: offset ? scrollEl?.offsetTop + offset : scrollEl?.offsetTop,
+            top,
             left: 0,
-            behavior: 'smooth',
+            behavior: 'instant',
           })
+        }
       }
       const { path } = this.$route
       if (path !== '/') {
         this.$router.push({ name: 'index' })
-        setTimeout(() => {
-          scrolling()
-        }, 500)
+        scrolling()
       } else {
         scrolling()
       }
