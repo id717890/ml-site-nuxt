@@ -167,9 +167,13 @@
           </tbody>
         </table>
       </div>
-      <!-- <button type="button" class="btn btn-order mb-4" @click="openQuiz">
-        Заказать КП
-      </button> -->
+      <button
+        type="button"
+        class="btn btn-order mb-4"
+        @click.prevent="openQuiz"
+      >
+        Рассчитать стоимость
+      </button>
     </div>
   </section>
 </template>
