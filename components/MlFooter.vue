@@ -83,28 +83,28 @@
                     <a
                       href="#clients"
                       title="Наши клиенты"
-                      @click.prevent="scrollTo('partners-block', 50)"
+                      @click.prevent="scrollTo(anchors.PARTNER_BLOCK, 50)"
                     >
                       Наши клиенты
                     </a>
                     <a
                       href="#integration"
                       title="Интеграции"
-                      @click.prevent="scrollTo('technology', 50)"
+                      @click.prevent="scrollTo(anchors.TECH_BLOCK, 50)"
                     >
                       Интеграции
                     </a>
                     <a
                       href="#steps"
                       title="Этапы подключения"
-                      @click.prevent="scrollTo('connections', 50)"
+                      @click.prevent="scrollTo(anchors.CONNECTIONS_BLOCK, 50)"
                     >
                       Этапы подключения
                     </a>
                     <a
                       href="#pricing"
                       title="Ценообразование"
-                      @click.prevent="scrollTo('pricing-block', -40)"
+                      @click.prevent="scrollTo(anchors.PRICING_BLOCK, -40)"
                     >
                       Ценообразование
                     </a>
@@ -114,7 +114,7 @@
                     <a
                       href="#faq"
                       title="FAQ"
-                      @click.prevent="scrollTo('faq-block', 50)"
+                      @click.prevent="scrollTo(anchors.FAQ_BLOCK, 50)"
                     >
                       FAQ
                     </a>
@@ -127,7 +127,7 @@
                     <a
                       href="#tech"
                       title="Технологии"
-                      @click="scrollTo('out-tech-block', -50)"
+                      @click="scrollTo(anchors.OUR_TECH_BLOCK, -50)"
                     >
                       Технологии
                     </a>
@@ -194,45 +194,15 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
 import CallModal from '~/components/Modal/Call'
 import ModalRules from '~/components/Modal/Rules'
-import types from '~/store/types'
-
+import MixinScrolling from '~/helpers/mixins/scrolling'
+// eslint-disable-next-line no-unused-vars
 export default {
   name: 'MlFooter',
+  mixins: [MixinScrolling],
+
   methods: {
-    ...mapMutations('app', [types.SET_APP_GLOBAL_LOADING]),
-    scrollTo(anchor, offset = null) {
-      const isMobile = this.$helper.isMobile()
-      function scrolling() {
-        const scrollEl = document.querySelector(`.${anchor}`)
-        if (scrollEl && scrollEl?.offsetTop) {
-          let top
-          if (isMobile) {
-            top = scrollEl?.offsetTop - 50
-          } else {
-            top = offset ? scrollEl?.offsetTop + offset : scrollEl?.offsetTop
-          }
-          window.scrollTo({
-            top,
-            left: 0,
-            behavior: 'instant',
-          })
-        }
-      }
-      const { path } = this.$route
-      if (path !== '/') {
-        this[types.SET_APP_GLOBAL_LOADING](true)
-        this.$router.push({ name: 'index' })
-        setTimeout(() => {
-          scrolling()
-          this[types.SET_APP_GLOBAL_LOADING](false)
-        }, 500)
-      } else {
-        scrolling()
-      }
-    },
     openLink() {
       // this.$emit('close')
       // this.$router.push({ name: 'rules' })

@@ -2191,14 +2191,14 @@ export default {
     },
     {
       id: 8,
-      order: 8,
+      order: 7,
       // order: 0,
       name: 'Connection',
       style: 'Default',
     },
     {
       id: 9,
-      order: 7,
+      order: 8,
       // order: 0,
       name: 'Pricing',
       style: 'Third',

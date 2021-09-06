@@ -16,3 +16,12 @@ export default {
     clickToClose: true,
   },
 }
+
+export const anchors = {
+  PARTNER_BLOCK: 'partners-block',
+  TECH_BLOCK: 'technology',
+  CONNECTIONS_BLOCK: 'connections',
+  PRICING_BLOCK: 'pricing-block',
+  FAQ_BLOCK: 'faq-block',
+  OUR_TECH_BLOCK: 'our-tech-block',
+}

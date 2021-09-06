@@ -25,6 +25,10 @@
 
   .ml-page-cert, .ml-page-widget {
     height: 100vh;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
   }
 
   .header {

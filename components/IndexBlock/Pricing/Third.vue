@@ -5,7 +5,7 @@
       <div class="box-shadow pricing-second">
         <table class="pricing-table">
           <colgroup>
-            <col style="width: 100px" />
+            <col style="width: 140px" />
             <col />
             <col />
           </colgroup>
@@ -219,7 +219,7 @@ export default {
   flex-flow: row nowrap;
   margin-left: 0;
   margin-right: 0;
-  padding: 30px 0 30px 115px;
+  padding: 30px 20px 30px 60px;
   margin-bottom: 70px;
 
   .p-config {

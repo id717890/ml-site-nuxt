@@ -128,7 +128,7 @@ body {
 }
 
 .header {
-    border-bottom: 1px solid #EAEAEA;
+    /* border-bottom: 1px solid #EAEAEA; */
     background-color: #FFFFFF;
     position: fixed;
     width: 100%;
@@ -429,6 +429,7 @@ body {
     background: #fff;
     transition: .4s;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 3%);
+    border: 1px solid #E5E5E5;
     border-radius: 20px;
     padding: 24px;
     width: 250px;
@@ -737,7 +738,8 @@ body {
     background-color: transparent;
     border-radius: 20px;
     padding: 40px 0 0px;
-    background-color: #F0F2F2;
+    /* background-color: #F0F2F2; */
+    background-color: #f8f8f8;
     z-index: 1;
 }
 

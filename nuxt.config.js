@@ -18,7 +18,11 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/assets/scss/app.scss', '~/assets/css/main.css'],
+  css: [
+    '~/assets/scss/app.scss',
+    '~/assets/css/main.css',
+    '~/assets/css/panel.css',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -79,6 +83,8 @@ export default {
         'faQuestion',
         'faExclamation',
         'faCircle',
+        'faBars',
+        'faTimes',
       ],
       regular: [],
       light: [],

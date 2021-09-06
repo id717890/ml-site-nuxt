@@ -31,6 +31,8 @@
     </section> -->
     <section class="d-block w100">
       <div class="container-old flex header-container py-0 px-0">
+        <fa class="ml-burger" icon="bars" @click.prevent="tooglePanel" />
+
         <div class="logo">
           <nuxt-link to="/">
             <img
@@ -62,10 +64,18 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import DemoModal from '~/components/Modal/Demo'
+import { SHOW_SIDE_PANEL } from '~/store/types'
 export default {
-  components: {},
+  computed: {
+    panelShow: (state) => state?.panel?.show,
+  },
   methods: {
+    ...mapMutations('panel', [SHOW_SIDE_PANEL]),
+    tooglePanel() {
+      this[SHOW_SIDE_PANEL](!this.panelShow)
+    },
     openQuiz() {
       // TODO перенести в конфиг ID quiz
       // eslint-disable-next-line no-undef

@@ -2,7 +2,7 @@
   <div
     v-if="settings"
     :style="{ backgroundColor: settings.bgColor }"
-    class="out-tech-block"
+    class="our-tech-block"
   >
     <div class="container-old">
       <div class="title_2 mt-5 mb-4" v-text="settings.title"></div>

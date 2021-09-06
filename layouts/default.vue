@@ -1,6 +1,7 @@
 <template>
   <client-only>
     <div id="app" class="app-wrapper">
+      <MlSidePanel />
       <div v-if="globalLoading" class="ml-global-loader">
         <div class="spinner-border text-secondary" role="status">
           <span class="visually-hidden">Loading...</span>
@@ -47,9 +48,9 @@
 // import Account from 'vue-material-design-icons/Account.vue'
 import { mapState } from 'vuex'
 import { debounce } from 'lodash'
-import MlHeader from '~/components/MlHeader'
-import MlFooter from '~/components/MlFooter'
-
+import MlHeader from '~/components/MlHeader.vue'
+import MlFooter from '~/components/MlFooter.vue'
+import MlSidePanel from '~/components/MlSidePanel.vue'
 const panelCfg = {
   code: '*',
   url: 'https://lkvidget.lctest.ru/',
@@ -62,6 +63,7 @@ export default {
   components: {
     MlHeader,
     MlFooter,
+    MlSidePanel,
   },
   middleware: ['cfg', 'jwt', 'client/redirect'],
   data: () => ({
