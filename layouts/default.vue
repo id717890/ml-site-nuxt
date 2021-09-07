@@ -73,6 +73,7 @@ export default {
     return {
       htmlAttrs: {
         translate: 'no',
+        lang: 'ru',
       },
       link: [
         {
