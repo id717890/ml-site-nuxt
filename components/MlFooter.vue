@@ -39,11 +39,11 @@
       <div class="container-old">
         <div class="row">
           <div class="col-4">
-            <img
+            <!-- <img
               style="margin-left: -25px"
               src="/img/logo.png"
               alt="Больше чем система лояльности!"
-            />
+            /> -->
             <p class="text1 mb-2">Больше чем система лояльности</p>
             <p class="text14 mb-2">
               <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
@@ -57,15 +57,15 @@
             <p class="text14">ООО ЭМ ЛОЯЛТИ</p>
             <p></p>
           </div>
-          <div class="col-4 mb-4">
+          <div class="col-4">
             <div class="second-block">
               <p class="text14 mb-1">Горячая линия</p>
               <p class="text1 mb-4">8 (499) 990-18-63</p>
               <p class="text14 mb-1">E-mail</p>
               <p class="text1 mb-4">info@mloyalty.ru</p>
-              <p>141503, Московская область, город</p>
+              <!-- <p>141503, Московская область, город</p>
               <p>Солнечногорск, Набережная улица,</p>
-              <p>дом 11 корпус а, помещение 100 офис 2</p>
+              <p>дом 11 корпус а, помещение 100 офис 2</p> -->
             </div>
           </div>
           <div class="col-4">
@@ -101,13 +101,6 @@
                     >
                       Этапы подключения
                     </a>
-                    <a
-                      href="#pricing"
-                      title="Ценообразование"
-                      @click.prevent="scrollTo(anchors.PRICING_BLOCK, -40)"
-                    >
-                      Ценообразование
-                    </a>
                   </div>
                   <div class="col-12 col-md-6 ancors">
                     <!-- <a href="#dop" title="Доп. услуги">Доп. услуги</a> -->
@@ -125,12 +118,19 @@
                       <nuxt-link to="/widget">Виджет-ЛК</nuxt-link>
                     </a>
                     <a
+                      href="#pricing"
+                      title="Ценообразование"
+                      @click.prevent="scrollTo(anchors.PRICING_BLOCK, -40)"
+                    >
+                      Ценообразование
+                    </a>
+                    <!-- <a
                       href="#tech"
                       title="Технологии"
                       @click="scrollTo(anchors.OUR_TECH_BLOCK, -50)"
                     >
                       Технологии
-                    </a>
+                    </a> -->
                   </div>
                 </div>
               </div>
@@ -146,9 +146,9 @@
                     >
                       Заказать звонок
                     </a>
-                    <!-- <a href="#" class="btn-footer" @click.prevent="openQuiz">
+                    <a href="#" class="btn-footer" @click.prevent="openQuiz">
                       Заказать КП
-                    </a> -->
+                    </a>
                   </div>
                 </div>
               </div>

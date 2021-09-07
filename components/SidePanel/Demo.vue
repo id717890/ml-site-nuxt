@@ -3,15 +3,24 @@
     class="cd-panel cd-panel--from-right js-cd-panel-main"
     :class="{ ' cd-panel--is-visible': showPanel }"
   >
-    <div class="cd-panel__header px-4 pt-1 pb-1">
+    <div class="cd-panel__header px-4 pt-1 pb-1" style="border: none">
       <p class="flex-grow-1 px-4"></p>
 
       <i class="fa fa-times close my-times" @click="togglePanel"></i>
     </div>
 
     <div class="cd-panel__container">
-      <div class="cd-panel__content px-4 py-3">
-        <p>
+      <div
+        class="
+          cd-panel__content
+          px-4
+          py-3
+          d-flex
+          flex-column
+          justify-content-center
+        "
+      >
+        <p class="text-center demo-text">
           Дорогой друг! Спасибо за интерес<br />к нашему продукту. Заполни,
           пожалуйста, форму, и мы вышлем тестовый доступ в систему!
         </p>
@@ -79,7 +88,7 @@
           </div>
 
           <div class="form__form-select form-block">
-            <p>
+            <p style="font-weight: 300" class="demo-text">
               Нажимая кнопку, вы даете согласие <br />
               на
               <a
@@ -158,7 +167,11 @@ export default {
         }
       )
     },
-
+    clearForm() {
+      this.name = null
+      this.phone = null
+      this.email = null
+    },
     async sendRequest() {
       this.loading = true
       this.submit = true
@@ -175,10 +188,17 @@ export default {
       })
       this.loading = false
       if (result) {
-        this.$emit('close')
+        // this.$emit('close')
         this.$modal.show(ModalMessage, {}, this.$const.MODAL_SETTINGS)
       }
     },
   },
 }
 </script>
+
+<style scoped>
+.demo-text {
+  font-size: 1rem;
+  color: #7f7f7f;
+}
+</style>
