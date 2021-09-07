@@ -35,7 +35,7 @@
           </div>
           <div class="img">
             <img
-              src="/img/funnel.png"
+              src="/img/funnel3.png"
               alt="Проводим работу с клиентами по единому общему сценарию механик"
             />
           </div>

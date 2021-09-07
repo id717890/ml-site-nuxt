@@ -14,3 +14,5 @@ export default {
 }
 
 export const SHOW_SIDE_PANEL = 'SHOW_SIDE_PANEL'
+
+export const SET_SIDE_PANEL_PAGE = 'SET_SIDE_PANEL_PAGE'

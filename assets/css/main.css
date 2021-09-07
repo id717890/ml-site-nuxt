@@ -57,7 +57,7 @@ body {
 }
 
 .app-wrapper {
-    min-width: 1020px;
+    /* min-width: 1020px; */
 }
 
 #app {
@@ -128,7 +128,7 @@ body {
 }
 
 .header {
-    /* border-bottom: 1px solid #EAEAEA; */
+    border-bottom: 1px solid #EAEAEA;
     background-color: #FFFFFF;
     position: fixed;
     width: 100%;
@@ -1379,8 +1379,8 @@ body {
     /* background-color: #F0F2F2; */
     background-color: #f8f8f8;
     /* color: #fff; */
-    /* color: #7f7f7f; */
-    color: black;
+    color: #7f7f7f;
+    /* color: black; */
     padding: 28px 0 0;
     margin-top: auto;
 }

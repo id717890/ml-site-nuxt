@@ -1,6 +1,7 @@
 .ml-burger {
   font-size: 1.6rem;
-  display: none;
+  display: block;
+  position: relative;
   cursor: pointer;
   color: lightgray;
 }
@@ -16,6 +17,9 @@
 @media only screen and (min-width: 0) and (max-width: 767.98px) {
   .ml-burger {
     display: block;
+    position: fixed;
+    top: 25px;
+    left: 25px;
   }
 }
 
@@ -67,6 +71,8 @@ Slide In Panel - by CodyHouse.co
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   height: 100%;
   width: 100%;
   visibility: hidden;
@@ -75,6 +81,7 @@ Slide In Panel - by CodyHouse.co
   z-index: 100;
   display: flex;
   flex-flow: column;
+  align-items: flex-end;
 }
 
 .cd-panel::after {
@@ -173,27 +180,7 @@ Slide In Panel - by CodyHouse.co
   /* transform: translateY(0px); */
 }
 
-@media only screen and (min-width: 768px) {
-  .cd-panel__header {
-    /* width: 70%; */
-    width: 100%;
-  }
 
-  .cd-panel__footer {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .cd-panel__header {
-    /* width: 50%; */
-    width: 100%;
-  }
-
-  .cd-panel__footer {
-    width: 100%;
-  }
-}
 
 .cd-panel__close {
   position: absolute;
@@ -360,20 +347,6 @@ Slide In Panel - by CodyHouse.co
   transition-delay: 0s;
 }
 
-@media only screen and (min-width: 768px) {
-  .cd-panel__container {
-    /* width: 70%; */
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  .cd-panel__container {
-    /* width: 50%; */
-    width: 100%;
-  }
-}
-
 .cd-panel__content {
   position: absolute;
   top: 0;
@@ -401,6 +374,24 @@ Slide In Panel - by CodyHouse.co
   .cd-panel__content p {
     font-size: 1.6rem;
     line-height: 1.6;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-panel__header,
+  .cd-panel__container,
+  .cd-panel__footer {
+    width: 580px;
+    /* width: 100%; */
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-panel__header,
+  .cd-panel__container,
+  .cd-panel__footer {
+    width: 500px;
+    /* width: 100%; */
   }
 }
 

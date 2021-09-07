@@ -25,3 +25,7 @@ export const anchors = {
   FAQ_BLOCK: 'faq-block',
   OUR_TECH_BLOCK: 'our-tech-block',
 }
+
+export const SIDE_PANEL_MENU_PAGE = 'SIDE_PANEL_MENU_PAGE'
+export const SIDE_PANEL_CALL_PAGE = 'SIDE_PANEL_CALL_PAGE'
+export const SIDE_PANEL_DEMO_PAGE = 'SIDE_PANEL_DEMO_PAGE'

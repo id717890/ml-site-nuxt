@@ -43,17 +43,22 @@
           </nuxt-link>
         </div>
         <div class="info">
-          <p>Больше, чем система лояльности</p>
+          <p style="white-space: nowrap">Больше, чем система лояльности</p>
         </div>
         <div class="btn_block flex flex-grow-0">
-          <button type="button" class="btn bg_tr btn-order" @click="openQuiz">
+          <button
+            type="button"
+            class="btn bg_tr btn-order"
+            style="white-space: nowrap"
+            @click="openQuiz"
+          >
             Заказать КП
           </button>
           <button
             type="button"
             class="btn btn-demo me-0"
             data-open_demo
-            @click="open"
+            @click.prevent="openSidePanelDemo"
           >
             Демо
           </button>
@@ -66,20 +71,30 @@
 <script>
 import { mapMutations } from 'vuex'
 import DemoModal from '~/components/Modal/Demo'
-import { SHOW_SIDE_PANEL } from '~/store/types'
+import { SIDE_PANEL_DEMO_PAGE, SIDE_PANEL_MENU_PAGE } from '~/helpers/constants'
+import { SET_SIDE_PANEL_PAGE, SHOW_SIDE_PANEL } from '~/store/types'
 export default {
   computed: {
     panelShow: (state) => state?.panel?.show,
   },
   methods: {
-    ...mapMutations('panel', [SHOW_SIDE_PANEL]),
+    ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
     tooglePanel() {
-      this[SHOW_SIDE_PANEL](!this.panelShow)
+      this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_MENU_PAGE)
+      setTimeout(() => {
+        this[SHOW_SIDE_PANEL](!this.panelShow)
+      }, 100)
     },
     openQuiz() {
       // TODO перенести в конфиг ID quiz
       // eslint-disable-next-line no-undef
       Marquiz.showModal('5aa97f14ee90d20018523ad6')
+    },
+    openSidePanelDemo() {
+      this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_DEMO_PAGE)
+      setTimeout(() => {
+        this[SHOW_SIDE_PANEL](!this.panelShow)
+      }, 100)
     },
     open() {
       this.$modal.show(

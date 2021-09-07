@@ -202,9 +202,9 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-order" @click="openQuiz">
+      <!-- <button type="button" class="btn btn-order" @click="openQuiz">
         Заказать КП
-      </button>
+      </button> -->
     </div>
   </section>
 </template>
