@@ -85,6 +85,7 @@ export default {
         'faCircle',
         'faBars',
         'faTimes',
+        'faPhone',
       ],
       regular: [],
       light: [],

@@ -115,7 +115,7 @@ import ModalMessage from '~/components/Modal/Message.vue'
 import ModalRules from '~/components/Modal/Rules'
 
 export default {
-  name: 'ModalDemo',
+  name: 'SidePanelPageDemo',
   directives: { mask },
   data: () => ({
     name: null,

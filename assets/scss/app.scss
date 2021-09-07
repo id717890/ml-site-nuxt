@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent !important;
 }
 
-.ml-scroll-top {
+.ml-scroll-top, .ml-call-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,7 +143,12 @@ body::-webkit-scrollbar-thumb {
   transition: all ease-in-out 0.5s;
 }
 
-.ml-scroll-top:hover {
+.ml-call-btn{
+  border-radius: 50%;
+}
+
+.ml-scroll-top:hover,
+.ml-call-btn:hover  {
   background-color: black !important;
 }
 

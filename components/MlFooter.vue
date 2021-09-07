@@ -135,7 +135,7 @@
                 </div>
               </div>
             </div>
-            <div class="container-fluid ps-0 pe-0">
+            <!-- <div class="container-fluid ps-0 pe-0">
               <div class="row">
                 <div class="col-12">
                   <div class="btn-panel">
@@ -152,7 +152,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

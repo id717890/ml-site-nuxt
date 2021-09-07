@@ -17,12 +17,10 @@
       <a
         v-show="showScrollTop"
         href="#"
-        class="ml-scroll-top"
-        @click.prevent="scrollTop"
+        class="ml-call-btn"
+        @click.prevent="openSidePanelCall"
       >
-        <!-- <i class="fa chevron-up"></i> -->
-        <!-- <v-icon>mdi-home</v-icon> -->
-        <fa icon="chevron-up" />
+        <fa icon="phone" />
       </a>
     </div>
   </client-only>
@@ -46,11 +44,14 @@
 
 <script>
 // import Account from 'vue-material-design-icons/Account.vue'
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import { debounce } from 'lodash'
 import MlHeader from '~/components/MlHeader.vue'
 import MlFooter from '~/components/MlFooter.vue'
 import MlSidePanel from '~/components/MlSidePanel.vue'
+import { SET_SIDE_PANEL_PAGE, SHOW_SIDE_PANEL } from '~/store/types'
+import { SIDE_PANEL_CALL_PAGE } from '~/helpers/constants'
+
 const panelCfg = {
   code: '*',
   url: 'https://lkvidget.lctest.ru/',
@@ -102,6 +103,13 @@ export default {
     el?.removeEventListener('wheel', this.debouncedScroll)
   },
   methods: {
+    ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
+    openSidePanelCall() {
+      this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_CALL_PAGE)
+      setTimeout(() => {
+        this[SHOW_SIDE_PANEL](!this.panelShow)
+      }, 100)
+    },
     initPanelLk() {
       ;(function (w, i, d, g, e, t) {
         t = i.createElement(d)
