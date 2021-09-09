@@ -7,13 +7,13 @@
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
-      <!-- <MlHeader /> -->
+      <MlHeader />
       <modals-container />
       <section class="ml-nuxt-router-container">
         <nuxt v-if="!loading" />
         <h1 v-else>Loading...</h1>
       </section>
-      <!-- <MlFooter /> -->
+      <MlFooter />
       <a href="#" class="ml-call-btn" @click.prevent="openSidePanelCall">
         <fa icon="phone" />
       </a>
