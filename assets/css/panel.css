@@ -381,7 +381,7 @@ Slide In Panel - by CodyHouse.co
   .cd-panel__header,
   .cd-panel__container,
   .cd-panel__footer {
-    width: 580px;
+    width: 448px;
     /* width: 100%; */
   }
 }
@@ -390,7 +390,7 @@ Slide In Panel - by CodyHouse.co
   .cd-panel__header,
   .cd-panel__container,
   .cd-panel__footer {
-    width: 500px;
+    width: 448px;
     /* width: 100%; */
   }
 }
