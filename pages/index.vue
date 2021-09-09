@@ -20,51 +20,51 @@
     >
       ref3
     </nuxt-link>
-    <component
+    <!-- <component
       :is="block.component"
       v-for="block in blocks"
       :key="block.id"
       :settings="block"
-    ></component>
+    ></component> -->
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 import { cloneDeep } from 'lodash'
-import MainDefault from '~/components/IndexBlock/Main/Default'
-import PartnersDefault from '~/components/IndexBlock/Partner/Default'
-import PartnersTabAndTag from '~/components/IndexBlock/Partner/TabAndTag'
-import SliderAnd4ImageDefault from '~/components/IndexBlock/SliderAnd4Image/Default'
-import ConvenientDefault from '~/components/IndexBlock/Convenient/Default'
-import TemplateDefault from '~/components/IndexBlock/Template/Default'
-import AlgorithmDefault from '~/components/IndexBlock/Algorithm/Default'
-import AdvertisingDefault from '~/components/IndexBlock/Advertising/Default'
-import ConnectionDefault from '~/components/IndexBlock/Connection/Default'
-import PricingDefault from '~/components/IndexBlock/Pricing/Default'
-import PricingSecond from '~/components/IndexBlock/Pricing/Second'
-import PricingThird from '~/components/IndexBlock/Pricing/Third'
-import FriendDefault from '~/components/IndexBlock/Friend/Default'
-import FriendSecond from '~/components/IndexBlock/Friend/Second'
-import TechDefault from '~/components/IndexBlock/Tech/Default'
+// import MainDefault from '~/components/IndexBlock/Main/Default'
+// import PartnersDefault from '~/components/IndexBlock/Partner/Default'
+// import PartnersTabAndTag from '~/components/IndexBlock/Partner/TabAndTag'
+// import SliderAnd4ImageDefault from '~/components/IndexBlock/SliderAnd4Image/Default'
+// import ConvenientDefault from '~/components/IndexBlock/Convenient/Default'
+// import TemplateDefault from '~/components/IndexBlock/Template/Default'
+// import AlgorithmDefault from '~/components/IndexBlock/Algorithm/Default'
+// import AdvertisingDefault from '~/components/IndexBlock/Advertising/Default'
+// import ConnectionDefault from '~/components/IndexBlock/Connection/Default'
+// import PricingDefault from '~/components/IndexBlock/Pricing/Default'
+// import PricingSecond from '~/components/IndexBlock/Pricing/Second'
+// import PricingThird from '~/components/IndexBlock/Pricing/Third'
+// import FriendDefault from '~/components/IndexBlock/Friend/Default'
+// import FriendSecond from '~/components/IndexBlock/Friend/Second'
+// import TechDefault from '~/components/IndexBlock/Tech/Default'
 export default {
   name: 'HomePage',
   components: {
-    MainDefault,
-    PartnersDefault,
-    PartnersTabAndTag,
-    SliderAnd4ImageDefault,
-    ConvenientDefault,
-    TemplateDefault,
-    AlgorithmDefault,
-    AdvertisingDefault,
-    ConnectionDefault,
-    PricingDefault,
-    PricingSecond,
-    PricingThird,
-    FriendDefault,
-    FriendSecond,
-    TechDefault,
+    // MainDefault,
+    // PartnersDefault,
+    // PartnersTabAndTag,
+    // SliderAnd4ImageDefault,
+    // ConvenientDefault,
+    // TemplateDefault,
+    // AlgorithmDefault,
+    // AdvertisingDefault,
+    // ConnectionDefault,
+    // PricingDefault,
+    // PricingSecond,
+    // PricingThird,
+    // FriendDefault,
+    // FriendSecond,
+    // TechDefault,
   },
   scrollToTop: false,
   head() {
