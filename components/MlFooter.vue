@@ -44,7 +44,7 @@
               src="/img/logo.png"
               alt="Больше чем система лояльности!"
             /> -->
-            <p class="text1 mb-2">Больше чем система лояльности</p>
+            <!-- <p class="text1 mb-2">Больше чем система лояльности</p> -->
             <p class="text14 mb-2">
               <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
             </p>
@@ -109,13 +109,14 @@
                       title="FAQ"
                       @click.prevent="scrollTo(anchors.FAQ_BLOCK, 50)"
                     >
-                      FAQ
+                      Вопросы и ответы
+                      <!-- FAQ -->
                     </a>
                     <a href="#sert" title="Сертификаты">
                       <nuxt-link to="/certificate">Сертификаты</nuxt-link>
                     </a>
                     <a href="#widget" title="Виджет-ЛК">
-                      <nuxt-link to="/widget">Виджет-ЛК</nuxt-link>
+                      <nuxt-link to="/widget">ЛК покупателя</nuxt-link>
                     </a>
                     <a
                       href="#pricing"
@@ -161,7 +162,7 @@
       <div class="container-old">
         <div class="row">
           <div class="col-4">
-            <div class="block1">
+            <div class="block1 ms-0">
               <span class="stat">40%</span>
               <div class="d-flex flex-column">
                 <span style="margin-top: 2px">клиентов пришли</span>

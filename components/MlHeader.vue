@@ -31,7 +31,7 @@
     </section> -->
     <section class="d-block w100">
       <div class="container-old flex header-container py-0 px-0">
-        <fa class="ml-burger" icon="bars" @click.prevent="tooglePanel" />
+        <!-- <fa class="ml-burger" icon="bars" @click.prevent="tooglePanel" /> -->
 
         <div class="logo">
           <nuxt-link to="/">

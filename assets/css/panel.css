@@ -403,5 +403,7 @@ Slide In Panel - by CodyHouse.co
 .cd-panel__content__menu a {
   margin-bottom: 15px;
   color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 

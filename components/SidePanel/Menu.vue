@@ -3,14 +3,15 @@
     class="cd-panel cd-panel--from-right js-cd-panel-main"
     :class="{ ' cd-panel--is-visible': showPanel }"
   >
-    <div class="cd-panel__header px-4 pt-1 pb-1">
-      <img
+    <div class="cd-panel__header px-4 pt-1 pb-1" style="border: none">
+      <!-- <img
         src="/img/logo2.png"
         alt="Больше чем система лояльности!"
         class="img-logo"
         height="45"
       />
-      <p class="flex-grow-1 px-4">Больше чем система лояльности!</p>
+      <p class="flex-grow-1 px-4">Больше чем система лояльности!</p> -->
+      <p class="flex-grow-1 px-4"></p>
       <!-- <v-btn icon class="me-3" @click.prevent="togglePanel">
         <fa class="my-times" icon="times" />
       </v-btn> -->
@@ -118,7 +119,7 @@
       </div>
       <!-- cd-panel__content -->
     </div>
-    <div class="cd-panel__footer px-4 py-3">
+    <div class="cd-panel__footer px-4 py-3 d-none">
       <p>2021 год. Все права защищены ООО ЭМ ЛОЯЛТИ</p>
     </div>
     <!-- cd-panel__container -->

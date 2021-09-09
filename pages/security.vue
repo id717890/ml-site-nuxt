@@ -66,8 +66,7 @@ export default {
   name: 'RulesPage',
   head() {
     return {
-      title:
-        'Согласие на обработку персональных данных - Система лояльноси MLoyalty',
+      title: 'Безопасность и надежность',
       meta: [
         {
           hid: 'description',

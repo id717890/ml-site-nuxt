@@ -121,13 +121,13 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent !important;
 }
 
-.ml-scroll-top, .ml-call-btn {
+.ml-scroll-top, .ml-call-btn, .ml-menu-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 75px;
-  bottom: 100px;
+  // right: 75px;
+  // bottom: 100px;
   background-color: white !important;
   padding: 18px;
   border: 2px solid #000;
@@ -145,10 +145,19 @@ body::-webkit-scrollbar-thumb {
 
 .ml-call-btn{
   border-radius: 50%;
+  right: 75px;
+  bottom: 85px;
+}
+
+.ml-menu-btn{
+  border-radius: 50%;
+  right: 75px;
+  bottom: 150px;
 }
 
 .ml-scroll-top:hover,
-.ml-call-btn:hover  {
+.ml-call-btn:hover,
+.ml-menu-btn:hover {
   background-color: black !important;
 }
 
