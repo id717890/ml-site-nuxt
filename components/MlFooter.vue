@@ -1,6 +1,8 @@
 <template>
-  <footer class="footer">
-    <!-- <div class="container ml-container pb-4">
+  <section>
+    <footer class="ml-footer-mobile">footer-mobile</footer>
+    <footer class="footer ml-footer-desktop">
+      <!-- <div class="container ml-container pb-4">
       <div class="flex">
         <div class="box box_1">
           <router-link to="/">
@@ -35,108 +37,108 @@
         </div>
       </div>
     </div> -->
-    <div class="ml-footer-first">
-      <div class="container-old">
-        <div class="row">
-          <div class="col-4">
-            <!-- <img
+      <div class="ml-footer-first">
+        <div class="container-old">
+          <div class="row">
+            <div class="col-4">
+              <!-- <img
               style="margin-left: -25px"
               src="/img/logo.png"
               alt="Больше чем система лояльности!"
             /> -->
-            <!-- <p class="text1 mb-2">Больше чем система лояльности</p> -->
-            <p class="text14 mb-2">
-              <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
-            </p>
-            <p class="text14 mb-2">
-              <nuxt-link to="/security">Безопасность и надежность</nuxt-link>
-            </p>
-            <p class="text14">
-              © {{ new Date().getFullYear() }}год. Все права защищены.
-            </p>
-            <p class="text14">ООО ЭМ ЛОЯЛТИ</p>
-            <p></p>
-          </div>
-          <div class="col-4">
-            <div class="second-block">
-              <p class="text14 mb-1">Горячая линия</p>
-              <p class="text1 mb-4">8 (499) 990-18-63</p>
-              <p class="text14 mb-1">E-mail</p>
-              <p class="text1 mb-4">info@mloyalty.ru</p>
-              <!-- <p>141503, Московская область, город</p>
+              <!-- <p class="text1 mb-2">Больше чем система лояльности</p> -->
+              <p class="text14 mb-2">
+                <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
+              </p>
+              <p class="text14 mb-2">
+                <nuxt-link to="/security">Безопасность и надежность</nuxt-link>
+              </p>
+              <p class="text14">
+                © {{ new Date().getFullYear() }}год. Все права защищены.
+              </p>
+              <p class="text14">ООО ЭМ ЛОЯЛТИ</p>
+              <p></p>
+            </div>
+            <div class="col-4">
+              <div class="second-block">
+                <p class="text14 mb-1">Горячая линия</p>
+                <p class="text1 mb-4">8 (499) 990-18-63</p>
+                <p class="text14 mb-1">E-mail</p>
+                <p class="text1 mb-4">info@mloyalty.ru</p>
+                <!-- <p>141503, Московская область, город</p>
               <p>Солнечногорск, Набережная улица,</p>
               <p>дом 11 корпус а, помещение 100 офис 2</p> -->
+              </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="third-block">
-              <div class="container-fluid px-0">
-                <div class="row px-0">
-                  <div class="col-12 col-md-6 ancors">
-                    <a
-                      href="https://dev.lctest.ru/Help"
-                      target="_blank"
-                      title="API документация"
-                    >
-                      API документация
-                    </a>
-                    <a
-                      href="#clients"
-                      title="Наши клиенты"
-                      @click.prevent="scrollTo(anchors.PARTNER_BLOCK, 50)"
-                    >
-                      Наши клиенты
-                    </a>
-                    <a
-                      href="#integration"
-                      title="Интеграции"
-                      @click.prevent="scrollTo(anchors.TECH_BLOCK, 50)"
-                    >
-                      Интеграции
-                    </a>
-                    <a
-                      href="#steps"
-                      title="Этапы подключения"
-                      @click.prevent="scrollTo(anchors.CONNECTIONS_BLOCK, 50)"
-                    >
-                      Этапы подключения
-                    </a>
-                  </div>
-                  <div class="col-12 col-md-6 ancors">
-                    <!-- <a href="#dop" title="Доп. услуги">Доп. услуги</a> -->
-                    <a
-                      href="#faq"
-                      title="FAQ"
-                      @click.prevent="scrollTo(anchors.FAQ_BLOCK, 50)"
-                    >
-                      Вопросы и ответы
-                      <!-- FAQ -->
-                    </a>
-                    <a href="#sert" title="Сертификаты">
-                      <nuxt-link to="/certificate">Сертификаты</nuxt-link>
-                    </a>
-                    <a href="#widget" title="Виджет-ЛК">
-                      <nuxt-link to="/widget">ЛК покупателя</nuxt-link>
-                    </a>
-                    <a
-                      href="#pricing"
-                      title="Ценообразование"
-                      @click.prevent="scrollTo(anchors.PRICING_BLOCK, -40)"
-                    >
-                      Ценообразование
-                    </a>
-                    <!-- <a
+            <div class="col-4">
+              <div class="third-block">
+                <div class="container-fluid px-0">
+                  <div class="row px-0">
+                    <div class="col-12 col-md-6 ancors">
+                      <a
+                        href="https://dev.lctest.ru/Help"
+                        target="_blank"
+                        title="API документация"
+                      >
+                        API документация
+                      </a>
+                      <a
+                        href="#clients"
+                        title="Наши клиенты"
+                        @click.prevent="scrollTo(anchors.PARTNER_BLOCK, 50)"
+                      >
+                        Наши клиенты
+                      </a>
+                      <a
+                        href="#integration"
+                        title="Интеграции"
+                        @click.prevent="scrollTo(anchors.TECH_BLOCK, 50)"
+                      >
+                        Интеграции
+                      </a>
+                      <a
+                        href="#steps"
+                        title="Этапы подключения"
+                        @click.prevent="scrollTo(anchors.CONNECTIONS_BLOCK, 50)"
+                      >
+                        Этапы подключения
+                      </a>
+                    </div>
+                    <div class="col-12 col-md-6 ancors">
+                      <!-- <a href="#dop" title="Доп. услуги">Доп. услуги</a> -->
+                      <a
+                        href="#faq"
+                        title="FAQ"
+                        @click.prevent="scrollTo(anchors.FAQ_BLOCK, 50)"
+                      >
+                        Вопросы и ответы
+                        <!-- FAQ -->
+                      </a>
+                      <a href="#sert" title="Сертификаты">
+                        <nuxt-link to="/certificate">Сертификаты</nuxt-link>
+                      </a>
+                      <a href="#widget" title="Виджет-ЛК">
+                        <nuxt-link to="/widget">ЛК покупателя</nuxt-link>
+                      </a>
+                      <a
+                        href="#pricing"
+                        title="Ценообразование"
+                        @click.prevent="scrollTo(anchors.PRICING_BLOCK, -40)"
+                      >
+                        Ценообразование
+                      </a>
+                      <!-- <a
                       href="#tech"
                       title="Технологии"
                       @click="scrollTo(anchors.OUR_TECH_BLOCK, -50)"
                     >
                       Технологии
                     </a> -->
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- <div class="container-fluid ps-0 pe-0">
+              <!-- <div class="container-fluid ps-0 pe-0">
               <div class="row">
                 <div class="col-12">
                   <div class="btn-panel">
@@ -154,44 +156,45 @@
                 </div>
               </div>
             </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ml-footer-second">
-      <div class="container-old">
-        <div class="row">
-          <div class="col-4">
-            <div class="block1 ms-0">
-              <span class="stat">40%</span>
-              <div class="d-flex flex-column">
-                <span style="margin-top: 2px">клиентов пришли</span>
-                <span>по рекомендации</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="block2">
-              <span class="stat">30</span>
-              <div class="d-flex flex-column">
-                <span style="margin-top: 2px">регионов</span>
-                <span>присутствия</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="block3">
-              <span class="stat">100%</span>
-              <div class="d-flex flex-column">
-                <span style="margin-top: 2px">собственная</span>
-                <span>разработка</span>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+      <div class="ml-footer-second">
+        <div class="container-old">
+          <div class="row">
+            <div class="col-4">
+              <div class="block1 ms-0">
+                <span class="stat">40%</span>
+                <div class="d-flex flex-column">
+                  <span style="margin-top: 2px">клиентов пришли</span>
+                  <span>по рекомендации</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="block2">
+                <span class="stat">30</span>
+                <div class="d-flex flex-column">
+                  <span style="margin-top: 2px">регионов</span>
+                  <span>присутствия</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="block3">
+                <span class="stat">100%</span>
+                <div class="d-flex flex-column">
+                  <span style="margin-top: 2px">собственная</span>
+                  <span>разработка</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
 </template>
 
 <script>
@@ -236,3 +239,27 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 0) and (max-width: 767.98px) {
+  .ml-footer-mobile {
+    display: block;
+  }
+
+  .ml-footer-desktop {
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .ml-footer-mobile {
+    display: none;
+  }
+
+  .ml-footer-desktop {
+    display: block;
+  }
+}
+</style>

@@ -20,10 +20,12 @@
     >
       ref3
     </nuxt-link>
+    <IndexPageMobile class="index-page-mobile" />
     <component
       :is="block.component"
       v-for="block in blocks"
       :key="block.id"
+      class="index-page-not-mobile"
       :settings="block"
     ></component>
   </div>
@@ -47,6 +49,7 @@ import PricingThird from '~/components/IndexBlock/Pricing/Third'
 import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
+import IndexPageMobile from '~/components/IndexBlock/Mobile/Index.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -65,6 +68,7 @@ export default {
     FriendDefault,
     FriendSecond,
     TechDefault,
+    IndexPageMobile,
   },
   scrollToTop: false,
   head() {
@@ -106,3 +110,31 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.index-page-mobile {
+  margin-top: 100px;
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 0) and (max-width: 767.98px) {
+  .index-page-mobile {
+    display: block;
+  }
+
+  .index-page-not-mobile {
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .index-page-mobile {
+    display: none;
+  }
+
+  .index-page-not-mobile {
+    display: block;
+  }
+}
+</style>

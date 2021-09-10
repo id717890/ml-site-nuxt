@@ -19,11 +19,21 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 0) and (max-width: 767.98px) {
+  .ml-menu-btn {
+    right: 20px;
+    bottom: 80px;
+  }
+  .ml-call-btn{
+    right: 20px;
+    bottom: 20px;
+  }
+
   body {
     padding-top: 0 !important;
   }
 
-  .ml-page-cert, .ml-page-widget {
+  .ml-page-cert,
+  .ml-page-widget {
     height: 100vh;
     display: flex;
     flex-grow: 1;
@@ -39,7 +49,8 @@
     width: 100%;
   }
 
-  .btn-order, .btn-demo {
+  .btn-order,
+  .btn-demo {
     // width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -52,6 +63,18 @@
 
   .v--modal-overlay {
     height: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ml-call-btn {
+    right: 75px;
+    bottom: 85px;
+  }
+
+  .ml-menu-btn{
+    right: 75px;
+    bottom: 150px;
   }
 }
 
@@ -79,7 +102,6 @@
 // // // Small devices (landscape phones, 576px and up)
 // // @media (min-width: 576px) and (max-width: 767.98px) {
 // // }
-
 
 // // // Medium devices (tablets, 768px and up)
 // // @media (min-width: 768px) and (max-width: 991.98px) {

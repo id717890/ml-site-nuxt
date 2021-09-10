@@ -1,38 +1,20 @@
 <template>
   <header class="header">
-    <!-- <section class="d-block d-sm-block d-md-none w100">
-      <div class="header-mobile">
-        <nuxt-link to="/">
-          <img
-            src="/img/logo2.png"
-            alt="Больше чем система лояльности!"
-            class="img-logo"
-          />
-        </nuxt-link>
-        <div class="info mb-3">
-          <p>Больше, чем система лояльности</p>
-        </div>
-        <button
-          type="button"
-          class="btn bg_tr btn-order mb-3 my-0 ms-0"
-          @click="openQuiz"
-        >
-          Заказать КП
-        </button>
-        <button
-          type="button"
-          class="btn btn-demo mb-1 my-0 ms-0"
-          data-open_demo
-          @click="open"
-        >
-          Демо
-        </button>
+    <section class="ml-header-mobile px-3 py-2">
+      <nuxt-link to="/">
+        <img
+          src="/img/mobile/logo-mobile.png"
+          alt="Больше чем система лояльности!"
+        />
+      </nuxt-link>
+      <div class="flex-grow-1 ps-3 text-center">
+        <p>Создаём и обслуживаем</p>
+        <p>проограммы лояльности!</p>
       </div>
-    </section> -->
-    <section class="d-block w100">
+      <img src="/img/mobile/burger-mobile.svg" alt="Вызвать меню" />
+    </section>
+    <section class="ml-header-desktop w100">
       <div class="container-old flex header-container py-0 px-0">
-        <!-- <fa class="ml-burger" icon="bars" @click.prevent="tooglePanel" /> -->
-
         <div class="logo">
           <nuxt-link to="/">
             <img
@@ -111,10 +93,28 @@ export default {
 </script>
 
 <style lang="scss">
-.header-mobile {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  padding: 20px;
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 0) and (max-width: 767.98px) {
+  .ml-header-mobile {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .ml-header-desktop {
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .ml-header-mobile {
+    display: none;
+  }
+
+  .ml-header-desktop {
+    display: block;
+  }
 }
 </style>

@@ -1,0 +1,30 @@
+.ml-text-16-300 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+.ml-text-18-500 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+.ml-text-18-700 {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -22,6 +22,7 @@ export default {
     '~/assets/scss/app.scss',
     '~/assets/css/main.css',
     '~/assets/css/panel.css',
+    '~/assets/css/ml-texts.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
