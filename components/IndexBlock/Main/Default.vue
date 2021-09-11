@@ -1,5 +1,10 @@
 <template>
   <section class="platform">
+    <!-- <section class="main-block-mobile">
+      <MainMobile />
+      <NavBtns />
+      <FunctionAndConnection />
+    </section> -->
     <div class="container-old ml-container">
       <!-- eslint-disable-next-line -->
       <h1 class="title_2" v-if="title1" v-html="title1">
@@ -148,8 +153,17 @@
 </template>
 
 <script>
+// import MainMobile from '~/components/IndexBlock/Mobile/components/Main.vue'
+// import NavBtns from '~/components/IndexBlock/Mobile/components/NavBtns.vue'
+// import FunctionAndConnection from '~/components/IndexBlock/Mobile/components/FunctionAndConnection.vue'
+
 export default {
   name: 'MainBlockDefault',
+  components: {
+    // MainMobile,
+    // NavBtns,
+    // FunctionAndConnection,
+  },
   props: {
     settings: {
       type: Object,
@@ -169,3 +183,29 @@ export default {
   },
 }
 </script>
+
+//
+<style lang="scss">
+// // Medium devices (tablets, 768px and up)
+// @media only screen and (min-width: 0) and (max-width: 767.98px) {
+//   .main-block-mobile {
+//     display: block;
+//   }
+
+//   .main-block-desktop {
+//     display: none;
+//   }
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media only screen and (min-width: 768px) {
+//   .main-block-mobile {
+//     display: none;
+//   }
+
+//   .main-block-desktop {
+//     display: block;
+//   }
+// }
+//
+</style>

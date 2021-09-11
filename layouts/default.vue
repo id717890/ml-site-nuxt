@@ -42,13 +42,14 @@
 
 <script>
 // import Account from 'vue-material-design-icons/Account.vue'
-import { mapState, mapMutations } from 'vuex'
+import { mapState } from 'vuex'
 // import { debounce } from 'lodash'
 import MlHeader from '~/components/MlHeader.vue'
 import MlFooter from '~/components/MlFooter.vue'
 import MlSidePanel from '~/components/MlSidePanel.vue'
-import { SET_SIDE_PANEL_PAGE, SHOW_SIDE_PANEL } from '~/store/types'
-import { SIDE_PANEL_CALL_PAGE, SIDE_PANEL_MENU_PAGE } from '~/helpers/constants'
+// import { SET_SIDE_PANEL_PAGE, SHOW_SIDE_PANEL } from '~/store/types'
+// import { SIDE_PANEL_CALL_PAGE, SIDE_PANEL_MENU_PAGE } from '~/helpers/constants'
+import MixinSidePanel from '~/helpers/mixins/sidePanel'
 
 const panelCfg = {
   code: '*',
@@ -64,6 +65,7 @@ export default {
     MlFooter,
     MlSidePanel,
   },
+  mixins: [MixinSidePanel],
   middleware: ['cfg', 'jwt', 'client/redirect'],
   data: () => ({
     // showScrollTop: false,
@@ -101,25 +103,25 @@ export default {
   //   el?.removeEventListener('wheel', this.debouncedScroll)
   // },
   methods: {
-    ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
+    // ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
     // tooglePanel() {
     //   this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_MENU_PAGE)
     //   setTimeout(() => {
     //     this[SHOW_SIDE_PANEL](!this.panelShow)
     //   }, 100)
     // },
-    openSidePanelCall() {
-      this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_CALL_PAGE)
-      setTimeout(() => {
-        this[SHOW_SIDE_PANEL](!this.panelShow)
-      }, 100)
-    },
-    openSidePanelMenu() {
-      this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_MENU_PAGE)
-      setTimeout(() => {
-        this[SHOW_SIDE_PANEL](!this.panelShow)
-      }, 100)
-    },
+    // openSidePanelCall() {
+    //   this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_CALL_PAGE)
+    //   setTimeout(() => {
+    //     this[SHOW_SIDE_PANEL](!this.panelShow)
+    //   }, 100)
+    // },
+    // openSidePanelMenu() {
+    //   this[SET_SIDE_PANEL_PAGE](SIDE_PANEL_MENU_PAGE)
+    //   setTimeout(() => {
+    //     this[SHOW_SIDE_PANEL](!this.panelShow)
+    //   }, 100)
+    // },
     initPanelLk() {
       ;(function (w, i, d, g, e, t) {
         t = i.createElement(d)

@@ -1,6 +1,6 @@
 <template>
   <section class="result partners-block">
-    <div class="container-old">
+    <div class="container-old partner-desktop">
       <div class="title_1">Нам доверяют и получают результат</div>
       <div v-if="tags" class="partner-filter-tag container-old v-application">
         <a

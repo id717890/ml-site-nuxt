@@ -11,7 +11,11 @@
         <p>Создаём и обслуживаем</p>
         <p>проограммы лояльности!</p>
       </div>
-      <img src="/img/mobile/burger-mobile.svg" alt="Вызвать меню" />
+      <img
+        src="/img/mobile/burger-mobile.svg"
+        alt="Вызвать меню"
+        @click.prevent="openSidePanelMenu"
+      />
     </section>
     <section class="ml-header-desktop w100">
       <div class="container-old flex header-container py-0 px-0">
@@ -55,7 +59,11 @@ import { mapMutations } from 'vuex'
 import DemoModal from '~/components/Modal/Demo'
 import { SIDE_PANEL_DEMO_PAGE, SIDE_PANEL_MENU_PAGE } from '~/helpers/constants'
 import { SET_SIDE_PANEL_PAGE, SHOW_SIDE_PANEL } from '~/store/types'
+import MixinSidePanel from '~/helpers/mixins/sidePanel'
+
 export default {
+  name: 'MlHeader',
+  mixins: [MixinSidePanel],
   computed: {
     panelShow: (state) => state?.panel?.show,
   },

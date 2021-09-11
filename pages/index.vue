@@ -1,26 +1,6 @@
 <template>
   <div>
-    <nuxt-link
-      class="d-none"
-      to="/коалиционная-программа-лояльности-пожалуйста.html"
-      title="коалиционная программа лояльности пожалуйста"
-    >
-      ref1
-    </nuxt-link>
-    <nuxt-link
-      class="d-none"
-      to="/программа-лояльности-m5-bonus.html"
-      title="программа лояльности M5 bonus"
-      >ref2</nuxt-link
-    >
-    <nuxt-link
-      class="d-none"
-      to="/программа-лояльности-сладкоежкам-везёт.html"
-      title="программа лояльности сладкоежкам везёт"
-    >
-      ref3
-    </nuxt-link>
-    <IndexPageMobile class="index-page-mobile" />
+    <!-- <IndexPageMobile class="index-page-mobile" /> -->
     <component
       :is="block.component"
       v-for="block in blocks"
@@ -28,6 +8,14 @@
       class="index-page-not-mobile"
       :settings="block"
     ></component>
+    <component
+      :is="block.component"
+      v-for="block in blocksMobile"
+      :key="block.id"
+      class="index-page-mobile"
+      :settings="block"
+    ></component>
+    <IndexingLinks />
   </div>
 </template>
 
@@ -50,6 +38,11 @@ import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
 import IndexPageMobile from '~/components/IndexBlock/Mobile/Index.vue'
+import MainMobileDefault from '~/components/IndexBlock/Mobile/components/Main.vue'
+import NavBtnsMobileDefault from '~/components/IndexBlock/Mobile/components/NavBtns.vue'
+import FunctionAndConnectionMobielDefault from '~/components/IndexBlock/Mobile/components/FunctionAndConnection.vue'
+import PartnerMobileDefault from '~/components/IndexBlock/Partner/Mobile/Default.vue'
+import IndexingLinks from '~/components/IndexingLinks.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -68,7 +61,12 @@ export default {
     FriendDefault,
     FriendSecond,
     TechDefault,
+    IndexingLinks,
     IndexPageMobile,
+    MainMobileDefault,
+    NavBtnsMobileDefault,
+    FunctionAndConnectionMobielDefault,
+    PartnerMobileDefault,
   },
   scrollToTop: false,
   head() {
@@ -87,6 +85,23 @@ export default {
     ...mapState({
       config: (state) => state?.app?.config,
     }),
+    blocksMobile() {
+      const buffer = cloneDeep(this.config?.indexBlocksMobile)
+      buffer?.sort((a, b) => {
+        if (a?.order < b?.order) {
+          return -1
+        }
+        if (a?.order > b?.order) {
+          return 1
+        }
+        return 0
+      })
+      return buffer?.map((x) => {
+        // x.component = null
+        x.component = `${x.name}${x.style}`
+        return x
+      })
+    },
     blocks() {
       const buffer = cloneDeep(this.config?.indexBlocks)
       buffer?.sort((a, b) => {
@@ -112,9 +127,8 @@ export default {
 </script>
 
 <style lang="scss">
-.index-page-mobile {
-  margin-top: 100px;
-}
+// .index-page-mobile {
+// }
 
 // Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 0) and (max-width: 767.98px) {
