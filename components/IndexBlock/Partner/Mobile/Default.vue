@@ -1,5 +1,5 @@
 <template>
-  <div class="w100 px-4">
+  <div class="w100 px-4 partners-block-mobile">
     <p class="ml-text-28-700 mb-2 mt-4">Нам доверяют и получают результат</p>
     <div v-if="tags" class="v-application partner-filter-tag-mobile">
       <a

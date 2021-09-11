@@ -10,9 +10,10 @@ export default {
     ...mapMutations('app', [types.SET_APP_GLOBAL_LOADING]),
     scrollTo(anchor, offset = null) {
       const isMobile = this.$helper.isMobile()
+      const anchorBlock = isMobile ? `${anchor}-mobile` : anchor
       function scrolling() {
-        const scrollEl = document.querySelector(`.${anchor}`)
-        if (scrollEl && scrollEl?.offsetTop) {
+        const scrollEl = document.querySelector(`.${anchorBlock}`)
+        if (scrollEl) {
           let top
           if (isMobile) {
             top = scrollEl?.offsetTop - 50

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-4">
+  <div class="px-4 pt-4 mb-5">
     <div class="quiz-mobile">
       <p class="quiz-mobile_title mb-3">
         Хотите точно знать сроки и стоимость по Вашему запросу?

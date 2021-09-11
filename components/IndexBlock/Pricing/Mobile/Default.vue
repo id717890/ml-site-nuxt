@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 pt-4">
+  <div class="px-4 pt-4 pricing-block-mobile">
     <div class="ml-text-28-700 mb-2">Ценообразование</div>
     <div class="d-flex flex-row flex-wrap">
       <a
@@ -195,6 +195,10 @@ export default {
   tbody {
     td {
       vertical-align: middle;
+
+      p {
+        text-align: center;
+      }
     }
 
     td:nth-child(1) {
