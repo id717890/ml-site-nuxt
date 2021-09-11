@@ -45,6 +45,7 @@ import FunctionAndConnectionMobielDefault from '~/components/IndexBlock/Mobile/c
 import PartnerMobileDefault from '~/components/IndexBlock/Partner/Mobile/Default.vue'
 import TemplateMobileDefault from '~/components/IndexBlock/Template/Mobile/Default.vue'
 import FriendMobileDefault from '~/components/IndexBlock/Friend/Mobile/Default.vue'
+import PricingMobileDefault from '~/components/IndexBlock/Pricing/Mobile/Default.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -71,6 +72,7 @@ export default {
     PartnerMobileDefault,
     TemplateMobileDefault,
     FriendMobileDefault,
+    PricingMobileDefault,
   },
   scrollToTop: false,
   head() {
