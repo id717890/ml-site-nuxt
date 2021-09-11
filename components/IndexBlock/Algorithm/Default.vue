@@ -1,6 +1,6 @@
 <template>
   <section class="algorithms">
-    <AlgorithmMobile class="algorithm-mobile" />
+    <!-- <AlgorithmMobile class="algorithm-mobile" /> -->
     <div class="container-old algorithm-desktop">
       <div class="title_2">
         Основной алгоритм работы <br />
@@ -72,11 +72,11 @@
 </template>
 
 <script>
-import AlgorithmMobile from '~/components/IndexBlock/Algorithm/Mobile/Default.vue'
+// import AlgorithmMobile from '~/components/IndexBlock/Algorithm/Mobile/Default.vue'
 export default {
   name: 'AlgorithmBlockDefault',
   components: {
-    AlgorithmMobile,
+    // AlgorithmMobile,
   },
 }
 </script>

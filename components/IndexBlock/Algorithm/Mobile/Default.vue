@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="algorithms w100 algorithm-mobile">
     <div class="d-flex flex-column align-items-center">
       <p class="ml-text-18-700 mb-4">
         Основной алгоритм работы <br />

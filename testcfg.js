@@ -22,6 +22,7 @@ export default {
     { id: 104, order: 4, name: 'PartnerMobile', style: 'Default', anchor: 'partners-block-mobile', ...partnersCfg },
     // prettier-ignore
     { id: 103, order: 3, name: 'FunctionAndConnectionMobiel', style: 'Default', },
+    { id: 111, order: 3, name: 'AlgorithmMobile', style: 'Default' },
   ],
   indexBlocks: [
     {

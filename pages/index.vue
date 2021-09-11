@@ -38,16 +38,17 @@ import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
 import IndexingLinks from '~/components/IndexingLinks.vue'
-import IndexPageMobile from '~/components/IndexBlock/Mobile/Index.vue'
-import MainMobileDefault from '~/components/IndexBlock/Mobile/components/Main.vue'
-import NavBtnsMobileDefault from '~/components/IndexBlock/Mobile/components/NavBtns.vue'
-import FunctionAndConnectionMobielDefault from '~/components/IndexBlock/Mobile/components/FunctionAndConnection.vue'
+// import IndexPageMobile from '~/components/IndexBlock/Main/Mobile/Index.vue'
+import MainMobileDefault from '~/components/IndexBlock/Main/Mobile/Default.vue'
+import NavBtnsMobileDefault from '~/components/IndexBlock/Main/Mobile/NavBtns.vue'
+import FunctionAndConnectionMobielDefault from '~/components/IndexBlock/Main/Mobile/FunctionAndConnection.vue'
 import PartnerMobileDefault from '~/components/IndexBlock/Partner/Mobile/Default.vue'
 import TemplateMobileDefault from '~/components/IndexBlock/Template/Mobile/Default.vue'
 import FriendMobileDefault from '~/components/IndexBlock/Friend/Mobile/Default.vue'
 import PricingMobileDefault from '~/components/IndexBlock/Pricing/Mobile/Default.vue'
 import QuizMobileDefault from '~/components/IndexBlock/Quiz/Mobile/Default.vue'
 import TechMobileDefault from '~/components/IndexBlock/Tech/Mobile/Default.vue'
+import AlgorithmMobileDefault from '~/components/IndexBlock/Algorithm/Mobile/Default.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -67,7 +68,7 @@ export default {
     FriendSecond,
     TechDefault,
     IndexingLinks,
-    IndexPageMobile,
+    // IndexPageMobile,
     MainMobileDefault,
     NavBtnsMobileDefault,
     FunctionAndConnectionMobielDefault,
@@ -77,6 +78,7 @@ export default {
     PricingMobileDefault,
     QuizMobileDefault,
     TechMobileDefault,
+    AlgorithmMobileDefault,
   },
   scrollToTop: false,
   head() {
