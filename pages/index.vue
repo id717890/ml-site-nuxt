@@ -37,12 +37,13 @@ import PricingThird from '~/components/IndexBlock/Pricing/Third'
 import FriendDefault from '~/components/IndexBlock/Friend/Default'
 import FriendSecond from '~/components/IndexBlock/Friend/Second'
 import TechDefault from '~/components/IndexBlock/Tech/Default'
+import IndexingLinks from '~/components/IndexingLinks.vue'
 import IndexPageMobile from '~/components/IndexBlock/Mobile/Index.vue'
 import MainMobileDefault from '~/components/IndexBlock/Mobile/components/Main.vue'
 import NavBtnsMobileDefault from '~/components/IndexBlock/Mobile/components/NavBtns.vue'
 import FunctionAndConnectionMobielDefault from '~/components/IndexBlock/Mobile/components/FunctionAndConnection.vue'
 import PartnerMobileDefault from '~/components/IndexBlock/Partner/Mobile/Default.vue'
-import IndexingLinks from '~/components/IndexingLinks.vue'
+import TemplateMobileDefault from '~/components/IndexBlock/Template/Mobile/Default.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -67,6 +68,7 @@ export default {
     NavBtnsMobileDefault,
     FunctionAndConnectionMobielDefault,
     PartnerMobileDefault,
+    TemplateMobileDefault,
   },
   scrollToTop: false,
   head() {
