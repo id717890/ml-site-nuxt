@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5">
+  <div class="px-4">
     <BorderedBlock class="pt-20 px-20 mb-4">
       <div class="d-flex flex-column">
         <p class="ml-text-18-700 mb-4">

@@ -1,6 +1,6 @@
 <template>
   <div class="w100 px-4">
-    <p class="ml-text-18-700 mb-2">Нам доверяют и получают результат</p>
+    <p class="ml-text-18-700 mb-2 mt-4">Нам доверяют и получают результат</p>
     <div v-if="tags" class="v-application partner-filter-tag-mobile">
       <a
         v-for="tag in tags"
