@@ -7,6 +7,7 @@ export default {
     // prettier-ignore
     { id: 101, order: 1, name: 'MainMobile', style: 'Default', },
     // { id: 102, order: 2, name: 'NavBtnsMobile', style: 'Default' },
+    { id: 108, order: 8, name: 'QuizMobile', style: 'Default' },
     { id: 107, order: 7, name: 'PricingMobile', style: 'Default' },
     // prettier-ignore
     { id: 106, order: 6, name: 'FriendMobile', style: 'Default', ...friendsCfg, },

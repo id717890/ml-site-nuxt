@@ -46,6 +46,7 @@ import PartnerMobileDefault from '~/components/IndexBlock/Partner/Mobile/Default
 import TemplateMobileDefault from '~/components/IndexBlock/Template/Mobile/Default.vue'
 import FriendMobileDefault from '~/components/IndexBlock/Friend/Mobile/Default.vue'
 import PricingMobileDefault from '~/components/IndexBlock/Pricing/Mobile/Default.vue'
+import QuizMobileDefault from '~/components/IndexBlock/Quiz/Mobile/Default.vue'
 export default {
   name: 'HomePage',
   components: {
@@ -73,6 +74,7 @@ export default {
     TemplateMobileDefault,
     FriendMobileDefault,
     PricingMobileDefault,
+    QuizMobileDefault,
   },
   scrollToTop: false,
   head() {
