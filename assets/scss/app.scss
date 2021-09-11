@@ -286,6 +286,11 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
 }
 
+.partner-filter-tag-mobile {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .not-valid {
   border: 1px solid red !important;
 }

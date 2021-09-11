@@ -1,6 +1,6 @@
 <template>
   <div class="w100 px-4">
-    <p class="ml-text-18-700 mb-2 mt-4">Нам доверяют и получают результат</p>
+    <p class="ml-text-28-700 mb-2 mt-4">Нам доверяют и получают результат</p>
     <div v-if="tags" class="v-application partner-filter-tag-mobile">
       <a
         v-for="tag in tags"
@@ -246,7 +246,8 @@ export default {
   height: 400px;
 }
 
-.partner-filter-tag-mobile {
+.partner-filter-tag-mobile,
+.friend-filter-tag-mobile {
   display: flex;
   flex-flow: row wrap;
 
@@ -259,7 +260,7 @@ export default {
     background: #ebebeb;
     border-radius: 20px;
     color: #808080;
-    font-size: 12px;
+    font-size: 1rem;
   }
 
   .btn-tag.active {
