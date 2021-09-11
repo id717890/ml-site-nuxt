@@ -112,6 +112,7 @@ export default {
       /madals-container.*/,
       /v-application.*/,
       /partner-filter-tag.*/,
+      /swiper.*/,
     ],
   },
 
