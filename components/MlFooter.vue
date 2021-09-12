@@ -1,42 +1,42 @@
 <template>
   <section>
-    <footer class="ml-footer-mobile">footer-mobile</footer>
-    <footer class="footer ml-footer-desktop">
-      <!-- <div class="container ml-container pb-4">
-      <div class="flex">
-        <div class="box box_1">
-          <router-link to="/">
-            <img src="/img/logo.png" alt="Больше чем система лояльности!" />
-          </router-link>
-          <div class="copi">
-            © {{ new Date().getFullYear() }} Все права защищены
+    <footer class="footer ml-footer-mobile">
+      <div class="ml-footer-first px-5 py-5 mb-5 text-center">
+        здесь будет другой футер
+      </div>
+      <div class="ml-footer-second">
+        <div class="d-flex flex-column">
+          <div class="py-2">
+            <div class="block1 ms-0">
+              <span class="stat">40%</span>
+              <div class="txt">
+                <span style="margin-top: 2px">клиентов пришли</span>
+                <span>по рекомендации</span>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="box box_2">
-          <div class="btn_block flex d-flex justify-content-center">
-            <button
-              type="button"
-              class="btn bg_tr btn-order"
-              @click="openCallModal"
-            >
-              Заказать звонок
-            </button>
+          <div class="py-2">
+            <div class="block2 px-0">
+              <span class="stat">30</span>
+              <div class="txt">
+                <span style="margin-top: 2px">регионов</span>
+                <span>присутствия</span>
+              </div>
+            </div>
           </div>
-          <a href="#" title="Подробнее" class="pers" @click.prevent="openLink">
-            Обработка персональных данных
-          </a>
-        </div>
-        <div class="box box_3">
-          <div class="title_footer">Контактная информация:</div>
-          <a href="tel:+74999901863" class="tel" title="Позвонить"
-            >+7 (499) 990-18-63</a
-          >
-          <a href="mailto:info@mloyalty.ru" class="mail" title="Написать письмо"
-            >info@mloyalty.ru</a
-          >
+          <div class="py-2">
+            <div class="block3">
+              <span class="stat">100%</span>
+              <div class="txt">
+                <span style="margin-top: 2px">собственная</span>
+                <span>разработка</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div> -->
+    </footer>
+    <footer class="footer ml-footer-desktop">
       <div class="ml-footer-first">
         <div class="container-old">
           <div class="row">
@@ -245,6 +245,24 @@ export default {
 @media only screen and (min-width: 0) and (max-width: 767.98px) {
   .ml-footer-mobile {
     display: block;
+
+    .ml-footer-second {
+      .block1,
+      .block2,
+      .block3 {
+        justify-content: center;
+        .stat {
+          flex-basis: 90px;
+          text-align: right;
+        }
+
+        .txt {
+          display: flex;
+          flex-flow: column;
+          flex-basis: 140px;
+        }
+      }
+    }
   }
 
   .ml-footer-desktop {
