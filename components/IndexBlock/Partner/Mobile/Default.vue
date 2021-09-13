@@ -1,7 +1,7 @@
 <template>
   <div class="w100 px-4 partners-block-mobile">
-    <p class="ml-text-28-700 mb-2 mt-4">Нам доверяют и получают результат</p>
-    <div v-if="tags" class="v-application partner-filter-tag-mobile">
+    <p class="ml-text-28-700 mb-2 mt-4">Наши клиенты</p>
+    <!-- <div v-if="tags" class="v-application partner-filter-tag-mobile">
       <a
         v-for="tag in tags"
         :key="tag.id"
@@ -13,10 +13,7 @@
       >
         {{ tag.name }}
       </a>
-      <!-- <v-btn title="Сбросить фильтры" icon @click="clearFilter">
-        <fa icon="redo" />
-      </v-btn> -->
-    </div>
+    </div> -->
     <div>
       <swiper
         ref="swiper-partners"
@@ -26,7 +23,7 @@
         <swiper-slide v-for="partner in slidesOfPartners" :key="partner.id">
           <BorderedBlock
             class="pt-20 pb-20 px-20 position-relative d-flex flex-column"
-            style="height: 360px"
+            style="height: 360px; border: none"
           >
             <div class="partner-slide-block">
               <div class="image">
@@ -66,14 +63,15 @@
               <div class="desc mb-3">
                 {{ partner.description }}
               </div>
-              <a
+              <!-- <a
                 href="#"
                 class="link btn bg_tr"
                 title="Подробнее"
                 rel="nofollow"
                 @click.prevent="openInfo(partner)"
-                >Подробнее</a
               >
+                Подробнее
+              </a> -->
               <!-- <router-link :to="item.link" class="link btn bg_tr" title="Подробнее" rel="nofollow">Подробнее</router-link> -->
             </div>
           </BorderedBlock>
@@ -251,22 +249,22 @@ export default {
   display: flex;
   flex-flow: row wrap;
 
-  .btn-tag {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3px 8px;
-    background: #ebebeb;
-    border-radius: 20px;
-    color: #808080;
-    font-size: 1rem;
-  }
+  // .btn-tag {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   padding: 3px 8px;
+  //   background: #ebebeb;
+  //   border-radius: 20px;
+  //   color: #808080;
+  //   font-size: 1rem;
+  // }
 
-  .btn-tag.active {
-    border-bottom: none !important;
-    background: #e0e0e0 !important;
-  }
+  // .btn-tag.active {
+  //   border-bottom: none !important;
+  //   background: #e0e0e0 !important;
+  // }
 }
 
 .partner-slide-block {
@@ -291,6 +289,7 @@ export default {
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #ff856f;
+  // background: #ff856f;
+  background: #000;
 }
 </style>

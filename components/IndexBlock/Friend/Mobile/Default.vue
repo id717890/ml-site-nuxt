@@ -1,7 +1,7 @@
 <template>
   <section v-if="settings" class="technology technology-mobile px-4 pt-0">
     <div class="ml-text-28-700 mb-2">{{ settings.title1 }}</div>
-    <div v-if="tags" class="friend-filter-tag-mobile v-application">
+    <div v-if="tags" class="friend-filter-tag-mobile v-application flex-nowrap">
       <a
         v-for="tag in tags"
         :key="tag.id"
@@ -66,7 +66,7 @@ export default {
       { name: 'Рассылки и боты', id: 2, selected: false },
       { name: 'Платежи', id: 3, selected: false },
       { name: 'Crm', id: 4, selected: false },
-      { name: 'Другие', id: 5, selected: false },
+      // { name: 'Другие', id: 5, selected: false },
     ],
   }),
   computed: {
@@ -223,14 +223,14 @@ export default {
 }
 
 .friend-filter-tag-mobile {
-  .btn-tag.active {
-    background: linear-gradient(
-      270deg,
-      #ff5766 0%,
-      #ff856f 100%,
-      #ff856f 100%
-    ) !important;
-    color: white !important;
-  }
+  // .btn-tag.active {
+  //   background: linear-gradient(
+  //     270deg,
+  //     #ff5766 0%,
+  //     #ff856f 100%,
+  //     #ff856f 100%
+  //   ) !important;
+  //   color: white !important;
+  // }
 }
 </style>

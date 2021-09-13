@@ -3,10 +3,14 @@
     class="cd-panel cd-panel--from-right js-cd-panel-main"
     :class="{ ' cd-panel--is-visible': showPanel }"
   >
+    <i
+      class="cd-panel__close fa fa-times close my-times"
+      @click="togglePanel"
+    ></i>
     <div class="cd-panel__header px-4 pt-1 pb-1" style="border: none">
       <p class="flex-grow-1 px-4"></p>
 
-      <i class="fa fa-times close my-times" @click="togglePanel"></i>
+      <!-- <i class="fa fa-times close my-times" @click="togglePanel"></i> -->
     </div>
 
     <div class="cd-panel__container">

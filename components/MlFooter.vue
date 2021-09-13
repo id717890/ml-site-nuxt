@@ -1,10 +1,23 @@
 <template>
   <section>
     <footer class="footer ml-footer-mobile">
-      <div class="ml-footer-first px-5 py-5 mb-5 text-center">
-        Здесь будет другой футер
+      <div class="ml-footer-first px-4 pb-4">
+        <p class="text14 mb-1">Горячая линия</p>
+        <p class="text1 mb-4">8 (499) 990-18-63</p>
+        <p class="text14 mb-1">E-mail</p>
+        <p class="text1 mb-4">info@mloyalty.ru</p>
+        <p class="text14 mb-2">
+          <nuxt-link to="/rules">Обработка персональных данных</nuxt-link>
+        </p>
+        <p class="text14 mb-2">
+          <nuxt-link to="/security">Безопасность и надежность</nuxt-link>
+        </p>
+        <p class="text14">
+          © {{ new Date().getFullYear() }}год. Все права защищены.
+        </p>
+        <p class="text14">ООО ЭМ ЛОЯЛТИ</p>
       </div>
-      <div class="ml-footer-second">
+      <!-- <div class="ml-footer-second">
         <div class="d-flex flex-column">
           <div class="py-2">
             <div class="block1 ms-0">
@@ -34,7 +47,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
     <footer class="footer ml-footer-desktop">
       <div class="ml-footer-first">

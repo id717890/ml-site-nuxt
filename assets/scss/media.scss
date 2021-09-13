@@ -20,14 +20,14 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 0) and (max-width: 767.98px) {
   .ml-menu-btn {
-    display: none !important;
-    // right: 20px;
-    // bottom: 80px;
+    // display: none !important;
+    right: 20px;
+    bottom: 80px;
   }
   .ml-call-btn{
-    display: none !important;
-    // right: 20px;
-    // bottom: 20px;
+    // display: none !important;
+    right: 20px;
+    bottom: 20px;
   }
 
   body {

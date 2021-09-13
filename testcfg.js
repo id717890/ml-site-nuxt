@@ -8,20 +8,20 @@ export default {
   indexBlocksMobile: [
     // prettier-ignore
     { id: 101, order: 1, name: 'MainMobile', style: 'Default', },
-    { id: 102, order: 2, name: 'NavBtnsMobile', style: 'Default' },
+    // { id: 102, order: 2, name: 'NavBtnsMobile', style: 'Default' },
     // prettier-ignore
     { id: 110, order: 10, name: 'TemplateMobile', style: 'Default', anchor: 'faq-block-mobile', ...faqCfg },
     { id: 109, order: 9, name: 'TechMobile', style: 'Default', ...techCfg },
     { id: 108, order: 8, name: 'QuizMobile', style: 'Default' },
     { id: 107, order: 7, name: 'PricingMobile', style: 'Default' },
     // prettier-ignore
-    { id: 106, order: 6, name: 'FriendMobile', style: 'Default', ...friendsCfg, },
+    { id: 106, order: 6, name: 'FriendMobile', style: 'Default', ...friendsCfg, title1: "Интеграции" },
     // prettier-ignore
     { id: 105, order: 5, name: 'TemplateMobile', style: 'Default', ...templateCfg, },
     // prettier-ignore
-    { id: 104, order: 4, name: 'PartnerMobile', style: 'Default', anchor: 'partners-block-mobile', ...partnersCfg },
+    { id: 104, order: 4, name: 'PartnerMobile', style: 'Default', anchor: 'partners-block-mobile', ...partnersCfg, },
     // prettier-ignore
-    { id: 103, order: 3, name: 'FunctionAndConnectionMobiel', style: 'Default', },
+    // { id: 103, order: 3, name: 'FunctionAndConnectionMobiel', style: 'Default', },
     { id: 111, order: 3, name: 'AlgorithmMobile', style: 'Default' },
   ],
   indexBlocks: [

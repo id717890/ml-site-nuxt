@@ -13,23 +13,15 @@
         <!-- eslint-disable-next-line -->
         <span class="text" v-html="line"></span>
       </div>
-      <div
-        class="
-          mt-3
-          d-flex
-          flex-row flex-nowrap
-          align-items-center
-          justify-content-around
-        "
-      >
-        <img src="/img/mobile/frame3.png" alt="" />
+      <div class="mt-3 d-flex flex-row flex-nowrap align-items-center">
+        <!-- <img src="/img/mobile/frame3.png" alt="" /> -->
         <a
           href="#"
-          class="btn btn-quiz"
+          class="btn btn-quiz mx-0"
           style="white-space: nowrap"
           @click.prevent="openQuiz"
         >
-          Начать опрос
+          Узнать стоимость
         </a>
       </div>
     </div>

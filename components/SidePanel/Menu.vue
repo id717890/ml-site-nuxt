@@ -3,6 +3,11 @@
     class="cd-panel cd-panel--from-right js-cd-panel-main"
     :class="{ ' cd-panel--is-visible': showPanel }"
   >
+    <i
+      class="cd-panel__close fa fa-times close my-times"
+      @click="togglePanel"
+    ></i>
+
     <div class="cd-panel__header px-4 pt-1 pb-1" style="border: none">
       <!-- <img
         src="/img/logo2.png"
@@ -15,7 +20,7 @@
       <!-- <v-btn icon class="me-3" @click.prevent="togglePanel">
         <fa class="my-times" icon="times" />
       </v-btn> -->
-      <i class="fa fa-times close my-times" @click="togglePanel"></i>
+      <!-- <i class="fa fa-times close my-times" @click="togglePanel"></i> -->
       <!-- <h1>Title Goes Here</h1>
       <a
         href="#0"

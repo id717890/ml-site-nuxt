@@ -145,12 +145,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ml-call-btn{
+  z-index: 100;
   border-radius: 50%;
   // right: 20px;
   // bottom: 20px;
 }
 
 .ml-menu-btn{
+  z-index: 100;
   border-radius: 50%;
   // right: 75px;
   // bottom: 150px;

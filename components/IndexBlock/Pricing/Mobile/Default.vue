@@ -1,10 +1,19 @@
 <template>
   <div class="px-4 pt-4 pricing-block-mobile">
     <div class="ml-text-28-700 mb-2">Ценообразование</div>
-    <div class="d-flex flex-row flex-wrap">
+    <div
+      class="
+        d-flex
+        flex-row flex-wrap
+        friend-filter-tag-mobile
+        v-application
+        flex-nowrap
+        my-2
+      "
+    >
       <a
         href="#"
-        class="pricing-btn me-2 mb-3"
+        class="btn-tag me-2 mb-3"
         :class="{ active: isFirst }"
         @click.prevent="isFirst = true"
       >
@@ -12,7 +21,7 @@
       </a>
       <a
         href="#"
-        class="pricing-btn mb-3"
+        class="btn-tag mb-3"
         :class="{ active: !isFirst }"
         @click.prevent="isFirst = false"
       >
@@ -46,7 +55,7 @@
             </td>
             <td>
               <div>
-                От 20 000 рублей
+                От 10 000 рублей
                 <br />
                 Зависит от требований
               </div>

@@ -5,7 +5,7 @@
     :class="settings.anchor"
   >
     <!-- eslint-disable-next-line --><!-- prettier-ignore -->
-    <p class="ml-text-28-700 mt-4" v-html="settings.title"></p>
+    <p class="ml-text-28-700 mt-4 mb-4" v-html="settings.title"></p>
     <div id="vue_acc" class="vue_acc_mobile">
       <div
         v-for="(template, index) in settings.items"
@@ -66,9 +66,9 @@ export default {
 }
 
 .pop-templates-mobile {
-  .item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
+  // .item {
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  // }
   .pop_title {
     font-size: 16px;
     line-height: 22px;
