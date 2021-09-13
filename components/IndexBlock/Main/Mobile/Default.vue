@@ -29,7 +29,7 @@
         alt="ЛЕГКО ПОДКЛЮЧАЙТЕ НУЖНЫЕ ОПЦИИ"
       />
 
-      <h1 class="align-self-center mb-4 ml-text-18-700">
+      <h1 class="align-self-center mb-4 ml-text-18-700 text-center">
         ЛЕГКО ПОДКЛЮЧАЙТЕ НУЖНЫЕ ОПЦИИ
       </h1>
       <div
@@ -44,8 +44,8 @@
         />
         <span class="ml-text-icon-block_text ps-4">{{ item.text }}</span>
       </div>
-      <h1 class="ml-text-18-700 mt-4 mb-4">
-        НАСТРАИВАЕМЫЙ ПЕРСОНАЛЬНЫЙ ФУНКЦИОНАЛ
+      <h1 class="ml-text-28-700 mt-4 mb-4">
+        Настраиваемый персональный функционал
       </h1>
       <div
         v-for="(item, index) in configs"

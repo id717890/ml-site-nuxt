@@ -17,7 +17,7 @@
         <!-- <img src="/img/mobile/frame3.png" alt="" /> -->
         <a
           href="#"
-          class="btn btn-quiz mx-0"
+          class="btn btn-quiz mx-0 mt-4"
           style="white-space: nowrap"
           @click.prevent="openQuiz"
         >

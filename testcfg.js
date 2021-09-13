@@ -17,7 +17,7 @@ export default {
     // prettier-ignore
     { id: 106, order: 6, name: 'FriendMobile', style: 'Default', ...friendsCfg, title1: "Интеграции" },
     // prettier-ignore
-    { id: 105, order: 5, name: 'TemplateMobile', style: 'Default', ...templateCfg, },
+    { id: 105, order: 5, name: 'TemplateMobile', style: 'Default', ...templateCfg, image: null },
     // prettier-ignore
     { id: 104, order: 4, name: 'PartnerMobile', style: 'Default', anchor: 'partners-block-mobile', ...partnersCfg, },
     // prettier-ignore

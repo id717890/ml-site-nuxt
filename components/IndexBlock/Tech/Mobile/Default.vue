@@ -4,8 +4,8 @@
     :style="{ backgroundColor: settings.bgColor }"
     class="our-tech-block-mobile px-4"
   >
-    <div class="ml-text-28-700 mb-2" v-text="settings.title"></div>
-    <div class="tech-wrapper-mobile">
+    <div class="ml-text-28-700 mb-4" v-text="settings.title"></div>
+    <div class="tech-wrapper-mobile pt-2">
       <div
         v-for="item in settings.items"
         :key="item.img"

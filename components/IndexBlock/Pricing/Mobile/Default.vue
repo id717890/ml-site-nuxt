@@ -218,7 +218,7 @@ export default {
         margin: 10px 0;
 
         img {
-          width: 58px;
+          width: 45px;
         }
       }
     }

@@ -14,10 +14,20 @@
         <h1 v-else>Loading...</h1>
       </section>
       <MlFooter />
-      <a href="#" class="ml-call-btn" @click.prevent="openSidePanelCall">
+      <a
+        v-if="showScrollTop"
+        href="#"
+        class="ml-call-btn"
+        @click.prevent="openSidePanelCall"
+      >
         <fa icon="phone" />
       </a>
-      <a href="#" class="ml-menu-btn" @click.prevent="openSidePanelMenu">
+      <a
+        v-if="showScrollTop"
+        href="#"
+        class="ml-menu-btn"
+        @click.prevent="openSidePanelMenu"
+      >
         <fa icon="bars" />
       </a>
     </div>
@@ -43,7 +53,7 @@
 <script>
 // import Account from 'vue-material-design-icons/Account.vue'
 import { mapState } from 'vuex'
-// import { debounce } from 'lodash'
+import { debounce } from 'lodash'
 import MlHeader from '~/components/MlHeader.vue'
 import MlFooter from '~/components/MlFooter.vue'
 import MlSidePanel from '~/components/MlSidePanel.vue'
@@ -68,7 +78,7 @@ export default {
   mixins: [MixinSidePanel],
   middleware: ['cfg', 'jwt', 'client/redirect'],
   data: () => ({
-    // showScrollTop: false,
+    showScrollTop: false,
   }),
   head() {
     return {
@@ -90,18 +100,18 @@ export default {
       globalLoading: (state) => state?.app?.globalLoading,
     }),
   },
-  // created() {
-  //   this.debouncedScroll = debounce(this.handleScroll, 200)
-  // },
+  created() {
+    this.debouncedScroll = debounce(this.handleScroll, 200)
+  },
   mounted() {
     setTimeout(() => {
       this.setInitialize()
     }, 250)
   },
-  // destroyed() {
-  //   const el = document.querySelector('#app')
-  //   el?.removeEventListener('wheel', this.debouncedScroll)
-  // },
+  destroyed() {
+    const el = document.querySelector('#app')
+    el?.removeEventListener('wheel', this.debouncedScroll)
+  },
   methods: {
     // ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
     // tooglePanel() {
@@ -213,14 +223,14 @@ export default {
     //   window.scrollTo({ top: 100, left: 100, behavior: 'smooth' })
     //   // this.showScrollTop = false
     // },
-    // handleScroll() {
-    //   const y = window.scrollY
-    //   if (y > 500) {
-    //     this.showScrollTop = true
-    //   } else {
-    //     this.showScrollTop = false
-    //   }
-    // },
+    handleScroll() {
+      const y = window.scrollY
+      if (y > 500) {
+        this.showScrollTop = true
+      } else {
+        this.showScrollTop = false
+      }
+    },
     marquizScript(w, d, s, o) {
       if (!window.__marquiz) window.__marquiz = []
       window.marquiz = function () {
