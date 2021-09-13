@@ -102,6 +102,7 @@ export default {
   },
   created() {
     this.debouncedScroll = debounce(this.handleScroll, 200)
+    this.debouncedTouchmove = debounce(this.handleScroll, 200)
   },
   mounted() {
     setTimeout(() => {
@@ -111,6 +112,7 @@ export default {
   destroyed() {
     const el = document.querySelector('#app')
     el?.removeEventListener('wheel', this.debouncedScroll)
+    el?.removeEventListener('touchmove', this.debouncedTouchmove)
   },
   methods: {
     // ...mapMutations('panel', [SHOW_SIDE_PANEL, SET_SIDE_PANEL_PAGE]),
@@ -208,6 +210,9 @@ export default {
     setInitialize() {
       const el = document.querySelector('#app')
       el?.addEventListener('wheel', this.debouncedScroll, true)
+      if ('ontouchstart' in window) {
+        el.addEventListener('touchmove', this.debouncedTouchmove, true)
+      }
       this.marquizScript(window, document, 'script', {
         host: '//quiz.marquiz.ru',
         id: '5aa97f14ee90d20018523ad6',
