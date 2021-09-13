@@ -2,7 +2,7 @@
   <section>
     <footer class="footer ml-footer-mobile">
       <div class="ml-footer-first px-5 py-5 mb-5 text-center">
-        здесь будет другой футер
+        Здесь будет другой футер
       </div>
       <div class="ml-footer-second">
         <div class="d-flex flex-column">
